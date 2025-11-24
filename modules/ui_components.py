@@ -6,7 +6,7 @@ from typing import Optional, Dict, List
 import os
 import time
 import platform
-import sys           # ✅ AGREGAR ESTA LÍNEA
+import sys           
 import subprocess
 # Importaciones de módulos propios
 from modules.models import (
@@ -139,10 +139,10 @@ class VentanaPrincipal:
     
     def __init__(self, root):
         self.root = root
-        self.root.title("Sistema de Control de Riegos - XICUCO")
+        self.root.title("Sistema de Control de Riegos - BEXHA")
         
         # Make window compact and centered
-        ancho = 1000
+        ancho = 1100
         alto = 600
         x = (self.root.winfo_screenwidth() // 2) - (ancho // 2)
         y = (self.root.winfo_screenheight() // 2) - (alto // 2)
@@ -4307,7 +4307,7 @@ class VentanaAgenda:
     def __init__(self, parent):
         self.ventana = tk.Toplevel(parent)
         self.ventana.title("📋 AGENDA - Directorio de Campesinos")
-        self.ventana.geometry("1000x650")
+        self.ventana.geometry("1300x700")
         self.ventana.transient(parent)
         
         self.campesino_seleccionado = None
@@ -4408,10 +4408,58 @@ class VentanaAgenda:
         self.text_notas = tk.Text(frame_detalles, width=30, height=5, wrap=tk.WORD)
         self.text_notas.pack(anchor=tk.W, pady=2)
         
-        # Botón guardar
+        # Botón guardar contacto
         ttk.Button(frame_detalles, text="💾 Guardar Información de Contacto",
                   command=self.guardar_contacto,
                   width=30).pack(pady=10)
+        
+        # ========== SECCIÓN DE DOCUMENTOS ==========
+        ttk.Separator(frame_detalles, orient='horizontal').pack(fill=tk.X, pady=10)
+        
+        ttk.Label(frame_detalles, text="📄 DOCUMENTOS", font=('Helvetica', 11, 'bold')).pack(anchor=tk.W, pady=5)
+        
+        # Frame para INE
+        frame_ine = ttk.Frame(frame_detalles)
+        frame_ine.pack(fill=tk.X, pady=5)
+        
+        self.lbl_ine = ttk.Label(frame_ine, text="INE: ✗ Sin documento", foreground='gray')
+        self.lbl_ine.pack(side=tk.LEFT)
+        
+        self.btn_ver_ine = ttk.Button(frame_ine, text="Ver", state=tk.DISABLED,
+                                      command=lambda: self.ver_documento('INE'), width=8)
+        self.btn_ver_ine.pack(side=tk.RIGHT, padx=2)
+        
+        self.btn_eliminar_ine = ttk.Button(frame_ine, text="Eliminar", state=tk.DISABLED,
+                                           command=lambda: self.eliminar_documento('INE'), width=8)
+        self.btn_eliminar_ine.pack(side=tk.RIGHT, padx=2)
+        
+        self.btn_subir_ine = ttk.Button(frame_ine, text="Subir", 
+                                        command=lambda: self.subir_documento('INE'), width=8)
+        self.btn_subir_ine.pack(side=tk.RIGHT, padx=2)
+        
+        # Frame para Documento Agrario
+        frame_agrario = ttk.Frame(frame_detalles)
+        frame_agrario.pack(fill=tk.X, pady=5)
+        
+        self.lbl_agrario = ttk.Label(frame_agrario, text="Doc. Agrario: ✗ Sin documento", foreground='gray')
+        self.lbl_agrario.pack(side=tk.LEFT)
+        
+        self.btn_ver_agrario = ttk.Button(frame_agrario, text="Ver", state=tk.DISABLED,
+                                          command=lambda: self.ver_documento('DOCUMENTO_AGRARIO'), width=8)
+        self.btn_ver_agrario.pack(side=tk.RIGHT, padx=2)
+        
+        self.btn_eliminar_agrario = ttk.Button(frame_agrario, text="Eliminar", state=tk.DISABLED,
+                                               command=lambda: self.eliminar_documento('DOCUMENTO_AGRARIO'), width=8)
+        self.btn_eliminar_agrario.pack(side=tk.RIGHT, padx=2)
+        
+        self.btn_subir_agrario = ttk.Button(frame_agrario, text="Subir", 
+                                            command=lambda: self.subir_documento('DOCUMENTO_AGRARIO'), width=8)
+        self.btn_subir_agrario.pack(side=tk.RIGHT, padx=2)
+        
+        # Botón para abrir carpeta
+        ttk.Button(frame_detalles, text="📁 Abrir Carpeta de Documentos",
+                  command=self.abrir_carpeta_documentos,
+                  width=30).pack(pady=5)
     
     def cargar_campesinos(self):
         """Carga todos los campesinos"""
@@ -4522,6 +4570,9 @@ class VentanaAgenda:
         self.text_notas.delete('1.0', tk.END)
         if self.campesino_seleccionado.get('notas'):
             self.text_notas.insert('1.0', self.campesino_seleccionado['notas'])
+        
+        # Actualizar estado de documentos
+        self.actualizar_estado_documentos()
     
     def guardar_contacto(self):
         """Guarda la información de contacto del campesino"""
@@ -4546,4 +4597,132 @@ class VentanaAgenda:
             self.on_seleccionar(None)
             
         except Exception as e:
-            messagebox.showerror("Error", f"Error al guardar:\\n{str(e)}")
+            messagebox.showerror("Error", f"Error al guardar:\n{str(e)}")
+    
+    def actualizar_estado_documentos(self):
+        """Actualiza el estado visual de los documentos"""
+        from modules.documentos import verificar_documento_existe
+        
+        if not self.campesino_seleccionado:
+            return
+        
+        campesino_id = self.campesino_seleccionado['id']
+        
+        # Verificar INE
+        tiene_ine = verificar_documento_existe(campesino_id, 'INE')
+        if tiene_ine:
+            self.lbl_ine.config(text="INE: ✓ Documento subido", foreground='green')
+            self.btn_ver_ine.config(state=tk.NORMAL)
+            self.btn_eliminar_ine.config(state=tk.NORMAL)
+        else:
+            self.lbl_ine.config(text="INE: ✗ Sin documento", foreground='gray')
+            self.btn_ver_ine.config(state=tk.DISABLED)
+            self.btn_eliminar_ine.config(state=tk.DISABLED)
+        
+        # Verificar Documento Agrario
+        tiene_agrario = verificar_documento_existe(campesino_id, 'DOCUMENTO_AGRARIO')
+        if tiene_agrario:
+            self.lbl_agrario.config(text="Doc. Agrario: ✓ Documento subido", foreground='green')
+            self.btn_ver_agrario.config(state=tk.NORMAL)
+            self.btn_eliminar_agrario.config(state=tk.NORMAL)
+        else:
+            self.lbl_agrario.config(text="Doc. Agrario: ✗ Sin documento", foreground='gray')
+            self.btn_ver_agrario.config(state=tk.DISABLED)
+            self.btn_eliminar_agrario.config(state=tk.DISABLED)
+    
+    def subir_documento(self, tipo_documento):
+        """Abre diálogo para subir un documento"""
+        from tkinter import filedialog
+        from modules.documentos import subir_documento
+        
+        if not self.campesino_seleccionado:
+            messagebox.showwarning("Advertencia", "Debe seleccionar un campesino primero")
+            return
+        
+        # Abrir diálogo de archivo
+        nombre_tipo = "INE" if tipo_documento == 'INE' else "Documento Agrario"
+        archivo = filedialog.askopenfilename(
+            title=f"Seleccionar {nombre_tipo}",
+            filetypes=[
+                ("Archivos PDF", "*.pdf"),
+                ("Imágenes", "*.jpg *.jpeg *.png"),
+                ("Todos los archivos", "*.*")
+            ]
+        )
+        
+        if not archivo:
+            return
+        
+        try:
+            ruta_guardado = subir_documento(
+                self.campesino_seleccionado['id'],
+                tipo_documento,
+                archivo
+            )
+            
+            if ruta_guardado:
+                messagebox.showinfo("Éxito", 
+                                    f"{nombre_tipo} subido correctamente\n"
+                                    f"Guardado en: {ruta_guardado}")
+                self.actualizar_estado_documentos()
+            else:
+                messagebox.showerror("Error", "No se pudo subir el document")
+        
+        except Exception as e:
+            messagebox.showerror("Error", f"Error al subir documento:\n{str(e)}")
+    
+    def ver_documento(self, tipo_documento):
+        """Visualiza un documento"""
+        from modules.documentos import obtener_ruta_documento, visualizar_documento
+        
+        if not self.campesino_seleccionado:
+            return
+        
+        try:
+            ruta = obtener_ruta_documento(self.campesino_seleccionado['id'], tipo_documento)
+            
+            if ruta:
+                visualizar_documento(ruta)
+            else:
+                nombre_tipo = "INE" if tipo_documento == 'INE' else "Documento Agrario"
+                messagebox.showwarning("Advertencia", f"No hay {nombre_tipo} para este campesino")
+                
+        except Exception as e:
+            messagebox.showerror("Error", f"Error al abrir documento:\n{str(e)}")
+    
+    def eliminar_documento(self, tipo_documento):
+        """Elimina un documento"""
+        from modules.documentos import eliminar_documento
+        
+        if not self.campesino_seleccionado:
+            return
+        
+        nombre_tipo = "INE" if tipo_documento == 'INE' else "Documento Agrario"
+        
+        if not messagebox.askyesno("Confirmar",
+                                    f"¿Está seguro de eliminar el {nombre_tipo}?\n"
+                                    "Esta acción no se puede deshacer."):
+            return
+        
+        try:
+            if eliminar_documento(self.campesino_seleccionado['id'], tipo_documento):
+                messagebox.showinfo("Éxito", f"{nombre_tipo} eliminado correctamente")
+                self.actualizar_estado_documentos()
+            else:
+                messagebox.showerror("Error", "No se pudo eliminar el documento")
+                
+        except Exception as e:
+            messagebox.showerror("Error", f"Error al eliminar documento:\n{str(e)}")
+    
+    def abrir_carpeta_documentos(self):
+        """Abre la carpeta de documentos del campesino en el explorador"""
+        from modules.documentos import abrir_carpeta_documentos
+        
+        if not self.campesino_seleccionado:
+            messagebox.showwarning("Advertencia", "Debe seleccionar un campesino primero")
+            return
+        
+        try:
+            abrir_carpeta_documentos(self.campesino_seleccionado['numero_lote'])
+        except Exception as e:
+            messagebox.showerror("Error", f"Error al abrir carpeta:\n{str(e)}")

@@ -7,6 +7,7 @@ import pandas as pd
 import chardet
 from datetime import datetime
 from typing import Optional, List, Dict, Tuple
+from modules.cuotas import actualizar_datos_campesino_en_cuotas
 # Ruta de la base de datos
 DB_PATH = os.path.join('database', 'riego.db')
 def get_connection():
@@ -42,6 +43,8 @@ def init_db():
             notas TEXT,
             telefono TEXT,
             direccion TEXT,
+            ruta_ine TEXT,
+            ruta_documento_agrario TEXT,
             activo BOOLEAN DEFAULT 1,
             fecha_registro TEXT DEFAULT CURRENT_TIMESTAMP
         )
@@ -111,7 +114,7 @@ def init_db():
     configuracion_default = {
         'folio_actual': '1',
         'ciclo_actual': 'OCTUBRE 2025',
-        'nombre_oficina': 'ASOCIACIÓN DE CAMPESINOS DE BOMBEO Y REBOMBEO DEL CERRO DEL XICUCO',
+        'nombre_oficina': 'ASOCIACION DE USUARIOS DE LA SECCION 14 EL BEXHA, A.C.',
         'tarifa_hectarea': '450',
         'ubicacion': 'Tezontepec de Aldama, Hgo.',
         'fecha_ultimo_cierre': '',
@@ -258,6 +261,13 @@ def actualizar_campesino(campesino_id: int, datos: Dict) -> bool:
             json.dumps(datos_previos)
         )
         conn.commit()
+        
+        # Sincronizar con cuotas.db
+        try:
+            actualizar_datos_campesino_en_cuotas(campesino_id, datos)
+        except Exception as e:
+            print(f"Error sincronizando cuotas: {e}")
+            
         return True
     finally:
         conn.close()
@@ -1039,6 +1049,12 @@ def partir_lote(campesino_id: int, num_divisiones: int, superficies: List[float]
             campesino_id
         )
         
+        # Sincronizar con cuotas.db (solo el original cambió de superficie)
+        try:
+            actualizar_datos_campesino_en_cuotas(campesino_id, {'superficie': superficies[0]})
+        except Exception as e:
+            print(f"Error sincronizando cuotas: {e}")
+        
         return nuevos_ids
         
     except Exception as e:
@@ -1088,6 +1104,12 @@ def renombrar_campesino(campesino_id: int, nuevo_nombre: str) -> bool:
             campesino_id
         )
         
+        # Sincronizar con cuotas.db
+        try:
+            actualizar_datos_campesino_en_cuotas(campesino_id, {'nombre': nuevo_nombre})
+        except Exception as e:
+            print(f"Error sincronizando cuotas: {e}")
+            
         return True
         
     except Exception as e:
@@ -1138,10 +1160,50 @@ def actualizar_superficie_campesino(campesino_id: int, nueva_superficie: float) 
             campesino_id
         )
         
+        # Sincronizar con cuotas.db
+        try:
+            actualizar_datos_campesino_en_cuotas(campesino_id, {'superficie': nueva_superficie})
+        except Exception as e:
+            print(f"Error sincronizando cuotas: {e}")
+            
         return True
         
     except Exception as e:
         conn.rollback()
         raise e
+    finally:
+        conn.close()
+
+def migrar_campos_documentos():
+    """Migración: Agrega campos para rutas de documentos si no existen"""
+    conn = get_connection()
+    cursor = conn.cursor()
+    
+    try:
+        # Verificar si las columnas ya existen
+        cursor.execute("PRAGMA table_info(campesinos)")
+        columnas = [col[1] for col in cursor.fetchall()]
+        
+        cambios = []
+        
+        if 'ruta_ine' not in columnas:
+            cursor.execute('ALTER TABLE campesinos ADD COLUMN ruta_ine TEXT')
+            cambios.append('ruta_ine')
+            print("✓ Columna ruta_ine agregada a campesinos")
+            
+        if 'ruta_documento_agrario' not in columnas:
+            cursor.execute('ALTER TABLE campesinos ADD COLUMN ruta_documento_agrario TEXT')
+            cambios.append('ruta_documento_agrario')
+            print("✓ Columna ruta_documento_agrario agregada a campesinos")
+        
+        if cambios:
+            conn.commit()
+            print(f"✓ Migración completada: {', '.join(cambios)}")
+        else:
+            print("✓ Las columnas de documentos ya existen")
+            
+    except Exception as e:
+        print(f"Error en migración de documentos: {e}")
+        conn.rollback()
     finally:
         conn.close()

@@ -285,11 +285,7 @@ def _dibujar_recibo_principal(c, recibo: Dict, nombre_oficina: str, ubicacion: s
     c.setFillColor(colors.black)
     c.setFont("Helvetica-Bold", 10)
     c.drawCentredString(RECIBO_ANCHO/2 + 0.5*cm, RECIBO_ALTO - 1*cm, 
-                       "ASOCIACIÓN DE CAMPESINOS DE BOMBEO Y REBOMBEO")
-    
-    c.setFont("Helvetica-Bold", 9)
-    c.drawCentredString(RECIBO_ANCHO/2 + 0.5*cm, RECIBO_ALTO - 1.35*cm, 
-                       "DEL CERRO DEL XICUCO A.C. M7-1")
+                       "ASOCIACION DE USUARIOS DE LA SECCION 14 EL BEXHA, A.C.")
     
     c.setFont("Helvetica", 8)
     c.drawCentredString(RECIBO_ANCHO/2 + 0.5*cm, RECIBO_ALTO - 1.75*cm, 
@@ -966,24 +962,58 @@ def generar_corte_caja_excel(fecha: str, recibos: List[Dict]) -> str:
     cell_total_label.alignment = Alignment(horizontal='right')
     cell_total_label.border = border
     
+    cell_total_monto = ws.cell(row=row_num, column=9, value=total_monto)
     cell_total_monto.fill = total_fill
     cell_total_monto.number_format = '$#,##0.00'
     cell_total_monto.alignment = Alignment(horizontal='right')
     cell_total_monto.border = border
     
-    # Ajustar anchos
-    for col in ws.columns:
-        max_length = 0
-        column = col[0].column_letter
-        for cell in col:
-            try:
-                if len(str(cell.value)) > max_length:
-                    max_length = len(cell.value)
-            except: pass
-        adjusted_width = (max_length + 2)
-        ws.column_dimensions[column].width = adjusted_width
-        
+    ws.cell(row=row_num, column=10).border = border
+    
+    # ===== ESTADÍSTICAS =====
+    row_num += 2
+    ws.cell(row=row_num, column=1, value='ESTADÍSTICAS:').font = Font(bold=True)
+    row_num += 1
+    
+    ws.cell(row=row_num, column=1, value=f"Total de recibos:")
+    ws.cell(row=row_num, column=2, value=len([r for r in recibos if not r.get('eliminado')]))
+    row_num += 1
+    
+    # Recibos por tipo
+    nuevas_siembras = len([r for r in recibos if r['tipo_accion'] == 'Nueva siembra' and not r.get('eliminado')])
+    riegos_adicionales = len([r for r in recibos if r['tipo_accion'] == 'Riego adicional' and not r.get('eliminado')])
+    
+    ws.cell(row=row_num, column=1, value=f"Nuevas siembras:")
+    ws.cell(row=row_num, column=2, value=nuevas_siembras)
+    row_num += 1
+    
+    ws.cell(row=row_num, column=1, value=f"Riegos adicionales:")
+    ws.cell(row=row_num, column=2, value=riegos_adicionales)
+    row_num += 1
+    
+    # ===== PIE DE PÁGINA =====
+    row_num += 2
+    ws.merge_cells(f'A{row_num}:J{row_num}')
+    cell_generado = ws.cell(row=row_num, column=1)
+    cell_generado.value = f"Generado el {datetime.now().strftime('%d/%m/%Y a las %H:%M:%S')}"
+    cell_generado.font = Font(name='Calibri', size=9, italic=True, color='808080')
+    cell_generado.alignment = Alignment(horizontal='center')
+    
+    # ===== AJUSTAR ANCHOS DE COLUMNA =====
+    ws.column_dimensions['A'].width = 8      # FOLIO
+    ws.column_dimensions['B'].width = 10     # NO DE LOTE
+    ws.column_dimensions['C'].width = 10     # CICLO
+    ws.column_dimensions['D'].width = 12     # BARRIO
+    ws.column_dimensions['E'].width = 12     # CULTIVO
+    ws.column_dimensions['F'].width = 14     # SUPERFICIE DE LA MILPA
+    ws.column_dimensions['G'].width = 13     # RIEGO DE LA MILPA
+    ws.column_dimensions['H'].width = 18     # CAMPESINO
+    ws.column_dimensions['I'].width = 15     # CUANTO SE COBRA
+    ws.column_dimensions['J'].width = 12     # FECHA
+    
+    # Guardar archivo
     wb.save(ruta_excel)
+    print(f"✅ Corte de caja Excel generado: {ruta_excel}")
     return ruta_excel
 
 def generar_reporte_mensual_excel(anio: int, mes: int, recibos: List[Dict]) -> str:
@@ -1054,59 +1084,7 @@ def generar_reporte_mensual_excel(anio: int, mes: int, recibos: List[Dict]) -> s
         
     wb.save(filepath)
     return filepath
-    cell_total_monto.number_format = '$#,##0.00'
-    cell_total_monto.alignment = Alignment(horizontal='right')
-    cell_total_monto.border = border
     
-    ws.cell(row=row_num, column=10).border = border
-    
-    # ===== ESTADÍSTICAS =====
-    row_num += 2
-    ws.cell(row=row_num, column=1, value='ESTADÍSTICAS:').font = Font(bold=True)
-    row_num += 1
-    
-    ws.cell(row=row_num, column=1, value=f"Total de recibos:")
-    ws.cell(row=row_num, column=2, value=len([r for r in recibos if not r.get('eliminado')]))
-    row_num += 1
-    
-    # Recibos por tipo
-    nuevas_siembras = len([r for r in recibos if r['tipo_accion'] == 'Nueva siembra' and not r.get('eliminado')])
-    riegos_adicionales = len([r for r in recibos if r['tipo_accion'] == 'Riego adicional' and not r.get('eliminado')])
-    
-    ws.cell(row=row_num, column=1, value=f"Nuevas siembras:")
-    ws.cell(row=row_num, column=2, value=nuevas_siembras)
-    row_num += 1
-    
-    ws.cell(row=row_num, column=1, value=f"Riegos adicionales:")
-    ws.cell(row=row_num, column=2, value=riegos_adicionales)
-    row_num += 1
-    
-    # ===== PIE DE PÁGINA =====
-    row_num += 2
-    ws.merge_cells(f'A{row_num}:J{row_num}')
-    cell_generado = ws.cell(row=row_num, column=1)
-    cell_generado.value = f"Generado el {datetime.now().strftime('%d/%m/%Y a las %H:%M:%S')}"
-    cell_generado.font = Font(name='Calibri', size=9, italic=True, color='808080')
-    cell_generado.alignment = Alignment(horizontal='center')
-    
-    # ===== AJUSTAR ANCHOS DE COLUMNA =====
-    ws.column_dimensions['A'].width = 8      # FOLIO
-    ws.column_dimensions['B'].width = 10     # NO DE LOTE
-    ws.column_dimensions['C'].width = 10     # CICLO
-    ws.column_dimensions['D'].width = 12     # BARRIO
-    ws.column_dimensions['E'].width = 12     # CULTIVO
-    ws.column_dimensions['F'].width = 14     # SUPERFICIE DE LA MILPA
-    ws.column_dimensions['G'].width = 13     # RIEGO DE LA MILPA
-    ws.column_dimensions['H'].width = 18     # CAMPESINO
-    ws.column_dimensions['I'].width = 15     # CUANTO SE COBRA
-    ws.column_dimensions['J'].width = 12     # FECHA
-    
-    # Guardar archivo
-    wb.save(ruta_excel)
-    print(f"✅ Corte de caja Excel generado: {ruta_excel}")
-    return ruta_excel
-
-
 def generar_pdf_estadisticas(estadisticas: Dict, estadisticas_cultivo: List[Dict]) -> str:
     """
     Genera un PDF profesional premium con las estadísticas del sistema incluyendo gráficos avanzados.
@@ -2019,9 +1997,7 @@ def dibujar_recibo_cuota(c, recibo: Dict, nombre_oficina: str, ubicacion: str):
     # TÍTULO
     c.setFillColor(colors.black)
     c.setFont("Helvetica-Bold", 10)
-    c.drawCentredString((RECIBO_ANCHO/2) + 0.5*cm, RECIBO_ALTO - 1*cm, "ASOCIACIÓN DE CAMPESINOS DE BOMBEO Y REBOMBEO")
-    c.setFont("Helvetica-Bold", 9)
-    c.drawCentredString((RECIBO_ANCHO/2) + 0.5*cm, RECIBO_ALTO - 1.35*cm, "DEL CERRO DEL XICUCO A.C. (M7-1)")
+    c.drawCentredString((RECIBO_ANCHO/2) + 0.5*cm, RECIBO_ALTO - 1*cm, "ASOCIACION DE USUARIOS DE LA SECCION 14 EL BEXHA, A.C.")
     c.setFont("Helvetica", 8)
     c.drawCentredString((RECIBO_ANCHO/2) + 0.5*cm, RECIBO_ALTO - 1.75*cm, "RFC: ACB030619G68")
     

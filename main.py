@@ -19,6 +19,14 @@ def main():
         init_cuotas_db()
         migrar_folios_individuales()
         recrear_tabla_recibos_cuotas()  # ✅ AGREGAR ESTO
+        
+        # ✅ MIGRAR CAMPOS DE DOCUMENTOS
+        from modules.models import migrar_campos_documentos
+        migrar_campos_documentos()
+        
+        # ✅ INICIALIZAR DIRECTORIO DE DOCUMENTOS
+        from modules.documentos import inicializar_directorio_documentos
+        inicializar_directorio_documentos()
 
         from modules.models import contar_campesinos
         

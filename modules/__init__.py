@@ -7,4 +7,4 @@ Módulo principal con todos los componentes del sistema
 """
 
 __version__ = '1.0.0'
-__author__ = 'Sistema de Riegos XICUCO'
+__author__ = 'Sistema de Riegos BEXHA'

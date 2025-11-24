@@ -630,3 +630,101 @@ def recrear_tabla_recibos_cuotas():
         conn.rollback()
     finally:
         conn.close()
+
+# ==================== SINCRONIZACIÓN CON RIEGO.DB ====================
+
+def actualizar_datos_campesino_en_cuotas(campesino_id: int, nuevos_datos: Dict):
+    """
+    Sincroniza los cambios de datos del campesino (riego.db) hacia cuotas.db.
+    
+    Si cambia la superficie:
+    - Recalcula el monto de todas las cuotas PENDIENTES de ese campesino.
+    - Monto = nueva_superficie * tarifa_tipo_cuota
+    
+    Siempre actualiza:
+    - Nombre, Lote, Barrio (para mantener consistencia visual en recibos/historial)
+    """
+    conn = get_cuotas_connection()
+    cursor = conn.cursor()
+    
+    try:
+        # 1. Actualizar datos básicos en todas las cuotas del campesino
+        campos_basicos = []
+        valores_basicos = []
+        
+        if 'nombre' in nuevos_datos:
+            campos_basicos.append("nombre_campesino = ?")
+            valores_basicos.append(nuevos_datos['nombre'])
+            
+        if 'numero_lote' in nuevos_datos:
+            campos_basicos.append("numero_lote = ?")
+            valores_basicos.append(nuevos_datos['numero_lote'])
+            
+        if 'barrio' in nuevos_datos:
+            campos_basicos.append("barrio = ?")
+            valores_basicos.append(nuevos_datos['barrio'])
+            
+        if campos_basicos:
+            valores_basicos.append(campesino_id)
+            sql_basico = f"UPDATE cuotas_campesinos SET {', '.join(campos_basicos)} WHERE campesino_id = ?"
+            cursor.execute(sql_basico, valores_basicos)
+            print(f"✓ Datos básicos actualizados en cuotas para campesino {campesino_id}")
+
+        # 2. Si cambió la superficie, recalcular montos de cuotas PENDIENTES
+        if 'superficie' in nuevos_datos:
+            nueva_superficie = float(nuevos_datos['superficie'])
+            print(f"DEBUG: Detectado cambio de superficie a {nueva_superficie}")
+            
+            # Obtener cuotas pendientes
+            cursor.execute('''
+                SELECT id, tipo_cuota_id, pagado
+                FROM cuotas_campesinos 
+                WHERE campesino_id = ?
+            ''', (campesino_id,))
+            
+            todas_cuotas = cursor.fetchall()
+            print(f"DEBUG: Total cuotas encontradas para campesino {campesino_id}: {len(todas_cuotas)}")
+            for c in todas_cuotas:
+                print(f"DEBUG: Cuota {c['id']} - Pagado: {c['pagado']}")
+
+            cursor.execute('''
+                SELECT id, tipo_cuota_id 
+                FROM cuotas_campesinos 
+                WHERE campesino_id = ? AND pagado = 0
+            ''', (campesino_id,))
+            
+            pendientes = cursor.fetchall()
+            print(f"DEBUG: Pendientes encontradas query: {len(pendientes)}")
+            
+            if pendientes:
+                print(f"⚠ Recalculando {len(pendientes)} cuotas pendientes por cambio de superficie...")
+                
+                for cuota in pendientes:
+                    cuota_id = cuota['id']
+                    tipo_id = cuota['tipo_cuota_id']
+                    
+                    # Obtener tarifa actual de ese tipo de cuota
+                    cursor.execute('SELECT monto FROM tipos_cuota WHERE id = ?', (tipo_id,))
+                    row_tipo = cursor.fetchone()
+                    
+                    if row_tipo:
+                        tarifa = row_tipo['monto']
+                        nuevo_monto = nueva_superficie * tarifa
+                        print(f"DEBUG: Recalculando Cuota {cuota_id}: Tarifa {tarifa} * Sup {nueva_superficie} = {nuevo_monto}")
+                        
+                        # Actualizar monto de la cuota
+                        cursor.execute('''
+                            UPDATE cuotas_campesinos 
+                            SET monto = ? 
+                            WHERE id = ?
+                        ''', (nuevo_monto, cuota_id))
+                
+                print(f"✓ Montos recalculados correctamente.")
+        
+        conn.commit()
+        
+    except Exception as e:
+        print(f"Error al sincronizar con cuotas: {e}")
+        # No lanzamos excepción para no romper el flujo principal de riego.db
+    finally:
+        conn.close()
