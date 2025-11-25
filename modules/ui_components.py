@@ -144,7 +144,7 @@ class VentanaPrincipal:
         
         # Make window compact and centered
         ancho = 1100
-        alto = 600
+        alto = 609
         x = (self.root.winfo_screenwidth() // 2) - (ancho // 2)
         y = (self.root.winfo_screenheight() // 2) - (alto // 2)
         self.root.geometry(f'{ancho}x{alto}+{x}+{y}')
