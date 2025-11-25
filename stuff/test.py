@@ -1,7 +1,3 @@
-"""
-Script de prueba - NOMBRE MÁS BAJO
-"""
-
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.units import cm
 from reportlab.lib import colors
@@ -13,7 +9,6 @@ import os
 RECIBO_ANCHO = 21.6 * cm
 RECIBO_ALTO = 7 * cm
 LOGO_PATH = os.path.join('assets', 'lagoo.png')
-
 # ===== COLORES =====
 COLOR_VERDE = colors.HexColor('#B8D1BF')
 COLOR_BEIGE = colors.HexColor('#F5F0E8')

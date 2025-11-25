@@ -3805,7 +3805,7 @@ class VentanaGestionarCuotas:
     def __init__(self, parent, ventana_principal):
         self.ventana = tk.Toplevel(parent)
         self.ventana.title("💰 Gestionar Cuotas de Cooperación")
-        self.ventana.geometry("700x550")
+        self.ventana.geometry("700x538")
         self.ventana.transient(parent)
         self.ventana.grab_set()
         self.ventana_principal = ventana_principal
@@ -3954,12 +3954,12 @@ class VentanaNuevaCuota:
         ttk.Label(frame_asignar, text="Después de crear la cuota:", 
                   font=("Helvetica", 9)).pack(anchor=tk.W)
         
-        self.var_asignar = tk.StringVar(value="manual")
-        ttk.Radiobutton(frame_asignar, text="Asignar manualmente después", 
-                        variable=self.var_asignar, value="manual").pack(anchor=tk.W, pady=2)
+        self.var_asignar = tk.StringVar(value="todos")
         ttk.Radiobutton(frame_asignar, text="Asignar a TODOS los campesinos ahora", 
                         variable=self.var_asignar, value="todos").pack(anchor=tk.W, pady=2)
-        
+        ttk.Radiobutton(frame_asignar, text="Asignar manualmente después", 
+                        variable=self.var_asignar, value="manual").pack(anchor=tk.W, pady=2)
+
         # Botones
         frame_botones = ttk.Frame(frame)
         frame_botones.pack(pady=20)
@@ -4242,7 +4242,7 @@ class VentanaAsignarCuota:
     def __init__(self, parent, tipo_cuota_id, ventana_detalle):
         self.ventana = tk.Toplevel(parent)
         self.ventana.title("Asignar Cuota a Campesino")
-        self.ventana.geometry("550x450")
+        self.ventana.geometry("550x536")
         self.ventana.transient(parent)
         self.ventana.grab_set()
         self.tipo_cuota_id = tipo_cuota_id
