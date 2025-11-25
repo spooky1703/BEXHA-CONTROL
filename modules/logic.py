@@ -577,38 +577,39 @@ def crear_backup(motivo: str) -> str:
     """Crea un backup de la base de datos"""
 
     try:
-
         backup_dir = os.path.join('database', 'backups')
-
         os.makedirs(backup_dir, exist_ok=True)
-
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        
+        backups_generados = []
 
+        # Backup Riego
         backup_filename = f"riego_backup_{timestamp}.db"
-
         backup_path = os.path.join(backup_dir, backup_filename)
-
         shutil.copy2(DB_PATH, backup_path)
+        backups_generados.append(backup_path)
+        
+        # Backup Cuotas
+        from modules.cuotas import CUOTAS_DB_PATH
+        if os.path.exists(CUOTAS_DB_PATH):
+            backup_cuotas_filename = f"cuotas_backup_{timestamp}.db"
+            backup_cuotas_path = os.path.join(backup_dir, backup_cuotas_filename)
+            shutil.copy2(CUOTAS_DB_PATH, backup_cuotas_path)
+            backups_generados.append(backup_cuotas_path)
 
         registrar_auditoria(
-
             'BACKUP_CREADO',
-
-            f"Backup creado: {backup_filename} - Motivo: {motivo}",
-
+            f"Backups creados: {', '.join([os.path.basename(b) for b in backups_generados])} - Motivo: {motivo}",
             None
-
         )
 
         limpiar_backups_antiguos()
 
-        return backup_path
+        return backups_generados
 
     except Exception as e:
-
         print(f"Error al crear backup: {e}")
-
-        return ""
+        return []
 
 def limpiar_backups_antiguos(mantener: int = 10):
 
@@ -821,6 +822,48 @@ def buscar_recibos_avanzado(filtros: Dict) -> list:
     cursor.execute(query, params)
 
     resultados = [dict(row) for row in cursor.fetchall()]
-
     conn.close()
     return resultados
+
+def generar_archivo_auditoria() -> str:
+    """
+    Genera un archivo CSV con todo el historial de auditoría.
+    Retorna la ruta del archivo generado.
+    """
+    import csv
+    from datetime import datetime
+    import os
+    from modules.models import get_connection
+    
+    try:
+        conn = get_connection()
+        cursor = conn.cursor()
+        cursor.execute('SELECT * FROM auditoria ORDER BY fecha_hora DESC')
+        registros = cursor.fetchall()
+        conn.close()
+        
+        filename = f"auditoria_completa_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
+        filepath = os.path.join('database', 'backups', filename)
+        os.makedirs(os.path.dirname(filepath), exist_ok=True)
+        
+        with open(filepath, 'w', newline='', encoding='utf-8') as csvfile:
+            writer = csv.writer(csvfile)
+            # Escribir encabezados
+            writer.writerow(['ID', 'Fecha/Hora', 'Tipo Evento', 'Usuario', 'Descripción', 'Datos Previos'])
+            
+            # Escribir datos
+            for row in registros:
+                writer.writerow([
+                    row['id'],
+                    row['fecha_hora'],
+                    row['tipo_evento'],
+                    row['usuario'],
+                    row['descripcion'],
+                    row['datos_previos']
+                ])
+                
+        return filepath
+        
+    except Exception as e:
+        print(f"Error al generar archivo de auditoría: {e}")
+        return ""

@@ -110,6 +110,17 @@ def init_db():
     cursor.execute('CREATE INDEX IF NOT EXISTS idx_siembra_activa ON siembras(activa)')
     cursor.execute('CREATE INDEX IF NOT EXISTS idx_siembra_campesino ON siembras(campesino_id)')
     cursor.execute('CREATE INDEX IF NOT EXISTS idx_recibo_eliminado ON recibos(eliminado)')
+    
+    # Tabla de contactos de correo
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS contactos_correo (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            alias TEXT UNIQUE NOT NULL,
+            correo TEXT NOT NULL,
+            es_principal BOOLEAN DEFAULT 0
+        )
+    ''')
+    
     # Insertar configuración por defecto
     configuracion_default = {
         'folio_actual': '1',
@@ -137,6 +148,36 @@ def init_db():
                 ██║  ██║███████╗╚██████╔╝██║ ╚████║███████║╚██████╔╝    ╚██████╗╚██████╔╝██████╔╝██║██║ ╚████║╚██████╔╝
                 ╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝ ╚═════╝      ╚═════╝ ╚═════╝ ╚═════╝ ╚═╝╚═╝  ╚═══╝ ╚═════╝                                                                  
                 """)
+    
+    # Migración de correo antiguo a contactos
+    migrar_correo_a_contactos()
+
+def migrar_correo_a_contactos():
+    """Migra la configuración antigua de correo a la tabla de contactos"""
+    conn = get_connection()
+    cursor = conn.cursor()
+    
+    try:
+        # Verificar si ya existe el Presidente
+        cursor.execute("SELECT id FROM contactos_correo WHERE alias = 'Presidente'")
+        if not cursor.fetchone():
+            # Obtener correo antiguo
+            cursor.execute("SELECT valor FROM configuracion WHERE clave = 'correo_reportes'")
+            row = cursor.fetchone()
+            correo_antiguo = row['valor'] if row else ""
+            
+            # Crear contacto Presidente
+            cursor.execute('''
+                INSERT INTO contactos_correo (alias, correo, es_principal)
+                VALUES ('Presidente', ?, 1)
+            ''', (correo_antiguo,))
+            conn.commit()
+            print("✓ Configuración de correo migrada a contacto 'Presidente'")
+            
+    except Exception as e:
+        print(f"Error en migración de contactos: {e}")
+    finally:
+        conn.close()
 
 # ==================== FUNCIONES DE CAMPESINOS ====================
 def buscar_campesino(termino: str) -> List[Dict]:
@@ -739,6 +780,66 @@ def obtener_toda_configuracion() -> Dict:
     config = {row['clave']: row['valor'] for row in cursor.fetchall()}
     conn.close()
     return config
+
+# ==================== GESTIÓN DE CONTACTOS DE CORREO ====================
+
+def obtener_contactos() -> List[Dict]:
+    """Obtiene todos los contactos de correo"""
+    conn = get_connection()
+    cursor = conn.cursor()
+    cursor.execute('SELECT * FROM contactos_correo ORDER BY es_principal DESC, alias ASC')
+    resultados = [dict(row) for row in cursor.fetchall()]
+    conn.close()
+    return resultados
+
+def crear_contacto(alias: str, correo: str) -> int:
+    """Crea un nuevo contacto de correo"""
+    conn = get_connection()
+    cursor = conn.cursor()
+    try:
+        cursor.execute('INSERT INTO contactos_correo (alias, correo) VALUES (?, ?)', (alias, correo))
+        id_contacto = cursor.lastrowid
+        conn.commit()
+        return id_contacto
+    except sqlite3.IntegrityError:
+        conn.close()
+        raise ValueError(f"El alias '{alias}' ya existe")
+    finally:
+        conn.close()
+
+def actualizar_contacto(contacto_id: int, correo: str):
+    """Actualiza el correo de un contacto"""
+    conn = get_connection()
+    cursor = conn.cursor()
+    cursor.execute('UPDATE contactos_correo SET correo = ? WHERE id = ?', (correo, contacto_id))
+    conn.commit()
+    conn.close()
+
+def eliminar_contacto(contacto_id: int):
+    """Elimina un contacto (excepto el principal)"""
+    conn = get_connection()
+    cursor = conn.cursor()
+    
+    # Verificar si es principal
+    cursor.execute('SELECT es_principal FROM contactos_correo WHERE id = ?', (contacto_id,))
+    row = cursor.fetchone()
+    if row and row['es_principal']:
+        conn.close()
+        raise ValueError("No se puede eliminar el contacto principal (Presidente)")
+        
+    cursor.execute('DELETE FROM contactos_correo WHERE id = ?', (contacto_id,))
+    conn.commit()
+    conn.close()
+
+def obtener_correo_presidente() -> str:
+    """Obtiene el correo del Presidente (contacto principal)"""
+    conn = get_connection()
+    cursor = conn.cursor()
+    cursor.execute("SELECT correo FROM contactos_correo WHERE alias = 'Presidente'")
+    row = cursor.fetchone()
+    conn.close()
+    return row['correo'] if row else ""
+
 
 # ==================== FUNCIONES DE AUDITORÍA ====================
 

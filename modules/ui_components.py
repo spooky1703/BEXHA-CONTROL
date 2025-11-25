@@ -42,6 +42,7 @@ from modules.cuotas import (
     obtener_cuotas_pendientes_campesino, obtener_resumen_cuota, pagar_cuota,
     obtener_recibo_cuota, obtener_recibos_cuotas_dia, obtener_estadisticas_generales_cuotas
 )
+from modules.whatsapp_handler import abrir_chat_whatsapp
 
 # Lista de cultivos comunes
 CULTIVOS = ['MAÍZ', 'FRIJOL','TRIGO', 'ALFALFA', 'CHILE', 'TOMATE', 'NABO' ,'AVENA','HABA','CALABAZA','CEBADA','PASTO','COLIFLOR']
@@ -1964,11 +1965,6 @@ class DialogoConfiguracion:
         self.entry_tarifa = ttk.Entry(tab_general, width=50)
         self.entry_tarifa.grid(row=5, column=0, pady=5)
         
-        # Correo para Reportes
-        ttk.Label(tab_general, text="Correo para Reportes:", font=('Helvetica', 10, 'bold')).grid(row=6, column=0, sticky=tk.W, pady=5)
-        self.entry_correo = ttk.Entry(tab_general, width=50)
-        self.entry_correo.grid(row=7, column=0, pady=5)
-        
         # Ciclo actual (solo lectura)
         ttk.Label(tab_general, text="Ciclo Actual:", font=('Helvetica', 10, 'bold')).grid(row=8, column=0, sticky=tk.W, pady=5)
         self.label_ciclo = ttk.Label(tab_general, text="-", foreground='blue')
@@ -2008,6 +2004,34 @@ class DialogoConfiguracion:
                 r['tipo_evento'],
                 r['descripcion']
             ))
+            
+        # ========== TAB 3: Contactos ==========
+        tab_contactos = ttk.Frame(notebook, padding="15")
+        notebook.add(tab_contactos, text="Contactos")
+        
+        # Treeview Contactos
+        cols_contactos = ('alias', 'correo', 'tipo')
+        self.tree_contactos = ttk.Treeview(tab_contactos, columns=cols_contactos, show='headings', height=10)
+        
+        self.tree_contactos.heading('alias', text='Alias')
+        self.tree_contactos.heading('correo', text='Correo Electrónico')
+        self.tree_contactos.heading('tipo', text='Tipo')
+        
+        self.tree_contactos.column('alias', width=150)
+        self.tree_contactos.column('correo', width=250)
+        self.tree_contactos.column('tipo', width=100)
+        
+        self.tree_contactos.pack(side=tk.TOP, fill=tk.BOTH, expand=True)
+        
+        # Botones Contactos
+        frame_btn_contactos = ttk.Frame(tab_contactos)
+        frame_btn_contactos.pack(fill=tk.X, pady=10)
+        
+        ttk.Button(frame_btn_contactos, text="➕ Agregar", command=self.agregar_contacto).pack(side=tk.LEFT, padx=5)
+        ttk.Button(frame_btn_contactos, text="✏️ Editar", command=self.editar_contacto).pack(side=tk.LEFT, padx=5)
+        ttk.Button(frame_btn_contactos, text="🗑️ Eliminar", command=self.eliminar_contacto).pack(side=tk.LEFT, padx=5)
+        
+        self.cargar_contactos()
         
         # Frame de botones
         frame_botones = ttk.Frame(self.frame_principal)
@@ -2030,9 +2054,124 @@ class DialogoConfiguracion:
         self.entry_nombre_oficina.insert(0, config.get('nombre_oficina', ''))
         self.entry_ubicacion.insert(0, config.get('ubicacion', ''))
         self.entry_tarifa.insert(0, config.get('tarifa_hectarea', '450'))
-        self.entry_correo.insert(0, config.get('correo_reportes', ''))
         self.label_ciclo.config(text=config.get('ciclo_actual', '-'))
         self.label_folio.config(text=config.get('folio_actual', '-'))
+        
+    def cargar_contactos(self):
+        """Carga la lista de contactos"""
+        from modules.models import obtener_contactos
+        
+        for item in self.tree_contactos.get_children():
+            self.tree_contactos.delete(item)
+            
+        contactos = obtener_contactos()
+        for c in contactos:
+            tipo = "PRINCIPAL" if c['es_principal'] else "Secundario"
+            self.tree_contactos.insert('', tk.END, values=(c['alias'], c['correo'], tipo), tags=(str(c['id']), str(c['es_principal'])))
+
+    def agregar_contacto(self):
+        """Diálogo para agregar contacto"""
+        dialogo = tk.Toplevel(self.ventana)
+        dialogo.title("Nuevo Contacto")
+        dialogo.geometry("300x200")
+        dialogo.transient(self.ventana)
+        dialogo.grab_set()
+        
+        ttk.Label(dialogo, text="Alias:").pack(pady=5)
+        entry_alias = ttk.Entry(dialogo)
+        entry_alias.pack(pady=5)
+        
+        ttk.Label(dialogo, text="Correo:").pack(pady=5)
+        entry_correo = ttk.Entry(dialogo)
+        entry_correo.pack(pady=5)
+        
+        def guardar():
+            alias = entry_alias.get().strip()
+            correo = entry_correo.get().strip()
+            if not alias or not correo:
+                messagebox.showwarning("Error", "Todos los campos son obligatorios")
+                return
+            
+            try:
+                from modules.models import crear_contacto
+                crear_contacto(alias, correo)
+                self.cargar_contactos()
+                dialogo.destroy()
+            except Exception as e:
+                messagebox.showerror("Error", str(e))
+        
+        ttk.Button(dialogo, text="Guardar", command=guardar).pack(pady=10)
+
+    def editar_contacto(self):
+        """Diálogo para editar contacto"""
+        selection = self.tree_contactos.selection()
+        if not selection:
+            return
+            
+        item = self.tree_contactos.item(selection[0])
+        id_contacto = int(item['tags'][0])
+        es_principal = int(item['tags'][1])
+        alias_actual = item['values'][0]
+        correo_actual = item['values'][1]
+        
+        dialogo = tk.Toplevel(self.ventana)
+        dialogo.title("Editar Contacto")
+        dialogo.geometry("300x200")
+        dialogo.transient(self.ventana)
+        dialogo.grab_set()
+        
+        ttk.Label(dialogo, text="Alias:").pack(pady=5)
+        entry_alias = ttk.Entry(dialogo)
+        entry_alias.insert(0, alias_actual)
+        entry_alias.pack(pady=5)
+        
+        if es_principal:
+            entry_alias.config(state='disabled')
+            ttk.Label(dialogo, text="(El alias principal no se puede cambiar)", font=('Arial', 8)).pack()
+        
+        ttk.Label(dialogo, text="Correo:").pack(pady=5)
+        entry_correo = ttk.Entry(dialogo)
+        entry_correo.insert(0, correo_actual)
+        entry_correo.pack(pady=5)
+        
+        def guardar():
+            correo = entry_correo.get().strip()
+            if not correo:
+                messagebox.showwarning("Error", "El correo es obligatorio")
+                return
+            
+            try:
+                from modules.models import actualizar_contacto
+                actualizar_contacto(id_contacto, correo)
+                self.cargar_contactos()
+                dialogo.destroy()
+            except Exception as e:
+                messagebox.showerror("Error", str(e))
+        
+        ttk.Button(dialogo, text="Guardar", command=guardar).pack(pady=10)
+
+    def eliminar_contacto(self):
+        """Elimina un contacto"""
+        selection = self.tree_contactos.selection()
+        if not selection:
+            return
+            
+        item = self.tree_contactos.item(selection[0])
+        id_contacto = int(item['tags'][0])
+        es_principal = int(item['tags'][1])
+        alias = item['values'][0]
+        
+        if es_principal:
+            messagebox.showwarning("Error", "No se puede eliminar el contacto principal (Presidente)")
+            return
+            
+        if messagebox.askyesno("Confirmar", f"¿Eliminar el contacto '{alias}'?"):
+            try:
+                from modules.models import eliminar_contacto
+                eliminar_contacto(id_contacto)
+                self.cargar_contactos()
+            except Exception as e:
+                messagebox.showerror("Error", str(e))
     
     def guardar_configuracion(self):
         """Guarda los cambios de configuración"""
@@ -2040,7 +2179,7 @@ class DialogoConfiguracion:
             actualizar_configuracion('nombre_oficina', self.entry_nombre_oficina.get().strip())
             actualizar_configuracion('ubicacion', self.entry_ubicacion.get().strip())
             actualizar_configuracion('tarifa_hectarea', self.entry_tarifa.get().strip())
-            actualizar_configuracion('correo_reportes', self.entry_correo.get().strip())
+            # Correo ya no se guarda aquí, se gestiona en la pestaña de contactos
             
             messagebox.showinfo("Éxito", "Configuración guardada correctamente")
             self.ventana.destroy()
@@ -2869,7 +3008,7 @@ class VentanaGestorReportes:
         
         self.ventana = tk.Toplevel(parent)
         self.ventana.title("📊 Gestor de Reportes")
-        self.ventana.geometry("800x550")
+        self.ventana.geometry("800x600")
         self.ventana.transient(parent)
         
         self.canvas, self.frame_principal = crear_ventana_scrollable(self.ventana, None)
@@ -3285,35 +3424,59 @@ class VentanaGestorReportes:
         nombre_archivo = item['values'][0]
         
         # Obtener correo destinatario
-        from modules.models import obtener_configuracion
-        destinatario = obtener_configuracion('correo_reportes')
+        # Obtener contactos disponibles
+        from modules.models import obtener_contactos
+        contactos = obtener_contactos()
         
-        if not destinatario:
-            messagebox.showwarning("Configuración Incompleta", 
-                                 "No se ha configurado un correo destinatario.\n"
-                                 "Vaya a Configuración > General para agregarlo.")
+        if not contactos:
+            messagebox.showwarning("Sin Contactos", 
+                                 "No hay contactos registrados.\n"
+                                 "Vaya a Configuración > Contactos para agregar uno.")
             return
             
-        if messagebox.askyesno("Confirmar Envío", 
-                             f"¿Enviar el siguiente reporte?\n\n"
-                             f"Archivo: {nombre_archivo}\n"
-                             f"Destinatario: {destinatario}"):
+        # Diálogo de selección de contacto
+        dialogo = tk.Toplevel(self.ventana)
+        dialogo.title("Enviar por Correo")
+        dialogo.geometry("400x200")
+        dialogo.transient(self.ventana)
+        dialogo.grab_set()
+        
+        ttk.Label(dialogo, text=f"Enviar archivo: {nombre_archivo}", font=('Helvetica', 10, 'bold')).pack(pady=10)
+        ttk.Label(dialogo, text="Seleccione el destinatario:").pack(pady=5)
+        
+        # Combobox con alias
+        aliases = [c['alias'] for c in contactos]
+        combo_contactos = ttk.Combobox(dialogo, values=aliases, state="readonly", width=30)
+        combo_contactos.current(0)
+        combo_contactos.pack(pady=5)
+        
+        def enviar():
+            seleccion = combo_contactos.get()
+            # Buscar correo del alias seleccionado
+            correo_destino = next((c['correo'] for c in contactos if c['alias'] == seleccion), None)
+            
+            if not correo_destino:
+                messagebox.showerror("Error", "No se encontró el correo del contacto seleccionado")
+                return
+                
             try:
+                # Mostrar indicador de carga
+                dialogo.config(cursor="watch")
+                dialogo.update()
+                
                 from modules.email_sender import enviar_correo_reporte
+                enviar_correo_reporte(correo_destino, ruta_archivo)
                 
-                # Mostrar indicador de carga (cursor de espera)
-                self.ventana.config(cursor="watch")
-                self.ventana.update()
-                
-                enviar_correo_reporte(destinatario, ruta_archivo)
-                
-                messagebox.showinfo("Éxito", "Correo enviado correctamente")
+                messagebox.showinfo("Éxito", f"Correo enviado a {seleccion} ({correo_destino})")
+                dialogo.destroy()
                 
             except Exception as e:
                 messagebox.showerror("Error", f"Error al enviar correo:\n{str(e)}")
             finally:
-                # Restaurar cursor
-                self.ventana.config(cursor="")
+                if dialogo.winfo_exists():
+                    dialogo.config(cursor="")
+        
+        ttk.Button(dialogo, text="✉️ Enviar", command=enviar).pack(pady=20)
 
     def generar_reporte_mensual(self):
         """Diálogo para generar reporte mensual"""
@@ -3380,6 +3543,42 @@ class VentanaGestorReportes:
                     
             except Exception as e:
                 messagebox.showerror("Error", f"Error al generar reportes:\n{str(e)}")
+                
+            # ===== AUTOMATIZACIÓN DE CORREO =====
+            try:
+                from modules.models import obtener_correo_presidente
+                correo_destino = obtener_correo_presidente()
+                
+                if correo_destino:
+                    # Mostrar indicador de carga
+                    self.ventana.config(cursor="watch")
+                    self.ventana.update()
+                    
+                    # 1. Generar Backups
+                    from modules.logic import crear_backup
+                    backups = crear_backup("Reporte Mensual Automático")
+                    
+                    # 2. Generar Auditoría
+                    from modules.logic import generar_archivo_auditoria
+                    auditoria_path = generar_archivo_auditoria()
+                    
+                    # 3. Preparar adjuntos
+                    adjuntos = [pdf_path, excel_path]
+                    adjuntos.extend(backups)
+                    if auditoria_path:
+                        adjuntos.append(auditoria_path)
+                        
+                    # 4. Enviar correo
+                    from modules.email_sender import enviar_correo_reporte
+                    enviar_correo_reporte(correo_destino, adjuntos)
+                    
+                    messagebox.showinfo("Correo Enviado", 
+                                      f"Se envió el reporte y los respaldos al Presidente:\n{correo_destino}")
+            except Exception as e:
+                print(f"Error al enviar correo automático: {e}")
+                messagebox.showwarning("Advertencia", f"Reportes generados pero falló el envío de correo:\n{str(e)}")
+            finally:
+                self.ventana.config(cursor="")
         
         ttk.Button(dialogo, text="✅ Generar", command=generar).pack(pady=20)
 
@@ -4397,8 +4596,17 @@ class VentanaAgenda:
         ttk.Separator(frame_detalles, orient='horizontal').pack(fill=tk.X, pady=10)
         
         ttk.Label(frame_detalles, text="📞 Teléfono:", font=('Helvetica', 10, 'bold')).pack(anchor=tk.W, pady=2)
-        self.entry_telefono = ttk.Entry(frame_detalles, width=30)
-        self.entry_telefono.pack(anchor=tk.W, pady=2)
+        
+        # Frame para teléfono y botón de WhatsApp
+        frame_telefono = ttk.Frame(frame_detalles)
+        frame_telefono.pack(fill=tk.X, pady=2)
+        
+        self.entry_telefono = ttk.Entry(frame_telefono, width=25)
+        self.entry_telefono.pack(side=tk.LEFT)
+        
+        ttk.Button(frame_telefono, text="📱 WhatsApp", 
+                   command=self.abrir_whatsapp,
+                   width=12).pack(side=tk.LEFT, padx=5)
         
         ttk.Label(frame_detalles, text="🏠 Dirección:", font=('Helvetica', 10, 'bold')).pack(anchor=tk.W, pady=5)
         self.entry_direccion = ttk.Entry(frame_detalles, width=30)
@@ -4461,6 +4669,11 @@ class VentanaAgenda:
                   command=self.abrir_carpeta_documentos,
                   width=30).pack(pady=5)
     
+    def abrir_whatsapp(self):
+        """Abre el chat de WhatsApp con el número actual"""
+        telefono = self.entry_telefono.get()
+        abrir_chat_whatsapp(telefono)
+
     def cargar_campesinos(self):
         """Carga todos los campesinos"""
         from modules.models import obtener_todos_campesinos

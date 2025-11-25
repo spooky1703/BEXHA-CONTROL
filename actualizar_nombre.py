@@ -1,7 +1,3 @@
-#!/usr/bin/env python3
-"""
-Script para actualizar el nombre de la organización en la base de datos existente.
-"""
 
 from modules.models import actualizar_configuracion, obtener_configuracion
 
@@ -16,7 +12,6 @@ def actualizar_nombre_organizacion():
     
     actualizar_configuracion('nombre_oficina', nombre_nuevo)
     
-    # Verificar
     nombre_verificado = obtener_configuracion('nombre_oficina')
     print(f"Nombre verificado: {nombre_verificado}")
     

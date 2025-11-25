@@ -8,23 +8,18 @@ from modules.ui_components import VentanaPrincipal
 from modules.cuotas import init_cuotas_db, migrar_folios_individuales, recrear_tabla_recibos_cuotas
 
 def main():
-    """Función principal del sistema"""
     try:
-        # Inicializar BASE DE DATOS DE RIEGOS
         print("Inicializando base de datos de RIEGOS...")
         init_db()
         
-        # ✅ INICIALIZAR BASE DE DATOS DE CUOTAS (SEPARADA)
         print("Inicializando base de datos de CUOTAS...")
         init_cuotas_db()
         migrar_folios_individuales()
-        recrear_tabla_recibos_cuotas()  # ✅ AGREGAR ESTO
+        recrear_tabla_recibos_cuotas() 
         
-        # ✅ MIGRAR CAMPOS DE DOCUMENTOS
         from modules.models import migrar_campos_documentos
         migrar_campos_documentos()
         
-        # ✅ INICIALIZAR DIRECTORIO DE DOCUMENTOS
         from modules.documentos import inicializar_directorio_documentos
         inicializar_directorio_documentos()
 
