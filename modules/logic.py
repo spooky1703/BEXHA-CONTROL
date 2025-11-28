@@ -1,10 +1,6 @@
-#models/logic.py
 from datetime import datetime
-
 from typing import Dict, Optional, Tuple
-
 import shutil
-
 import os
 
 from modules.models import (

@@ -1,0 +1,9140 @@
+[
+  {
+    "id": 1,
+    "nombre": "ALBERTO ALVARADO ESTRADA",
+    "lote": "21062",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 2,
+    "nombre": "ALBINO CRUZ SALVADOR",
+    "lote": "21064",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 3,
+    "nombre": "TOMAS ESTRADA SANTIAGO",
+    "lote": "21066",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 4,
+    "nombre": "AURELIO ANGELES ROJO",
+    "lote": "21068",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 5,
+    "nombre": "SANCHEZ CRUZ ANDRES",
+    "lote": "21071",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 6,
+    "nombre": "HERMILO MOTA CRUZ",
+    "lote": "21072",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 7,
+    "nombre": "GUILLERMO MARTINEZ SANCHEZ",
+    "lote": "21073",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 8,
+    "nombre": "EMILIO MOTA CRUZ",
+    "lote": "21074",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 9,
+    "nombre": "SERAPIO ROJO ANGELES",
+    "lote": "21075",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 10,
+    "nombre": "LUIS AGUILAR QUIJANO",
+    "lote": "21077",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 11,
+    "nombre": "TRINIDAD AGUILAR QUIJANO",
+    "lote": "21078",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 12,
+    "nombre": "ANGELA FLORES HERNANDEZ",
+    "lote": "21080",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 13,
+    "nombre": "JOSE MOTA VALDEZ",
+    "lote": "21081",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 14,
+    "nombre": "JOSEFA CRUZ SANTIAGO",
+    "lote": "21082",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 15,
+    "nombre": "JOSEFA CRUZ SANTIAGO",
+    "lote": "21082",
+    "barrio": "HIITEL"
+  },
+  {
+    "id": 16,
+    "nombre": "DELFINO MOTA VALDEZ",
+    "lote": "21083",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 17,
+    "nombre": "GERARDO SANTIAGO HERNANDEZ",
+    "lote": "21084",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 18,
+    "nombre": "DELFINO MOTA VALDEZ",
+    "lote": "21086",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 19,
+    "nombre": "DELFINO MOTA VALDEZ",
+    "lote": "21087",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 20,
+    "nombre": "CELESTINO AGUILAR ROJO",
+    "lote": "21088",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 21,
+    "nombre": "DECIDERIO AGUILAR QUIJANO",
+    "lote": "21089",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 22,
+    "nombre": "MARDONIO CERVANTES MOTA",
+    "lote": "21090",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 23,
+    "nombre": "ALFREDO GONZALEZ CONTRERAS",
+    "lote": "21091",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 24,
+    "nombre": "FROILAN MENDOZA SANTIAGO",
+    "lote": "21092",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 25,
+    "nombre": "ISABEL DE ANGELES CRUZ",
+    "lote": "21093",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 26,
+    "nombre": "IGNACIO PEREZ PEREZ",
+    "lote": "21094",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 27,
+    "nombre": "MARGARITO GONZALEZ MARTINEZ",
+    "lote": "21094",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 28,
+    "nombre": "ANGELES RUIZ CONSTANCIA",
+    "lote": "21096",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 29,
+    "nombre": "MARIO GONZALEZ MARTINEZ",
+    "lote": "21100",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 30,
+    "nombre": "MARIO GONZALEZ MARTINEZ",
+    "lote": "21101",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 31,
+    "nombre": "ANTONIO CERVANTES GARCIA",
+    "lote": "21102",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 32,
+    "nombre": "INOCENTE PEREZ JUAREZ",
+    "lote": "21105",
+    "barrio": "VARIADO"
+  },
+  {
+    "id": 33,
+    "nombre": "LEOBARDA ANGELES RUIZ",
+    "lote": "21106",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 34,
+    "nombre": "JOAQUIN GONZALEZ PEREZ",
+    "lote": "21107",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 35,
+    "nombre": "ANGEL CERVANTES MOTA",
+    "lote": "21107-A",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 36,
+    "nombre": "JOSE MOTA VALDEZ",
+    "lote": "21110",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 37,
+    "nombre": "MARGARITO GONZALEZ MARTINEZ",
+    "lote": "21112",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 38,
+    "nombre": "JUSTINO HERNANDEZ ESTRADA",
+    "lote": "21113",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 39,
+    "nombre": "RUBEN HERNANDEZ CERVANTES",
+    "lote": "21113-1",
+    "barrio": ""
+  },
+  {
+    "id": 40,
+    "nombre": "PONCIANO SANCHEZ ANGELES",
+    "lote": "21114",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 41,
+    "nombre": "HILARIO SANCHEZ SIMON",
+    "lote": "21115",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 42,
+    "nombre": "ZEFERINA SIMON QUIJANO",
+    "lote": "21115",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 43,
+    "nombre": "ZEFERINA SIMON QUIJANO",
+    "lote": "21115",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 44,
+    "nombre": "POMPEYO LUGO CONTERAS",
+    "lote": "21127",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 45,
+    "nombre": "ENCARNACION ANGELES PEREZ",
+    "lote": "21128",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 46,
+    "nombre": "FIDEL VITE BAUTISTA",
+    "lote": "21129",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 47,
+    "nombre": "MOISES RUBEN LUGO BERNAL",
+    "lote": "21130",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 48,
+    "nombre": "MARIA DE LOS ANGELES GOMEZ SERRANO",
+    "lote": "21131",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 49,
+    "nombre": "REMEDIOS MARTINEZ REYES",
+    "lote": "21137",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 50,
+    "nombre": "ERNESTO ANGELES ARCINIEGA",
+    "lote": "21138",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 51,
+    "nombre": "PEDRO ESTRADA ANGELES",
+    "lote": "21139",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 52,
+    "nombre": "SALOMON SIMON RIOS",
+    "lote": "21154",
+    "barrio": "LA LOMA H"
+  },
+  {
+    "id": 53,
+    "nombre": "ELVA VALDEZ CORNEJO",
+    "lote": "21157",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 54,
+    "nombre": "ANASTACIO SANTIAGO HERNANDEZ",
+    "lote": "21161",
+    "barrio": ""
+  },
+  {
+    "id": 55,
+    "nombre": "EUFEMINO ANGELES PEREZ",
+    "lote": "21165",
+    "barrio": ""
+  },
+  {
+    "id": 56,
+    "nombre": "MELQUIADEZ SANTIAGO MOTA",
+    "lote": "21166",
+    "barrio": ""
+  },
+  {
+    "id": 57,
+    "nombre": "BONIFACIO MARTINEZ PEREZ",
+    "lote": "21167",
+    "barrio": ""
+  },
+  {
+    "id": 58,
+    "nombre": "EMILIO MOTA CRUZ",
+    "lote": "21167",
+    "barrio": ""
+  },
+  {
+    "id": 59,
+    "nombre": "MARGARITA SANCHEZ VDA. GARCIA",
+    "lote": "21173",
+    "barrio": ""
+  },
+  {
+    "id": 60,
+    "nombre": "JUSTINO MOTA ANGELES",
+    "lote": "21187",
+    "barrio": ""
+  },
+  {
+    "id": 61,
+    "nombre": "PABLO MARTINEZ SANTIAGO",
+    "lote": "21193",
+    "barrio": "VARIADO"
+  },
+  {
+    "id": 62,
+    "nombre": "MARTIN GONZALEZ CONTRERAS",
+    "lote": "21205",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 63,
+    "nombre": "BONIFACIA CONTRERAS SALVADOR",
+    "lote": "21210",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 64,
+    "nombre": "LEON PIZAÑA URIBE",
+    "lote": "21222",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 65,
+    "nombre": "ENEDINA ANGELES DE VALDEZ",
+    "lote": "21241",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 66,
+    "nombre": "ONESIMO GARCIA ESTRADA",
+    "lote": "21241",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 67,
+    "nombre": "FRANCISCO LUGO CONTRERAS",
+    "lote": "21245",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 68,
+    "nombre": "MARIA ELENA CRUZ DOMINGUEZ",
+    "lote": "21247",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 69,
+    "nombre": "FABIAN VALDEZ DURAN",
+    "lote": "21248",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 70,
+    "nombre": "CRISTINO HERNANDEZ AGUILAR",
+    "lote": "21250-2",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 71,
+    "nombre": "JULIAN HERNANDEZ AGUILAR",
+    "lote": "21250",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 72,
+    "nombre": "FRANCISCO ANGELES ESTRADA",
+    "lote": "21254",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 73,
+    "nombre": "MARTIN SIMON ANGELES",
+    "lote": "21256",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 74,
+    "nombre": "JOSE GARCIA DOMINGUEZ",
+    "lote": "21257",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 75,
+    "nombre": "TOMAS RIVAS SANTIAGO",
+    "lote": "21259",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 76,
+    "nombre": "REYES OROPEZA MOTA",
+    "lote": "21260",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 77,
+    "nombre": "HERMENEGILDO CRUZ CRUZ",
+    "lote": "21263",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 78,
+    "nombre": "HERMENEGILDO CRUZ CRUZ",
+    "lote": "21263",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 79,
+    "nombre": "SALOMON GARCIA SANTIAGO",
+    "lote": "21263",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 80,
+    "nombre": "AUGUSTO PEREZ CRUZ",
+    "lote": "21268",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 81,
+    "nombre": "MODESTA PEREZ ESTRADA",
+    "lote": "21268",
+    "barrio": ""
+  },
+  {
+    "id": 82,
+    "nombre": "FAUSTINO MENDOZA RIVAS",
+    "lote": "21269",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 83,
+    "nombre": "SALOMON SIMON RIVAS",
+    "lote": "21270",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 84,
+    "nombre": "FRANCISCO ANGELES ESTRADA",
+    "lote": "21272",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 85,
+    "nombre": "CONSTANTINO PIZAÑA CRUZ",
+    "lote": "21273",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 86,
+    "nombre": "CECILIO GARCIA DOMINGUEZ",
+    "lote": "21275",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 87,
+    "nombre": "CIPRIANO LUGO HERNANDEZ",
+    "lote": "21277",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 88,
+    "nombre": "J.GUADALUPE ANGELES QUIJANO",
+    "lote": "21278",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 89,
+    "nombre": "ELVIA PIZAÑA LUGO",
+    "lote": "21279",
+    "barrio": ""
+  },
+  {
+    "id": 90,
+    "nombre": "TITO ANGELES MOTA",
+    "lote": "21285",
+    "barrio": "VARIADO"
+  },
+  {
+    "id": 91,
+    "nombre": "PABLO GARCIA REYES",
+    "lote": "21286",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 92,
+    "nombre": "UNIDAD DEPORTIVA HUITEL",
+    "lote": "21286-A",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 93,
+    "nombre": "HERLINDO ANGELES MOTA",
+    "lote": "21287",
+    "barrio": ""
+  },
+  {
+    "id": 94,
+    "nombre": "HERLINDO ANGELES MARTINEZ",
+    "lote": "21290",
+    "barrio": "VARIADO"
+  },
+  {
+    "id": 95,
+    "nombre": "BERNARDO PEREZ RIVAS",
+    "lote": "21292",
+    "barrio": "VARIADO"
+  },
+  {
+    "id": 96,
+    "nombre": "EMILIO ANGELES CONTRERAS",
+    "lote": "21293",
+    "barrio": "VARIADO"
+  },
+  {
+    "id": 97,
+    "nombre": "ONESIMO ANGELES MOTA",
+    "lote": "21294",
+    "barrio": "VARIADO"
+  },
+  {
+    "id": 98,
+    "nombre": "REYNA ANGELES ROJO",
+    "lote": "21298",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 99,
+    "nombre": "MARTIN SIMON CRUZ",
+    "lote": "21301",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 100,
+    "nombre": "JOSEFA SIMON CRUZ",
+    "lote": "21301-1",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 101,
+    "nombre": "AGUSTINA ROJO OROPEZA",
+    "lote": "21302",
+    "barrio": "VARIADO"
+  },
+  {
+    "id": 102,
+    "nombre": "JUAN AGUILAR ROJO",
+    "lote": "21303",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 103,
+    "nombre": "MARIA ROJO ANGELES",
+    "lote": "21303",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 104,
+    "nombre": "RICARDO MOTA ROJO",
+    "lote": "21303",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 105,
+    "nombre": "PORFIRIO SIMON PEREZ",
+    "lote": "21304",
+    "barrio": "LA LOMA"
+  },
+  {
+    "id": 106,
+    "nombre": "AURELIO ANGELES ROJO",
+    "lote": "21304-B",
+    "barrio": ""
+  },
+  {
+    "id": 107,
+    "nombre": "MARTIN SIMON AGUILAR",
+    "lote": "21306",
+    "barrio": ""
+  },
+  {
+    "id": 108,
+    "nombre": "SALUSTIA QUIJANO GARCIA",
+    "lote": "21308",
+    "barrio": "LA LOMA H"
+  },
+  {
+    "id": 109,
+    "nombre": "AUGUSTO ANGELES ARCINIEGA",
+    "lote": "21312",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 110,
+    "nombre": "MARGARITA GONZALEZ GARCIA",
+    "lote": "21314",
+    "barrio": "LA LOMA"
+  },
+  {
+    "id": 111,
+    "nombre": "SANTOS PEREZ BARRERA",
+    "lote": "21315",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 112,
+    "nombre": "HILARION ORTIZ AGUILAR",
+    "lote": "21315-A",
+    "barrio": "LOMA H"
+  },
+  {
+    "id": 113,
+    "nombre": "ADOLFO  CERVANTEZ",
+    "lote": "21317",
+    "barrio": "VARIADO"
+  },
+  {
+    "id": 114,
+    "nombre": "EDUARDO ANGELES TREJO",
+    "lote": "21317",
+    "barrio": "VARIADO"
+  },
+  {
+    "id": 115,
+    "nombre": "JUAN GOMEZ CERVANTES",
+    "lote": "21320",
+    "barrio": "VARIADO"
+  },
+  {
+    "id": 116,
+    "nombre": "MOISES PEREZ PEREZ",
+    "lote": "21322",
+    "barrio": "VARIADO"
+  },
+  {
+    "id": 117,
+    "nombre": "CECILIA GARRIDO CRUZ",
+    "lote": "21324",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 118,
+    "nombre": "GERONIMO MENDOZA VALDEZ",
+    "lote": "21326",
+    "barrio": "VARIADO"
+  },
+  {
+    "id": 119,
+    "nombre": "EMILIO PEREZ ANGELES",
+    "lote": "21327",
+    "barrio": "VARIADO"
+  },
+  {
+    "id": 120,
+    "nombre": "GERONIMO MENDOZA VALDEZ",
+    "lote": "21328",
+    "barrio": "VARIADO"
+  },
+  {
+    "id": 121,
+    "nombre": "ADRIAN QUIJANO DIAZ",
+    "lote": "21330",
+    "barrio": "VARIADO"
+  },
+  {
+    "id": 122,
+    "nombre": "FAUSTINO CERVANTES GARCIA",
+    "lote": "21331",
+    "barrio": "VARIADO"
+  },
+  {
+    "id": 123,
+    "nombre": "LORENZA CERVANTES GARCIA",
+    "lote": "21332",
+    "barrio": "VARIADO"
+  },
+  {
+    "id": 124,
+    "nombre": "JUAN GOMEZ CERVANTES",
+    "lote": "21333",
+    "barrio": "VARIADO"
+  },
+  {
+    "id": 125,
+    "nombre": "MARIO GONZALEZ MARTINEZ",
+    "lote": "21336",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 126,
+    "nombre": "JULIAN QUIJANO ORTIZ",
+    "lote": "21337",
+    "barrio": "VARIADO"
+  },
+  {
+    "id": 127,
+    "nombre": "PONCIANO CERVANTES GARCIA",
+    "lote": "21338",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 128,
+    "nombre": "RICARDO AGUILAR AGUILAR",
+    "lote": "21342",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 129,
+    "nombre": "ROSENDO BENITEZ CAPILIA",
+    "lote": "21343",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 130,
+    "nombre": "FRANCISCA HERNANDEZ GARCIA",
+    "lote": "21348",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 131,
+    "nombre": "REYNA SALVADOR MARTINEZ",
+    "lote": "21351",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 132,
+    "nombre": "AMADO SALVADOR HERNANDEZ",
+    "lote": "21354",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 133,
+    "nombre": "ISABEL RIOS SIMON",
+    "lote": "21355",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 134,
+    "nombre": "MARIA CRUZ CHAVEZ",
+    "lote": "21357",
+    "barrio": "LLANO"
+  },
+  {
+    "id": 135,
+    "nombre": "BASILIZA PEREZ BARRERA",
+    "lote": "21360",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 136,
+    "nombre": "MARIA ASCENCION SALVADOR RIOS",
+    "lote": "21362",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 137,
+    "nombre": "JOSEFA PEREZ BARRERA",
+    "lote": "21364",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 138,
+    "nombre": "VICTORIANO CRUZ CRUZ",
+    "lote": "21365",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 139,
+    "nombre": "GUADALUPE SERRANO GARCIA",
+    "lote": "21368",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 140,
+    "nombre": "CLAUDIO LUGO CRUZ",
+    "lote": "21370",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 141,
+    "nombre": "VICTORIANO PEREZ PEREZ",
+    "lote": "21371",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 142,
+    "nombre": "CLARA SALVADOR LUGO",
+    "lote": "21372",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 143,
+    "nombre": "FIDEL LUGO QUIJANO",
+    "lote": "21372",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 144,
+    "nombre": "ROSA SALVADOR LUGO",
+    "lote": "21374",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 145,
+    "nombre": "LUCINA RIOS BARRERA",
+    "lote": "21378",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 146,
+    "nombre": "jesus garcia",
+    "lote": "21381",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 147,
+    "nombre": "ABEL ANGELES ROJO",
+    "lote": "21385",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 148,
+    "nombre": "JUAN ANTONIO SIMON SERRANO",
+    "lote": "21385-D",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 149,
+    "nombre": "SAID SIMON DIAZ",
+    "lote": "21385-C",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 150,
+    "nombre": "CESAR SIMON PEREZ",
+    "lote": "21385-A",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 151,
+    "nombre": "DIANA CRUZ SIMON",
+    "lote": "21385-B",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 152,
+    "nombre": "PEDRO TELLES HERNANDEZ",
+    "lote": "21385",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 153,
+    "nombre": "PRIMO SALVADOR RIOS",
+    "lote": "21385",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 154,
+    "nombre": "ROSA SALVADOR LUGO",
+    "lote": "21385-1",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 155,
+    "nombre": "TELESFORO HERNANDEZ SERRANO",
+    "lote": "21385",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 156,
+    "nombre": "LUCINA SALVADOR LUGO",
+    "lote": "21386",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 157,
+    "nombre": "MARIO CRUZ CONTRERAS",
+    "lote": "21387",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 158,
+    "nombre": "GRACIANO SIMON HERNANDEZ",
+    "lote": "21388",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 159,
+    "nombre": "AMADO SALVADOR RIOS",
+    "lote": "21389",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 160,
+    "nombre": "NICASIO RIOS ESTRADA",
+    "lote": "21389",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 161,
+    "nombre": "ASCENCION SALVADOR RIOS",
+    "lote": "21390",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 162,
+    "nombre": "JESUS SALVADOR RIOS",
+    "lote": "21394",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 163,
+    "nombre": "PABLO PEREZ CRUZ",
+    "lote": "21395",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 164,
+    "nombre": "SANTOS PEREZ BARRERA",
+    "lote": "21395",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 165,
+    "nombre": "FEDERICO SIMON HERNANDEZ",
+    "lote": "21397",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 166,
+    "nombre": "ALBERTA CRUZ BERNAL",
+    "lote": "21399",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 167,
+    "nombre": "GRACIANO SIMON HERNANDEZ",
+    "lote": "21401",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 168,
+    "nombre": "RICARDA BARRERA AGUILAR",
+    "lote": "21402",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 169,
+    "nombre": "MARGARITA ESTRADA AGUILAR",
+    "lote": "21403",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 170,
+    "nombre": "JULIAN RIOS PEREZ",
+    "lote": "21404",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 171,
+    "nombre": "RICARDA BARRERA AGUILAR",
+    "lote": "21405",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 172,
+    "nombre": "EULALIO PEREZ CRUZ",
+    "lote": "21406",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 173,
+    "nombre": "JUAN CORNEJO AGUILAR",
+    "lote": "21408",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 174,
+    "nombre": "GRACIANO CRUZ LORENZO",
+    "lote": "21409",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 175,
+    "nombre": "BELEN SERRANO AGUILAR",
+    "lote": "21409-3",
+    "barrio": ""
+  },
+  {
+    "id": 176,
+    "nombre": "BERNARDINO BARRERA ESTRADA",
+    "lote": "21411",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 177,
+    "nombre": "BONIFACIA ESTRADA MOTA",
+    "lote": "21411",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 178,
+    "nombre": "FRANCISCO GOMEZ AGUILAR",
+    "lote": "21411",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 179,
+    "nombre": "JUAN BARRERA PEREZ",
+    "lote": "21415",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 180,
+    "nombre": "CANDIDO LOPEZ RAMIREZ",
+    "lote": "21416",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 181,
+    "nombre": "LORENZO SERRANO OLGUIN",
+    "lote": "21417-A",
+    "barrio": ""
+  },
+  {
+    "id": 182,
+    "nombre": "CANDIDO SALVADOR RIOS",
+    "lote": "21419",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 183,
+    "nombre": "CLAUDIO AGUILAR CONTRERAS",
+    "lote": "21420",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 184,
+    "nombre": "VALENTIN ESTRADA BARRERA",
+    "lote": "21421",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 185,
+    "nombre": "CANDIDO LOPEZ RAMIREZ",
+    "lote": "21424",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 186,
+    "nombre": "LEOPOLDO ANGELES RIOS",
+    "lote": "21426",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 187,
+    "nombre": "JOSE MOTA VALDEZ",
+    "lote": "21427",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 188,
+    "nombre": "BENITO LOPEZ HERNANDEZ",
+    "lote": "21428",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 189,
+    "nombre": "FERNANDO GARCIA MARTINEZ",
+    "lote": "21430",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 190,
+    "nombre": "JOSE ESTRADA MOTA",
+    "lote": "21431",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 191,
+    "nombre": "EUSTORGIO SALVADOR AGUILAR",
+    "lote": "21432",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 192,
+    "nombre": "JUSTINIANO SALVADOR AGUILAR",
+    "lote": "21432",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 193,
+    "nombre": "CLEMENTE RAMIREZ SERRANO",
+    "lote": "21434",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 194,
+    "nombre": "TITO CONTRERAS QUIJANO",
+    "lote": "21435",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 195,
+    "nombre": "JOSE MARTINEZ ESTRADA",
+    "lote": "21437",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 196,
+    "nombre": "JOSE REYES MARTINEZ CORNEJO",
+    "lote": "21438",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 197,
+    "nombre": "TRINIDAD MARTINEZ RIOS",
+    "lote": "21438",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 198,
+    "nombre": "PACIANO GARCIA MOTA",
+    "lote": "21439",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 199,
+    "nombre": "ROMAN AGUILAR MARTINEZ",
+    "lote": "21440",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 200,
+    "nombre": "ANDRES AGUILAR BARRERA",
+    "lote": "21440-2",
+    "barrio": ""
+  },
+  {
+    "id": 201,
+    "nombre": "PANFILO GARCIA ESTRADA",
+    "lote": "21441",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 202,
+    "nombre": "ALFREDO GARCIA ESTRADA",
+    "lote": "21442",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 203,
+    "nombre": "PURA REYES ESTRADA",
+    "lote": "21444",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 204,
+    "nombre": "JOSE MARTINEZ AGUILAR",
+    "lote": "21446",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 205,
+    "nombre": "TRINIDAD MARTINEZ RIOS",
+    "lote": "21446",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 206,
+    "nombre": "MARIA CRUZ  ESTRADA",
+    "lote": "21447",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 207,
+    "nombre": "CANDIDO LOPEZ RAMIREZ",
+    "lote": "21448",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 208,
+    "nombre": "J GUADALUPE RAMIREZ SALVADOR",
+    "lote": "21449",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 209,
+    "nombre": "ANTONIA CORNEJO GARCIA",
+    "lote": "21452",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 210,
+    "nombre": "ANDRES RAMIREZ SERRANO",
+    "lote": "21453",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 211,
+    "nombre": "JOSE RAMIREZ CRUZ",
+    "lote": "21454",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 212,
+    "nombre": "CATARINA REYES SERRANO",
+    "lote": "21455",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 213,
+    "nombre": "ROSALIO REYES ESTRADA",
+    "lote": "21455",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 214,
+    "nombre": "ELFEGO ORTIZ HERNANDEZ",
+    "lote": "21456",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 215,
+    "nombre": "PRIMO CONTRERAS SALVADOR",
+    "lote": "21457",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 216,
+    "nombre": "GILBERTO SANTIAGO PEREZ",
+    "lote": "21460",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 217,
+    "nombre": "BENJAMIN SALVADOR SERRANO",
+    "lote": "21461",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 218,
+    "nombre": "BENJAMIN SALVADOR SERRANO",
+    "lote": "21462",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 219,
+    "nombre": "GILBERTO SANCHEZ VALDEZ",
+    "lote": "21463",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 220,
+    "nombre": "J.GUADALUPE SERRANO DOMINGUEZ",
+    "lote": "21464",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 221,
+    "nombre": "DAVID LOPEZ HERNANDEZ",
+    "lote": "21465",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 222,
+    "nombre": "DELFINO CORNEJO LOPEZ",
+    "lote": "21465",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 223,
+    "nombre": "DAVID LOPEZ HERNANDEZ",
+    "lote": "21465-A",
+    "barrio": ""
+  },
+  {
+    "id": 224,
+    "nombre": "CANDIDO ALVARADO RAMIREZ",
+    "lote": "21466",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 225,
+    "nombre": "ALBERTO ALVARADO MOTA",
+    "lote": "21467",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 226,
+    "nombre": "AMADO SALVADOR RIOS",
+    "lote": "21469",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 227,
+    "nombre": "FRANCISCO SERRANO MOTA",
+    "lote": "21471",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 228,
+    "nombre": "CARLOS GARCIA CRUZ",
+    "lote": "21472",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 229,
+    "nombre": "ESPERANZA CERVANTEZ GARCIA",
+    "lote": "21472",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 230,
+    "nombre": "SOLEDAD GARCIA ROJO",
+    "lote": "21472",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 231,
+    "nombre": "JUAN PABLO PIZAÑA SANTIAGO",
+    "lote": "21473",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 232,
+    "nombre": "BERNABE CORNEJO MARTINEZ",
+    "lote": "21474",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 233,
+    "nombre": "FRANCISCO LUGO CONTRERAS",
+    "lote": "21477",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 234,
+    "nombre": "J. GUADALUPE VALDEZ ESCOBAR",
+    "lote": "21478",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 235,
+    "nombre": "ALBINO CRUZ SALVADOR",
+    "lote": "21479",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 236,
+    "nombre": "FELICITAS CRUZ MENDOZA",
+    "lote": "21479-1",
+    "barrio": ""
+  },
+  {
+    "id": 237,
+    "nombre": "SAUL FELICIANO VALDEZ CORNEJO",
+    "lote": "21481",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 238,
+    "nombre": "JUAN PABLO PIZAÑA SANTIAGO",
+    "lote": "21482",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 239,
+    "nombre": "RICARDO RIVAS PORRAS",
+    "lote": "21483",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 240,
+    "nombre": "EMILIA ESTRADA LUGO",
+    "lote": "21484",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 241,
+    "nombre": "PORFIRIA ESCOBAR DIAZ",
+    "lote": "21485",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 242,
+    "nombre": "ROSA LUGO SANTIAGO",
+    "lote": "21486",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 243,
+    "nombre": "ANGEL ANGELES CRUZ",
+    "lote": "21487",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 244,
+    "nombre": "HERMENEGILDO CRUZ CRUZ",
+    "lote": "21488",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 245,
+    "nombre": "ANGELA ESTRADA CONTRERAS",
+    "lote": "21489",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 246,
+    "nombre": "FRANCISCO ANGELES ESTRADA",
+    "lote": "21490",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 247,
+    "nombre": "GUADALUPE SERRANO MOTA",
+    "lote": "21491",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 248,
+    "nombre": "VALENTE SERRANO REYES",
+    "lote": "21492",
+    "barrio": "LA LOMA"
+  },
+  {
+    "id": 249,
+    "nombre": "CELEDONIO GONZALEZ ESTRADA",
+    "lote": "21493",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 250,
+    "nombre": "J.GUADALUPE SERRANO HERNANDEZ",
+    "lote": "21493",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 251,
+    "nombre": "BONIFACIO ESTRADA MOTA",
+    "lote": "21494",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 252,
+    "nombre": "FAUSTINO MARTINEZ RIOS",
+    "lote": "21495",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 253,
+    "nombre": "JOSE BERNI HERNANDEZ",
+    "lote": "21497",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 254,
+    "nombre": "JOSE BERNI HERNANDEZ",
+    "lote": "21501",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 255,
+    "nombre": "BENITO SERRANO REYES",
+    "lote": "21503",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 256,
+    "nombre": "PABLO PEREZ GARCIA",
+    "lote": "21503",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 257,
+    "nombre": "GUADALUPE GARCIA MOTA",
+    "lote": "21508",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 258,
+    "nombre": "ALFREDO MOTA HERNANDEZ",
+    "lote": "21509",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 259,
+    "nombre": "FRANCISCO SERRANO MOTA",
+    "lote": "21514",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 260,
+    "nombre": "LEONARDO MARTINEZ GARCIA",
+    "lote": "21515",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 261,
+    "nombre": "PABLO PEREZ GARCIA",
+    "lote": "21517",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 262,
+    "nombre": "PETRONILO ESTRADA SIMON",
+    "lote": "21517",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 263,
+    "nombre": "GUILLERMO GARCIA GARCIA",
+    "lote": "21519",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 264,
+    "nombre": "ISABEL ESTRADA MONROY",
+    "lote": "21521",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 265,
+    "nombre": "JUAN SERRANO GARCIA",
+    "lote": "21521",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 266,
+    "nombre": "AMADO ALVAREZ GARCIA",
+    "lote": "21523",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 267,
+    "nombre": "JOSEFA AGUILAR SERRANO",
+    "lote": "21525",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 268,
+    "nombre": "JUAN CORNEJO LOPEZ",
+    "lote": "21526",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 269,
+    "nombre": "ELADIO GARCIA MOTA",
+    "lote": "21528",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 270,
+    "nombre": "JOSE CORNEJO ESCAMILLA",
+    "lote": "21529",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 271,
+    "nombre": "RAMON CORNEJO GARCIA",
+    "lote": "21530",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 272,
+    "nombre": "FERNANDO GARCIA MARTINEZ",
+    "lote": "21531",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 273,
+    "nombre": "FRANCISCO ALVAREZ SALVADOR",
+    "lote": "21532",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 274,
+    "nombre": "SALUSTIA GARCIA",
+    "lote": "21532-1",
+    "barrio": "0.10"
+  },
+  {
+    "id": 275,
+    "nombre": "LUCIO BARRERA REYES",
+    "lote": "21536",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 276,
+    "nombre": "MARIA LUISA PLACENCIA HERNANDEZ",
+    "lote": "21538",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 277,
+    "nombre": "AMADO ALVAREZ GARCIA",
+    "lote": "21539",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 278,
+    "nombre": "JOSE PEREZ REYES",
+    "lote": "21540",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 279,
+    "nombre": "EPIFANIO SERRANO REYES",
+    "lote": "21541",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 280,
+    "nombre": "JOSE CORNEJO AGUILAR",
+    "lote": "21541",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 281,
+    "nombre": "MARIA ALVAREZ SALVADOR",
+    "lote": "21543",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 282,
+    "nombre": "MARIO MOTA MARTÍNEZ",
+    "lote": "21545",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 283,
+    "nombre": "MARIA SALVADOR MOTA",
+    "lote": "21546",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 284,
+    "nombre": "MAXIMINO MOTA OROPEZA",
+    "lote": "21547",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 285,
+    "nombre": "FRANCISCO BARCENAS OROPEZA",
+    "lote": "21549",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 286,
+    "nombre": "JUAN BARCENAS SALVADOR",
+    "lote": "21550",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 287,
+    "nombre": "RUFINO BARCENAS",
+    "lote": "21550-1",
+    "barrio": ""
+  },
+  {
+    "id": 288,
+    "nombre": "MARTIN BARCENAS SERRANO",
+    "lote": "21551-1",
+    "barrio": ""
+  },
+  {
+    "id": 289,
+    "nombre": "MARTIN BARCENAS SERRANO",
+    "lote": "21551",
+    "barrio": ""
+  },
+  {
+    "id": 290,
+    "nombre": "JUANA GARCIA DE CORNEJO",
+    "lote": "21552",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 291,
+    "nombre": "JULIANA GARCIA VDA. GARCIA",
+    "lote": "21552",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 292,
+    "nombre": "ESTEBAN ALVAREZ CRUZ",
+    "lote": "21553",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 293,
+    "nombre": "PAULINO LOPEZ CORONA",
+    "lote": "21553",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 294,
+    "nombre": "FIDELA CORNEJO GARCIA",
+    "lote": "21555",
+    "barrio": ""
+  },
+  {
+    "id": 295,
+    "nombre": "AMBROSIA CORNEJO GARCIA",
+    "lote": "21555-2",
+    "barrio": ""
+  },
+  {
+    "id": 296,
+    "nombre": "MA. DE JESUS CORNEJO GARCIA",
+    "lote": "21555-3",
+    "barrio": ""
+  },
+  {
+    "id": 297,
+    "nombre": "MARCIANO CORNEJO GARCIA",
+    "lote": "21555",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 298,
+    "nombre": "PATRICIO GARCIA LOPEZ",
+    "lote": "21556",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 299,
+    "nombre": "SALUSTIA GARCIA MATINEZ",
+    "lote": "21557",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 300,
+    "nombre": "PATRICIO GARCIA ESTRADA",
+    "lote": "21558",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 301,
+    "nombre": "PAULINO GARCIA GARCIA",
+    "lote": "21560",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 302,
+    "nombre": "CANDIDO PEREZ GARCIA",
+    "lote": "21561",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 303,
+    "nombre": "EMILIANO SERRANO MOTA",
+    "lote": "21568",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 304,
+    "nombre": "GUILLERMO GARCIA GARCIA",
+    "lote": "21569",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 305,
+    "nombre": "REYNA JACOBA GARCIA ALVAREZ",
+    "lote": "21570",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 306,
+    "nombre": "REYNA JACOBA GARCIA ALVAREZ",
+    "lote": "21570",
+    "barrio": ""
+  },
+  {
+    "id": 307,
+    "nombre": "BALDOMERO GARCIA LOPEZ",
+    "lote": "21571",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 308,
+    "nombre": "MANUEL MARTINEZ CONTRERAS",
+    "lote": "21573",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 309,
+    "nombre": "JESUS GARCIA MOTA",
+    "lote": "21575",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 310,
+    "nombre": "FIDEL SERRANO HERNANDEZ",
+    "lote": "21576",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 311,
+    "nombre": "BENITO SERRANO MENDOZA",
+    "lote": "21577",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 312,
+    "nombre": "GUMERSINDO SERRANO CRUZ",
+    "lote": "21578",
+    "barrio": "LA LOMA"
+  },
+  {
+    "id": 313,
+    "nombre": "HERMILO SERRANO ANGELES",
+    "lote": "21579",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 314,
+    "nombre": "MARIA BERNARDA CORONA GARCIA",
+    "lote": "21580",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 315,
+    "nombre": "CARMELITA GARCÍA VALDEZ",
+    "lote": "21583",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 316,
+    "nombre": "ELADIO GARCIA MOTA",
+    "lote": "21584",
+    "barrio": "LA LOMA"
+  },
+  {
+    "id": 317,
+    "nombre": "ELADIO GARCIA MOTA",
+    "lote": "21585",
+    "barrio": ""
+  },
+  {
+    "id": 318,
+    "nombre": "EMMA CORNEJO QUIJANO",
+    "lote": "21588",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 319,
+    "nombre": "CELIO DOMINGUEZ GARCIA",
+    "lote": "21589",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 320,
+    "nombre": "JOSEFA CRUZ SANTIAGO",
+    "lote": "21591",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 321,
+    "nombre": "BRIGIDO MOTA ANGELES",
+    "lote": "21592",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 322,
+    "nombre": "TOMAS OSCAR LUGO VALDEZ",
+    "lote": "21595",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 323,
+    "nombre": "FRANCISCO ANGELES CRUZ",
+    "lote": "21596",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 324,
+    "nombre": "CARLOS CRUZ HERRERA",
+    "lote": "21597",
+    "barrio": "LA LOMA"
+  },
+  {
+    "id": 325,
+    "nombre": "ELADIO OROPEZA SANTIAGO",
+    "lote": "21598",
+    "barrio": "LA LOMA"
+  },
+  {
+    "id": 326,
+    "nombre": "GERONIMO OROPEZA SANTIAGO",
+    "lote": "21599",
+    "barrio": "LA LOMA"
+  },
+  {
+    "id": 327,
+    "nombre": "HERMINIA OROPEZA ANGELES",
+    "lote": "21600",
+    "barrio": "LA LOMA H"
+  },
+  {
+    "id": 328,
+    "nombre": "FRANCISCO QUIJANO GARCIA",
+    "lote": "21601",
+    "barrio": "LA LOMA"
+  },
+  {
+    "id": 329,
+    "nombre": "FIDEL LUGO QUIJANO",
+    "lote": "21602",
+    "barrio": "LA LOMA H"
+  },
+  {
+    "id": 330,
+    "nombre": "ALBINO CRUZ SALVADOR",
+    "lote": "21604",
+    "barrio": "LA LOMA H"
+  },
+  {
+    "id": 331,
+    "nombre": "MARIA LOPEZ ALVAREZ",
+    "lote": "21607",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 332,
+    "nombre": "RICARDA BARRERA AGUILAR",
+    "lote": "21608",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 333,
+    "nombre": "ESPERANZA MARTINEZ MOTA",
+    "lote": "21609",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 334,
+    "nombre": "RICARDA BARRERA AGUILAR",
+    "lote": "21609",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 335,
+    "nombre": "JOSEFA MARTINEZ ESTRADA",
+    "lote": "21610",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 336,
+    "nombre": "EMMA GERONI SALVADOR MOTA",
+    "lote": "21611",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 337,
+    "nombre": "JOSE SALVADOR GARCIA",
+    "lote": "21611",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 338,
+    "nombre": "DAMIAN PEREZ LOPEZ",
+    "lote": "21613",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 339,
+    "nombre": "EFIGENIO PEREZ SEBASTIAN",
+    "lote": "21613",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 340,
+    "nombre": "PEDRO GARCIA CORNEJO",
+    "lote": "21614",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 341,
+    "nombre": "CARLOS SERRANO HERNANDEZ",
+    "lote": "21616-1",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 342,
+    "nombre": "FELIX PEREZ BARRERA",
+    "lote": "21616",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 343,
+    "nombre": "DAMASO GARCIA ESCOBAR",
+    "lote": "21617",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 344,
+    "nombre": "MARCIANO CORNEJO GARCIA",
+    "lote": "21619",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 345,
+    "nombre": "VIRGINIA CORNEJO GARCIA",
+    "lote": "21620",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 346,
+    "nombre": "ANDRES CORNEJO",
+    "lote": "21620-1",
+    "barrio": ""
+  },
+  {
+    "id": 347,
+    "nombre": "CARLOS GARCIA SALVADOR",
+    "lote": "21621",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 348,
+    "nombre": "ADOLFO GARCIA ESCOBAR",
+    "lote": "21622",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 349,
+    "nombre": "ADOLFO GARCIA ESCOBAR",
+    "lote": "21622-1",
+    "barrio": ""
+  },
+  {
+    "id": 350,
+    "nombre": "BONIFACIA GARCIA GARCIA",
+    "lote": "21622",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 351,
+    "nombre": "FACUNDA GARCIA GARCIA",
+    "lote": "21622",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 352,
+    "nombre": "MAXIMO GARCIA GONZALEZ",
+    "lote": "21622",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 353,
+    "nombre": "VALERIA GARCIA DURAN",
+    "lote": "21622",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 354,
+    "nombre": "ELADIO GARCIA MOTA",
+    "lote": "21624",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 355,
+    "nombre": "NOLBERTA GARCIA VALDEZ",
+    "lote": "21624-3",
+    "barrio": ""
+  },
+  {
+    "id": 356,
+    "nombre": "JUAN PEREZ ALVAREZ",
+    "lote": "21625",
+    "barrio": ""
+  },
+  {
+    "id": 357,
+    "nombre": "MIGUEL CRUZ CRUZ",
+    "lote": "21626",
+    "barrio": ""
+  },
+  {
+    "id": 358,
+    "nombre": "OTILIO ALVAREZ CRUZ",
+    "lote": "21626",
+    "barrio": "EL MEZQUITE"
+  },
+  {
+    "id": 359,
+    "nombre": "ANTONIA ALVAREZ BARCENAS",
+    "lote": "21626-0",
+    "barrio": ""
+  },
+  {
+    "id": 360,
+    "nombre": "BENITO SERRANO REYES",
+    "lote": "21627",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 361,
+    "nombre": "SANTOS ESCOBAR CRUZ",
+    "lote": "21629",
+    "barrio": "LA LOMA H"
+  },
+  {
+    "id": 362,
+    "nombre": "JULIAN ESCOBAR ARTEAGA",
+    "lote": "21629-1",
+    "barrio": "LA LOMA H"
+  },
+  {
+    "id": 363,
+    "nombre": "ESPERANZA PEREZ BARRERA",
+    "lote": "21630",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 364,
+    "nombre": "MA. GUADALUPE CORNEJO LOPEZ",
+    "lote": "21631",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 365,
+    "nombre": "CARLOS SERRANO HERNANDEZ",
+    "lote": "21632",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 366,
+    "nombre": "REYES GONZALEZ MOTA",
+    "lote": "21633",
+    "barrio": "LA LOMA"
+  },
+  {
+    "id": 367,
+    "nombre": "CLARO BERTIN VALDEZ GONZALEZ",
+    "lote": "21634",
+    "barrio": "Z NOPAL"
+  },
+  {
+    "id": 368,
+    "nombre": "CLARO BERTIN VALDEZ GONZALEZ",
+    "lote": "21635",
+    "barrio": "Z NOPAL"
+  },
+  {
+    "id": 369,
+    "nombre": "GLORIA PASCUALA GONZALEZ BARRERA",
+    "lote": "21635-A",
+    "barrio": ""
+  },
+  {
+    "id": 370,
+    "nombre": "JACINTO GONZALEZ SANTIAGO",
+    "lote": "21636",
+    "barrio": "LA LOMA H"
+  },
+  {
+    "id": 371,
+    "nombre": "JUANA GONZALEZ GARCIA",
+    "lote": "21637",
+    "barrio": "LA LOMA H"
+  },
+  {
+    "id": 372,
+    "nombre": "GRACIANO OROPEZA SANTIAGO",
+    "lote": "21638",
+    "barrio": "LA LOMA"
+  },
+  {
+    "id": 373,
+    "nombre": "JOAQUIN PEREZ GOMEZ",
+    "lote": "21640",
+    "barrio": "LA LOMA H"
+  },
+  {
+    "id": 374,
+    "nombre": "CELERINO DORANTES GONZALEZ",
+    "lote": "21641",
+    "barrio": "LA LOMA"
+  },
+  {
+    "id": 375,
+    "nombre": "LUIS ALVAREZ BARCENAS",
+    "lote": "21642",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 376,
+    "nombre": "BENITO PEREZ MARTINEZ",
+    "lote": "21644",
+    "barrio": "LA LOMA H"
+  },
+  {
+    "id": 377,
+    "nombre": "PETRA DORANTES PORRAS",
+    "lote": "21645",
+    "barrio": "LA LOMA"
+  },
+  {
+    "id": 378,
+    "nombre": "DIONISIO DORANTES PORRAS",
+    "lote": "21646",
+    "barrio": "LA LOMA"
+  },
+  {
+    "id": 379,
+    "nombre": "JOSE QUIJANO PEREZ",
+    "lote": "21647",
+    "barrio": "LA LOMA"
+  },
+  {
+    "id": 380,
+    "nombre": "ANDRES SIMON OROPEZA",
+    "lote": "21653",
+    "barrio": "LA LOMA"
+  },
+  {
+    "id": 381,
+    "nombre": "LEOBARDA DOMINGUEZ GARCIA",
+    "lote": "21654",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 382,
+    "nombre": "FIDEL LUGO QUIJANO",
+    "lote": "21655",
+    "barrio": "LA LOMA H"
+  },
+  {
+    "id": 383,
+    "nombre": "DOLORES AGUILAR HERNANDEZ",
+    "lote": "21656",
+    "barrio": "LA LOMA"
+  },
+  {
+    "id": 384,
+    "nombre": "BENITO PEREZ MARTINEZ",
+    "lote": "21657",
+    "barrio": "LA LOMA H"
+  },
+  {
+    "id": 385,
+    "nombre": "POMPEYO AGUILAR HERNANDEZ",
+    "lote": "21658",
+    "barrio": "LA LOMA H"
+  },
+  {
+    "id": 386,
+    "nombre": "MA. SANTOS HERNANDEZ GARCIA",
+    "lote": "21660",
+    "barrio": "LA LOMA"
+  },
+  {
+    "id": 387,
+    "nombre": "MARCIANO CRUZ PEREZ",
+    "lote": "21666",
+    "barrio": "LA LOMA H"
+  },
+  {
+    "id": 388,
+    "nombre": "MARIA PEREZ CRUZ",
+    "lote": "21670",
+    "barrio": "LA LOMA"
+  },
+  {
+    "id": 389,
+    "nombre": "ZERAFIN ORTIZ AGUILAR",
+    "lote": "21673",
+    "barrio": "LA LOMA"
+  },
+  {
+    "id": 390,
+    "nombre": "ZERAFIN ORTIZ AGUILAR",
+    "lote": "21674",
+    "barrio": ""
+  },
+  {
+    "id": 391,
+    "nombre": "SABINO PEREZ SALVADOR",
+    "lote": "21675",
+    "barrio": "LA LOMA H"
+  },
+  {
+    "id": 392,
+    "nombre": "SABINO PEREZ SALVADOR",
+    "lote": "21675-1",
+    "barrio": "LA LOMA H"
+  },
+  {
+    "id": 393,
+    "nombre": "SERAFIN PEREZ MOTA",
+    "lote": "21676",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 394,
+    "nombre": "LUISA GARCIA GARCIA",
+    "lote": "21679",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 395,
+    "nombre": "GUILLERMO ORTIZ MENDOZA",
+    "lote": "21680",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 396,
+    "nombre": "SANTIAGO CRUZ HERRERA",
+    "lote": "21689",
+    "barrio": "LA LOMA"
+  },
+  {
+    "id": 397,
+    "nombre": "FAUSTINO CERVANTES GARCIA",
+    "lote": "21690",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 398,
+    "nombre": "GUADALUPE CERVANTES GARCIA",
+    "lote": "21691",
+    "barrio": "VARIADO"
+  },
+  {
+    "id": 399,
+    "nombre": "TOMAS ANGELES GUERRERO",
+    "lote": "21693",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 400,
+    "nombre": "FAUSTO ANGELES SANTIAGO",
+    "lote": "21695",
+    "barrio": "LA LOMA"
+  },
+  {
+    "id": 401,
+    "nombre": "ELADIO OROPEZA ROJO",
+    "lote": "21697",
+    "barrio": "LA LOMA"
+  },
+  {
+    "id": 402,
+    "nombre": "CATALINA ESTRADA OROPEZA",
+    "lote": "21698",
+    "barrio": "LA LOMA"
+  },
+  {
+    "id": 403,
+    "nombre": "FELICITAS OROPEZA SALVADOR",
+    "lote": "21700",
+    "barrio": "LA LOMA"
+  },
+  {
+    "id": 404,
+    "nombre": "MARTINA OROPEZA SALVADOR",
+    "lote": "21700",
+    "barrio": "LA LOMA"
+  },
+  {
+    "id": 405,
+    "nombre": "ASTREBERTO CRUZ GONZALEZ",
+    "lote": "21701",
+    "barrio": "LA LOMA"
+  },
+  {
+    "id": 406,
+    "nombre": "RUPERTO PEREZ MARTINEZ",
+    "lote": "21702",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 407,
+    "nombre": "ELIZABETH RIOS SIMON",
+    "lote": "21702-1",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 408,
+    "nombre": "JULIAN MONROY HERNANDEZ",
+    "lote": "21703",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 409,
+    "nombre": "JULIAN MONROY HERNANDEZ",
+    "lote": "21703",
+    "barrio": ""
+  },
+  {
+    "id": 410,
+    "nombre": "SOFIA PEREZ MONROY",
+    "lote": "21704",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 411,
+    "nombre": "TOMAS ANGELES GUERRERO",
+    "lote": "21705",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 412,
+    "nombre": "PROSPERO GARCIA CERVANTES",
+    "lote": "21706",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 413,
+    "nombre": "ROSENDO GARCIA FLORES",
+    "lote": "21706",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 414,
+    "nombre": "JUSTINO ORTIZ HERNANDEZ",
+    "lote": "21708",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 415,
+    "nombre": "TRINIDAD ORTIZ MARQUEZ",
+    "lote": "21709",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 416,
+    "nombre": "PEDRO SANTIAGO CRUZ",
+    "lote": "21718",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 417,
+    "nombre": "HERMENEGILD PEREZ ORTIZ",
+    "lote": "21710",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 418,
+    "nombre": "LAZARO PEREZ ORTIZ",
+    "lote": "21710",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 419,
+    "nombre": "ZERAFIN PEREZ MARTINEZ",
+    "lote": "21710",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 420,
+    "nombre": "FRANCISCO ANGELES PEREZ",
+    "lote": "21710-A",
+    "barrio": ""
+  },
+  {
+    "id": 421,
+    "nombre": "IRINEO PEREZ ANGELES",
+    "lote": "21711-3",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 422,
+    "nombre": "IRINEO PEREZ ANGELES",
+    "lote": "21711-3",
+    "barrio": ""
+  },
+  {
+    "id": 423,
+    "nombre": "MAURA PEREZ ORTIZ",
+    "lote": "21711",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 424,
+    "nombre": "FLORENCIA REYES MENDOZA",
+    "lote": "21713",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 425,
+    "nombre": "HIPOLITO HERNANDEZ CRUZ",
+    "lote": "21715",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 426,
+    "nombre": "MANUEL HERNANDEZ OLGUIN",
+    "lote": "21716",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 427,
+    "nombre": "JUANA HERNANDEZ PORRAS",
+    "lote": "21717",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 428,
+    "nombre": "FRANCISCO ANGELES PEREZ",
+    "lote": "21719-1",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 429,
+    "nombre": "MARGARITO PEREZ AGUIRRE",
+    "lote": "21719",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 430,
+    "nombre": "AQUILINO SIMON REYES",
+    "lote": "21722",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 431,
+    "nombre": "AQUILINO SIMON REYES",
+    "lote": "21722",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 432,
+    "nombre": "RAMON SIMON REYES",
+    "lote": "21722",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 433,
+    "nombre": "AGAPITO ORTIZ HERNANDEZ",
+    "lote": "21723",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 434,
+    "nombre": "TORIBIO ORTIZ HERNANDEZ",
+    "lote": "21724",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 435,
+    "nombre": "ABRAHAM SIMON REYES",
+    "lote": "21727",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 436,
+    "nombre": "MARGARITO PEREZ AGUIRRE",
+    "lote": "21728",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 437,
+    "nombre": "SARA PEREZ CRUZ",
+    "lote": "21728",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 438,
+    "nombre": "LEANDRO PEREZ MOTA",
+    "lote": "21729",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 439,
+    "nombre": "REYNALDA HERNANDEZ SANCHEZ",
+    "lote": "21730",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 440,
+    "nombre": "SILVINO HERNANDEZ VELAZQUEZ",
+    "lote": "21732",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 441,
+    "nombre": "AMADOR LUGO HERNANDEZ",
+    "lote": "21733",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 442,
+    "nombre": "MARGARITO PEREZ CRUZ",
+    "lote": "21734",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 443,
+    "nombre": "FRANCISCO ANGELES PEREZ",
+    "lote": "21735",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 444,
+    "nombre": "PROSPERO BAUTISTA PEREZ",
+    "lote": "21736",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 445,
+    "nombre": "ROSA CRUZ REYES",
+    "lote": "21737",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 446,
+    "nombre": "JUAN SALAS URIBE",
+    "lote": "21738",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 447,
+    "nombre": "MELECIO PORRAS SALAS",
+    "lote": "21738",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 448,
+    "nombre": "GUMECINDO BAUTISTA HERNANDEZ",
+    "lote": "21739",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 449,
+    "nombre": "GUMECINDO BAUTISTA HERNANDEZ",
+    "lote": "21739",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 450,
+    "nombre": "LEOBARDO HERNANDEZ SANTIAGO",
+    "lote": "21742",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 451,
+    "nombre": "LIBRADO HERNANDEZ GONZALEZ",
+    "lote": "21742",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 452,
+    "nombre": "PABLO HERNANDEZ SANTIAGO",
+    "lote": "21743",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 453,
+    "nombre": "BENIGNO ORTIZ ESPINOZA",
+    "lote": "21744",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 454,
+    "nombre": "MAXIMINA HERNANDEZ PEREZ",
+    "lote": "21746",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 455,
+    "nombre": "EMMA PEREZ AGUIRRE",
+    "lote": "21747",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 456,
+    "nombre": "EMMA PEREZ AGUIRRE",
+    "lote": "21748",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 457,
+    "nombre": "ESTEBAN PEREZ AGUIRRE",
+    "lote": "21749",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 458,
+    "nombre": "MARGARITO PEREZ AGUIRRE",
+    "lote": "21750",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 459,
+    "nombre": "CATALINA HERNANDEZ PEREZ",
+    "lote": "21751",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 460,
+    "nombre": "ANGELA CRUZ GUERRERO",
+    "lote": "21753",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 461,
+    "nombre": "ARTEMIO SANTIAGO HERNANDEZ",
+    "lote": "21754",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 462,
+    "nombre": "FRANCISCO ANGELES PEREZ",
+    "lote": "21756",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 463,
+    "nombre": "AGUSTINA CRUZ SANCHEZ",
+    "lote": "21757",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 464,
+    "nombre": "EDUARDO ESTRADA MARTINEZ",
+    "lote": "21759",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 465,
+    "nombre": "GUADALUPE ESTRADA MARTINEZ",
+    "lote": "21760",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 466,
+    "nombre": "MANUEL HERNANDEZ ANGELES",
+    "lote": "21762",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 467,
+    "nombre": "MACRINA HERNANDEZ SANCHEZ",
+    "lote": "21763",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 468,
+    "nombre": "MACRINA HERNANDEZ SANCHEZ",
+    "lote": "21763",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 469,
+    "nombre": "FRANCISCO ANGELES PEREZ",
+    "lote": "21764",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 470,
+    "nombre": "JACINTO ANGELES PEREZ",
+    "lote": "21764",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 471,
+    "nombre": "VICENTE HERNANDEZ SANCHEZ",
+    "lote": "21765",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 472,
+    "nombre": "CIRIACO HERNANDEZ PEREZ",
+    "lote": "21766",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 473,
+    "nombre": "FACUNDO HERNANDEZ PEREZ",
+    "lote": "21766",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 474,
+    "nombre": "HERIBERTO HERNANDEZ PEREZ",
+    "lote": "21766",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 475,
+    "nombre": "ANGEL CORNEJO MARTINEZ",
+    "lote": "21770",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 476,
+    "nombre": "PRIMO LUGO HERNANDEZ",
+    "lote": "21771",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 477,
+    "nombre": "ROMAN HERNANDEZ GOMEZ",
+    "lote": "21777",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 478,
+    "nombre": "POMPEYO HERNANDEZ CRUZ",
+    "lote": "21778",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 479,
+    "nombre": "ROMAN HERNANDEZ GOMEZ",
+    "lote": "21779",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 480,
+    "nombre": "AUSTRABERTO PORRAS MENDIETA",
+    "lote": "21784",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 481,
+    "nombre": "ADAN LOPEZ REYES",
+    "lote": "21785",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 482,
+    "nombre": "ALBERTO PORRAS HERNANDEZ",
+    "lote": "21785",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 483,
+    "nombre": "LEANDRO CRUZ MARTINEZ",
+    "lote": "21792",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 484,
+    "nombre": "NATALIA MARTINEZ CRUZ",
+    "lote": "21792",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 485,
+    "nombre": "VICENTE REYES MARTINEZ",
+    "lote": "21793-A",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 486,
+    "nombre": "JUANA GARCIA HERNANDEZ",
+    "lote": "21794",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 487,
+    "nombre": "VICENTE HERNANDEZ PEREZ",
+    "lote": "21795",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 488,
+    "nombre": "ANDRES HERNANDEZ PEREZ",
+    "lote": "21797",
+    "barrio": ""
+  },
+  {
+    "id": 489,
+    "nombre": "JOSE HERNANDEZ PEREZ",
+    "lote": "21798",
+    "barrio": ""
+  },
+  {
+    "id": 490,
+    "nombre": "ELFEGO PEREZ SALVADOR",
+    "lote": "21799",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 491,
+    "nombre": "LUCAS MOTA GARCIA",
+    "lote": "21800",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 492,
+    "nombre": "ELFEGO PEREZ SALVADOR",
+    "lote": "21801",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 493,
+    "nombre": "JOSE HERNANDEZ PEREZ",
+    "lote": "21801",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 494,
+    "nombre": "ANDRES HERNANDEZ PEREZ",
+    "lote": "21802",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 495,
+    "nombre": "INOCENTE GONZALEZ BAUTISTA",
+    "lote": "21803",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 496,
+    "nombre": "AMADO HERNANDEZ ANGELES",
+    "lote": "21804",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 497,
+    "nombre": "RAFAEL ESTRADA REYES",
+    "lote": "21805",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 498,
+    "nombre": "RAFAEL ESTRADA REYES",
+    "lote": "21805-A",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 499,
+    "nombre": "DANIEL PEREZ MARTINEZ",
+    "lote": "21806",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 500,
+    "nombre": "MARIA ESTRADA ROJO",
+    "lote": "21806",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 501,
+    "nombre": "IGNACIO CORONA HERNANDEZ",
+    "lote": "21807",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 502,
+    "nombre": "MARCOS SERRANO CUENDIA",
+    "lote": "21807",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 503,
+    "nombre": "RAFAEL ESTRADA ROJO",
+    "lote": "21808",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 504,
+    "nombre": "ENCARNACION CRUZ ESTRADA",
+    "lote": "21809",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 505,
+    "nombre": "SABINO ESTRADA MENDOZA",
+    "lote": "21810",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 506,
+    "nombre": "VICENTE MARTINEZ PORRAS",
+    "lote": "21810",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 507,
+    "nombre": "ELEASIN PEREZ PEREZ",
+    "lote": "21811",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 508,
+    "nombre": "CRESCENCIA CORONA  ALMARAZ",
+    "lote": "21812",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 509,
+    "nombre": "LEANDRO CRUZ MARTINEZ",
+    "lote": "21813",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 510,
+    "nombre": "VICENTE REYES MARTINEZ",
+    "lote": "21814",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 511,
+    "nombre": "SOTERO HERNANDEZ MOTA",
+    "lote": "21815",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 512,
+    "nombre": "FILOGONIO MARTINEZ MOTA",
+    "lote": "21816",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 513,
+    "nombre": "HILARION MARTINEZ ESTRADA",
+    "lote": "21816",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 514,
+    "nombre": "JOSE MARTINEZ ESTRADA",
+    "lote": "21816",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 515,
+    "nombre": "AGUSTINA SALVADOR MOTA",
+    "lote": "21819",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 516,
+    "nombre": "ENRIQUE CEDEÑO DELGADILLO",
+    "lote": "21821",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 517,
+    "nombre": "JOSE GONZALEZ ESTRADA",
+    "lote": "21826",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 518,
+    "nombre": "MARIA BARRERA VDA. GONZAL",
+    "lote": "21831",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 519,
+    "nombre": "REYES GONZALEZ MOTA",
+    "lote": "21831",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 520,
+    "nombre": "JOSE GONZALEZ ESTRADA",
+    "lote": "21832",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 521,
+    "nombre": "JOSE GONZALEZ ESTRADA",
+    "lote": "21834",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 522,
+    "nombre": "FAUSTINO PEREZ MARTINEZ",
+    "lote": "21835",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 523,
+    "nombre": "JACINTO GONZALEZ SANTIAGO",
+    "lote": "21835",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 524,
+    "nombre": "JESUS GARCIA HERNANDEZ",
+    "lote": "21836",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 525,
+    "nombre": "TEODORO GARCIA CORNEJO",
+    "lote": "21836",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 526,
+    "nombre": "ISIDRO ANGELES PEREZ",
+    "lote": "21837",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 527,
+    "nombre": "MAXIMINO GARCIA GONZALEZ",
+    "lote": "21838",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 528,
+    "nombre": "ANDRES GONZALEZ HERNANDEZ",
+    "lote": "21841",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 529,
+    "nombre": "DIONISIO GARCIA AGUILAR",
+    "lote": "21841",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 530,
+    "nombre": "PASCUAL PEREZ SALVADOR",
+    "lote": "21841",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 531,
+    "nombre": "REY DAVID PEREZ CERVANTES",
+    "lote": "21841",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 532,
+    "nombre": "J. GUADALUPE MARTINEZ CONTRERAS",
+    "lote": "21842",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 533,
+    "nombre": "ROSENDO PEREZ MARTINEZ",
+    "lote": "21843",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 534,
+    "nombre": "SOLEDAD GARCIA CORNEJO",
+    "lote": "21844",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 535,
+    "nombre": "JOSE GONZALEZ CORNEJO",
+    "lote": "21848",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 536,
+    "nombre": "RICARDA BARRERA AGUILAR",
+    "lote": "21849",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 537,
+    "nombre": "ROSENDO PEREZ MARTINEZ",
+    "lote": "21854",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 538,
+    "nombre": "BENIGNO PEREZ ANGELES",
+    "lote": "21855",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 539,
+    "nombre": "RODOLFO PEREZ MENDOZA",
+    "lote": "21855",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 540,
+    "nombre": "EUSTOLIO ORTIZ PEREZ",
+    "lote": "21856",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 541,
+    "nombre": "JOSE ORTIZ AGUILAR",
+    "lote": "21857",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 542,
+    "nombre": "RUPERTO PEREZ MARTINEZ",
+    "lote": "21858",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 543,
+    "nombre": "ZERAFIN ORTIZ AGUILAR",
+    "lote": "21859",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 544,
+    "nombre": "ZERAFIN ORTIZ AGUILAR",
+    "lote": "21860",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 545,
+    "nombre": "ROSENDO PEREZ MARTINEZ",
+    "lote": "21875",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 546,
+    "nombre": "GUMERSINDO ORTIZ MARQUEZ",
+    "lote": "21878",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 547,
+    "nombre": "NATALIA ORTIZ MARQUEZ",
+    "lote": "21879",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 548,
+    "nombre": "NATALIA ORTIZ MARQUEZ",
+    "lote": "21879",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 549,
+    "nombre": "LEANDRO PEREZ ANGELES",
+    "lote": "21882",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 550,
+    "nombre": "BENITO PEREZ MARTINEZ",
+    "lote": "21884",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 551,
+    "nombre": "MARTIN VALDEZ AGUILAR",
+    "lote": "21885",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 552,
+    "nombre": "PEDRO CORNEJO MARTINEZ",
+    "lote": "21886",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 553,
+    "nombre": "CAMPO DE FUTBOL LA LOMA",
+    "lote": "21887",
+    "barrio": ""
+  },
+  {
+    "id": 554,
+    "nombre": "VICTORINA HERNANDEZ PEREZ",
+    "lote": "21890",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 555,
+    "nombre": "VICENTE HERNANDEZ SANCHEZ",
+    "lote": "21892",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 556,
+    "nombre": "ONECIMO  GOMEZ HERNANDEZ",
+    "lote": "21894",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 557,
+    "nombre": "SOLEDAD HERNANDEZ RODRIGUEZ",
+    "lote": "21897",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 558,
+    "nombre": "JESUS HERNANDEZ OROPEZA",
+    "lote": "21898",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 559,
+    "nombre": "ANTONINO HERNANDEZ HERNANDEZ",
+    "lote": "21900",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 560,
+    "nombre": "LEONOR LUGO CONTRERAS",
+    "lote": "21901",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 561,
+    "nombre": "CANDIDO HERNANDEZ VAZQUEZ",
+    "lote": "21903",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 562,
+    "nombre": "CRISPIN HERNANDEZ ANGELES",
+    "lote": "21903",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 563,
+    "nombre": "MIGUEL CRUZ SANCHEZ",
+    "lote": "21905",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 564,
+    "nombre": "SATURNINO PORRAS GUZMAN",
+    "lote": "21906",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 565,
+    "nombre": "PONCIANO SANCHEZ ANGELES",
+    "lote": "21907",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 566,
+    "nombre": "SATURNINO PORRAS GUZMAN",
+    "lote": "21908",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 567,
+    "nombre": "FRANCISCO GOMEZ AGUILAR",
+    "lote": "21909",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 568,
+    "nombre": "FRANCISCO GOMEZ AGUILAR",
+    "lote": "21910",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 569,
+    "nombre": "FRANCISCO GOMEZ AGUILAR",
+    "lote": "21911",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 570,
+    "nombre": "LIBORIA HERNANDEZ DE CRUZ",
+    "lote": "21911-1",
+    "barrio": ""
+  },
+  {
+    "id": 571,
+    "nombre": "FRANCISCO GOMEZ AGUILAR",
+    "lote": "21912",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 572,
+    "nombre": "AGAPITO PEREZ HERNANDEZ",
+    "lote": "21912-1",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 573,
+    "nombre": "FRANCISCO GOMEZ AGUILAR",
+    "lote": "21913",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 574,
+    "nombre": "FELIPE MOTA HERNANDEZ",
+    "lote": "21914",
+    "barrio": ""
+  },
+  {
+    "id": 575,
+    "nombre": "ISIDRO GOMEZ HERNANDEZ",
+    "lote": "21915",
+    "barrio": ""
+  },
+  {
+    "id": 576,
+    "nombre": "ISMAEL PORRAS GUERRERO",
+    "lote": "21916",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 577,
+    "nombre": "LUCIANO PORRAS ANGELES",
+    "lote": "21917",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 578,
+    "nombre": "BELEN CRUZ OLGUIN",
+    "lote": "21920",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 579,
+    "nombre": "GONZALO LOPEZ CRUZ",
+    "lote": "21922",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 580,
+    "nombre": "PABLO CRUZ OLGUIN",
+    "lote": "21922",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 581,
+    "nombre": "LAURO LOPEZ CRUZ",
+    "lote": "21922-2",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 582,
+    "nombre": "JOSE DORANTES PORRAS",
+    "lote": "21924",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 583,
+    "nombre": "JOSE DORANTES PORRAS",
+    "lote": "21924",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 584,
+    "nombre": "JUAN HERNANDEZ HERNANDEZ",
+    "lote": "21926",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 585,
+    "nombre": "JUAN HERNANDEZ HERNANDEZ",
+    "lote": "21926-1",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 586,
+    "nombre": "LUMINOSA HERNANDEZ ANGELES",
+    "lote": "21927",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 587,
+    "nombre": "ZENAIDO GARCIA HERNANDEZ",
+    "lote": "21929",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 588,
+    "nombre": "FEDERICO MARTINEZ MONROY",
+    "lote": "21932",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 589,
+    "nombre": "JOSE CANO CRUZ",
+    "lote": "21933",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 590,
+    "nombre": "JUAN REYES MARTINEZ",
+    "lote": "21935",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 591,
+    "nombre": "JUAN CRUZ SANCHEZ",
+    "lote": "21936",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 592,
+    "nombre": "AUSTREBERTO PORRAS MENDIETA",
+    "lote": "21938",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 593,
+    "nombre": "ISMAEL PORRAS ESCAMILLA",
+    "lote": "21940",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 594,
+    "nombre": "ISMAEL PORRAS ESCAMILLA",
+    "lote": "21941",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 595,
+    "nombre": "JACINTO PORRAS CRUZ",
+    "lote": "21942",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 596,
+    "nombre": "ISMAEL PORRAS ESCAMILLA",
+    "lote": "21947",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 597,
+    "nombre": "ISMAEL PORRAS GUERRERO",
+    "lote": "21948",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 598,
+    "nombre": "CONRADO GARCIA BAUTISTA",
+    "lote": "21950",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 599,
+    "nombre": "DEMETRIO GARCIA SANCHEZ",
+    "lote": "21950-1",
+    "barrio": ""
+  },
+  {
+    "id": 600,
+    "nombre": "ONECIMO PORRAS GUERRERO",
+    "lote": "21956",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 601,
+    "nombre": "AUSTROBERTO PORRAS MENDIETA",
+    "lote": "21957",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 602,
+    "nombre": "CARLOS PORRAS HERNANDEZ",
+    "lote": "21957",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 603,
+    "nombre": "ISMAEL PORRAS GUERRERO",
+    "lote": "21958",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 604,
+    "nombre": "ABEL MOTA HERNANDEZ",
+    "lote": "21959",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 605,
+    "nombre": "HIPOLITO SANCHEZ URIBE",
+    "lote": "21960",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 606,
+    "nombre": "MAXIMINO GARCIA PORRAS",
+    "lote": "21961",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 607,
+    "nombre": "HONORATO PORRAS HERNANDEZ",
+    "lote": "21961-2",
+    "barrio": ""
+  },
+  {
+    "id": 608,
+    "nombre": "PLACIDA GARCIA HERNANDEZ",
+    "lote": "21962",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 609,
+    "nombre": "FORTUNATO GARCIA HERNANDEZ",
+    "lote": "21963",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 610,
+    "nombre": "JUAN PORRAS GUERRERO",
+    "lote": "21965",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 611,
+    "nombre": "AURELIANO PORRAS MARTINEZ",
+    "lote": "21965-1",
+    "barrio": ""
+  },
+  {
+    "id": 612,
+    "nombre": "MANUEL PEREZ PORRAS",
+    "lote": "21966",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 613,
+    "nombre": "JUAN REYES HERNANDEZ",
+    "lote": "21967",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 614,
+    "nombre": "LAURO PORRAS ESCAMILLA",
+    "lote": "21967-A",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 615,
+    "nombre": "PEDRO PORRAS MONROY",
+    "lote": "21968",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 616,
+    "nombre": "FRANCISCO ANGELES PEREZ",
+    "lote": "21969",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 617,
+    "nombre": "ISIDORO ANGELES PEREZ",
+    "lote": "21969",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 618,
+    "nombre": "ONECIMO PORRAS GUERRERO",
+    "lote": "21970",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 619,
+    "nombre": "ONECIMO PORRAS GUERRERO",
+    "lote": "21970",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 620,
+    "nombre": "ONESIMO PORRAS GUERRERO",
+    "lote": "21970-B",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 621,
+    "nombre": "JUAN PORRAS CORONA",
+    "lote": "21971",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 622,
+    "nombre": "ISMAEL PORRAS GUERRERO",
+    "lote": "21972",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 623,
+    "nombre": "ISMAEL PORRAS GUERRERO",
+    "lote": "21972",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 624,
+    "nombre": "VALENTINA MOTA PORRAS",
+    "lote": "21973",
+    "barrio": ""
+  },
+  {
+    "id": 625,
+    "nombre": "FAUSTINO MOTA PEREZ",
+    "lote": "21973",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 626,
+    "nombre": "FRANCISCO MARTINEZ GUZMAN",
+    "lote": "21974",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 627,
+    "nombre": "INOCENTE PORRAS GUZMAN",
+    "lote": "21975",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 628,
+    "nombre": "MANUEL PEREZ PORRAS",
+    "lote": "21976",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 629,
+    "nombre": "MA. GUADALUPE DAMASA TORAL PORRAS",
+    "lote": "21977",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 630,
+    "nombre": "SATURNINO PORRAS GUZMAN",
+    "lote": "21978",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 631,
+    "nombre": "JUANA MARTINEZ GARCIA",
+    "lote": "21979",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 632,
+    "nombre": "AGAPITO PORRAS ESCAMILLA",
+    "lote": "21980",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 633,
+    "nombre": "AGAPITO PORRAS ESCAMILLA",
+    "lote": "21980-1",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 634,
+    "nombre": "VICENTE MARTINEZ PORRAS",
+    "lote": "21981",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 635,
+    "nombre": "MODESTA PORRAS HERNANDEZ",
+    "lote": "21982",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 636,
+    "nombre": "FELIPE MOTA HERNANDEZ",
+    "lote": "21984",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 637,
+    "nombre": "ONECIMO PORRAS GUERRERO",
+    "lote": "21985",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 638,
+    "nombre": "REFUGIO PEDRO PORRAS JIMENEZ",
+    "lote": "21986",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 639,
+    "nombre": "LONGINA PORRAS GUERRERO",
+    "lote": "21987",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 640,
+    "nombre": "RAFAEL PORRAS CRUZ",
+    "lote": "21988",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 641,
+    "nombre": "AVELINA ANGELES HERNANDEZ",
+    "lote": "21989",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 642,
+    "nombre": "ISIDORO ANGELES PEREZ",
+    "lote": "21990",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 643,
+    "nombre": "CENOBIO CRUZ PORRAS",
+    "lote": "21991",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 644,
+    "nombre": "ISIDRO SIMON CRUZ",
+    "lote": "21992",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 645,
+    "nombre": "JUAN PORRAS GUERERO",
+    "lote": "21993",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 646,
+    "nombre": "HERLINDO PORRAS BARRERA",
+    "lote": "21994",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 647,
+    "nombre": "RAFAEL MARTINEZ PORRAS",
+    "lote": "21995",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 648,
+    "nombre": "JUAN PORRAS GUERRERO",
+    "lote": "21996",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 649,
+    "nombre": "JOSE GARCIA PORRAS",
+    "lote": "21997",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 650,
+    "nombre": "APOLINAR MARTINEZ PEREZ",
+    "lote": "21998",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 651,
+    "nombre": "CENOBIO CRUZ PORRAS",
+    "lote": "21999",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 652,
+    "nombre": "FELIPE HERNANDEZ ANGELES",
+    "lote": "22000",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 653,
+    "nombre": "MA. CONCEPCION PEREZ H.",
+    "lote": "22000",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 654,
+    "nombre": "VALENTINA MOTA PORRAS",
+    "lote": "22001",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 655,
+    "nombre": "SAMUEL PÉREZ SÁNCHEZ",
+    "lote": "22002",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 656,
+    "nombre": "MARCOS PORRAS BARRERA",
+    "lote": "22003",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 657,
+    "nombre": "VICTOR PORRAS OLGUIN",
+    "lote": "22003-1",
+    "barrio": ""
+  },
+  {
+    "id": 658,
+    "nombre": "LUCIANO PORRAS REYES",
+    "lote": "22004",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 659,
+    "nombre": "FIDEL PORRAS PORRAS",
+    "lote": "22005",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 660,
+    "nombre": "HERMANOS HERNANDEZ HERNANDEZ",
+    "lote": "22005",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 661,
+    "nombre": "JOSE GARCIA PORRAS",
+    "lote": "22006",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 662,
+    "nombre": "ISIDORO ANGELES PEREZ",
+    "lote": "22007",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 663,
+    "nombre": "JUVENTINO HERNANDEZ ANGELES",
+    "lote": "22007-2",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 664,
+    "nombre": "HERLINDO PORRAS BARRERA",
+    "lote": "22008",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 665,
+    "nombre": "HERLINDO PORRAS BARRERA",
+    "lote": "22008",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 666,
+    "nombre": "JULIAN AGUILAR QUIJANO",
+    "lote": "22009",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 667,
+    "nombre": "FRANCISCO AGUILAR CRUZ",
+    "lote": "22009",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 668,
+    "nombre": "ASCENCION MARTINEZ PORRAS",
+    "lote": "22010",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 669,
+    "nombre": "ASCENCION MARTINEZ PORRAS",
+    "lote": "22010",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 670,
+    "nombre": "JOSE GARCIA PORRAS",
+    "lote": "22011",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 671,
+    "nombre": "BERULIO GARCIA VALDEZ",
+    "lote": "22012",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 672,
+    "nombre": "JULIA GONZALEZ VDA. MARTIN",
+    "lote": "22013",
+    "barrio": "LLANO"
+  },
+  {
+    "id": 673,
+    "nombre": "TELESFORO AGUILAR SERRANO",
+    "lote": "22013",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 674,
+    "nombre": "MARTIN SANCHEZ RIOS",
+    "lote": "22014",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 675,
+    "nombre": "ESTANISLAO BARRERA PEREZ",
+    "lote": "22015",
+    "barrio": "PROP. HUITEL"
+  },
+  {
+    "id": 676,
+    "nombre": "NEMORIO RIOS CONTRERAS",
+    "lote": "22016",
+    "barrio": "ALTO H"
+  },
+  {
+    "id": 677,
+    "nombre": "MATILDE RIOS SALVADOR",
+    "lote": "22017",
+    "barrio": "ALTO H"
+  },
+  {
+    "id": 678,
+    "nombre": "REYNA ANGELES ROJO",
+    "lote": "22018",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 679,
+    "nombre": "MARCELINA AGUILAR CRUZ",
+    "lote": "22019",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 680,
+    "nombre": "TEOFILO HERNANDEZ MENDOZA",
+    "lote": "22020",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 681,
+    "nombre": "LUIS LUGO GARCIA",
+    "lote": "22021",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 682,
+    "nombre": "SALUSTIA ANGELES CRUZ",
+    "lote": "22022",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 683,
+    "nombre": "AGUSTIN GOMEZ CERVANTES",
+    "lote": "22023",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 684,
+    "nombre": "ADAN BARRERA MOTA",
+    "lote": "22024",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 685,
+    "nombre": "ANASTACIO SANTIAGO PIZAÑA",
+    "lote": "22026",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 686,
+    "nombre": "MARCIAL BALTAZAR CRUZ",
+    "lote": "22027",
+    "barrio": "2o. GIRON ACAY"
+  },
+  {
+    "id": 687,
+    "nombre": "JACINTO DIAZ OROPEZA",
+    "lote": "22028",
+    "barrio": "2o. GIRON ACAY"
+  },
+  {
+    "id": 688,
+    "nombre": "JULIO DIAZ PIZAÑA",
+    "lote": "22033",
+    "barrio": "2o. GIRON ACAY"
+  },
+  {
+    "id": 689,
+    "nombre": "MARCIAL DIAZ MARTINEZ",
+    "lote": "22033",
+    "barrio": "2o. GIRON ACAY"
+  },
+  {
+    "id": 690,
+    "nombre": "MARTINIANO MARTINEZ ESTRADA",
+    "lote": "22034",
+    "barrio": "2o. GIRON ACAY"
+  },
+  {
+    "id": 691,
+    "nombre": "MODESTO CRUZ JIMENEZ",
+    "lote": "22034",
+    "barrio": "2o. GIRON ACAY"
+  },
+  {
+    "id": 692,
+    "nombre": "MODESTO CRUZ JIMENEZ",
+    "lote": "22034",
+    "barrio": "2o. GIRON ACAY"
+  },
+  {
+    "id": 693,
+    "nombre": "MARIO BALTAZAR JIMENEZ",
+    "lote": "22035",
+    "barrio": "2o. GIRON ACAY"
+  },
+  {
+    "id": 694,
+    "nombre": "MARTINIANO DIAZ CRUZ",
+    "lote": "22035",
+    "barrio": "2o. GIRON ACAY"
+  },
+  {
+    "id": 695,
+    "nombre": "PEDRO DIAZ JIMENEZ",
+    "lote": "22035",
+    "barrio": "2o. GIRON ACAY"
+  },
+  {
+    "id": 696,
+    "nombre": "JUAN BALTAZAR DIAZ",
+    "lote": "22036",
+    "barrio": "2o. GIRON ACAY"
+  },
+  {
+    "id": 697,
+    "nombre": "MANUEL BALTAZAR CONTRERAS",
+    "lote": "22036",
+    "barrio": "2o. GIRON ACAY"
+  },
+  {
+    "id": 698,
+    "nombre": "ENRIQUE CRUZ DIAZ",
+    "lote": "22037",
+    "barrio": "2o. GIRON ACAY"
+  },
+  {
+    "id": 699,
+    "nombre": "PABLO DIAZ JIMENEZ",
+    "lote": "22039",
+    "barrio": "2o. GIRON ACAY"
+  },
+  {
+    "id": 700,
+    "nombre": "ANASTACIO DIAZ BALTAZAR",
+    "lote": "22041",
+    "barrio": "2o. GIRON ACAY"
+  },
+  {
+    "id": 701,
+    "nombre": "CANDELARIO ZUÑIGA JIMENEZ",
+    "lote": "22042",
+    "barrio": "2o. GIRON ACAY"
+  },
+  {
+    "id": 702,
+    "nombre": "NICOLAS ESTRADA RIOS",
+    "lote": "22042",
+    "barrio": "2o. GIRON ACAY"
+  },
+  {
+    "id": 703,
+    "nombre": "ANTONIO DIAZ VENTURA",
+    "lote": "22043",
+    "barrio": "2o. GIRON ACAY"
+  },
+  {
+    "id": 704,
+    "nombre": "GERONIMO RAMIREZ DIAZ",
+    "lote": "22043",
+    "barrio": "2o. GIRON ACAY"
+  },
+  {
+    "id": 705,
+    "nombre": "RAYMUNDO RAMIREZ DIAZ",
+    "lote": "22043",
+    "barrio": "2o. GIRON ACAY"
+  },
+  {
+    "id": 706,
+    "nombre": "VICENTE DIAZ VIVEROS",
+    "lote": "22043",
+    "barrio": "2o. GIRON ACAY"
+  },
+  {
+    "id": 707,
+    "nombre": "GUADALUPE DIAZ RAMIREZ",
+    "lote": "22044",
+    "barrio": "2o. GIRON ACAY"
+  },
+  {
+    "id": 708,
+    "nombre": "GUADALUPE DIAZ CRUZ",
+    "lote": "22045",
+    "barrio": "2o. GIRON ACAY"
+  },
+  {
+    "id": 709,
+    "nombre": "LUIS DIAZ LORENZO",
+    "lote": "22045",
+    "barrio": "2o. GIRON ACAY"
+  },
+  {
+    "id": 710,
+    "nombre": "ALEJANDRO DIAZ VIVEROS",
+    "lote": "22046",
+    "barrio": "2o. GIRON ACAY"
+  },
+  {
+    "id": 711,
+    "nombre": "FAUSTO CRUZ SANCHEZ",
+    "lote": "22047",
+    "barrio": "2o. GIRON ACAY"
+  },
+  {
+    "id": 712,
+    "nombre": "MEDARDO PEREZ VENTURA",
+    "lote": "22048",
+    "barrio": "2o. GIRON ACAY"
+  },
+  {
+    "id": 713,
+    "nombre": "ALFREDO ANGELES MONROY",
+    "lote": "22049",
+    "barrio": "1ER. GIR ACAY"
+  },
+  {
+    "id": 714,
+    "nombre": "JUAN DIAZ VENTURA",
+    "lote": "22049",
+    "barrio": "1ER. GIR ACAY"
+  },
+  {
+    "id": 715,
+    "nombre": "MEDARDO PEREZ VENTURA",
+    "lote": "22049",
+    "barrio": "1ER. GIR ACAY"
+  },
+  {
+    "id": 716,
+    "nombre": "MEDARDO PEREZ VENTURA",
+    "lote": "22050",
+    "barrio": "1ER. GIR ACAY"
+  },
+  {
+    "id": 717,
+    "nombre": "SEBERIANO DIAZ VENTURA",
+    "lote": "22051",
+    "barrio": "1ER. GIR ACAY"
+  },
+  {
+    "id": 718,
+    "nombre": "VICENTE VIVEROS DIAZ",
+    "lote": "22052",
+    "barrio": "1ER. GIR ACAY"
+  },
+  {
+    "id": 719,
+    "nombre": "GUMECINDO RAMIREZ DIAZ",
+    "lote": "22053",
+    "barrio": "1ER. GIR ACAY"
+  },
+  {
+    "id": 720,
+    "nombre": "HILARION VENTURA MARTINEZ",
+    "lote": "22054",
+    "barrio": "1ER. GIR ACAY"
+  },
+  {
+    "id": 721,
+    "nombre": "TOMAS PEREZ VENTURA",
+    "lote": "22055",
+    "barrio": "1ER. GIR ACAY"
+  },
+  {
+    "id": 722,
+    "nombre": "SIMON LORENZO BERNAL",
+    "lote": "22056",
+    "barrio": "1ER. GIR ACAY"
+  },
+  {
+    "id": 723,
+    "nombre": "TOMAS CRUZ DIAZ",
+    "lote": "22057",
+    "barrio": "1ER. GIR ACAY"
+  },
+  {
+    "id": 724,
+    "nombre": "ERASMO DIAZ JIMENEZ",
+    "lote": "22058",
+    "barrio": "1ER. GIR ACAY"
+  },
+  {
+    "id": 725,
+    "nombre": "PARCELA ESCOLAR STGO ACAYUTLAN",
+    "lote": "22059",
+    "barrio": "1ER. GIR ACAY"
+  },
+  {
+    "id": 726,
+    "nombre": "JOSE OROPEZA DIAZ",
+    "lote": "22060",
+    "barrio": "1ER. GIR ACAY"
+  },
+  {
+    "id": 727,
+    "nombre": "PANFILO JIMENEZ CRUZ",
+    "lote": "22061",
+    "barrio": "1ER. GIR ACAY"
+  },
+  {
+    "id": 728,
+    "nombre": "FAUSTINO MARTINEZ ESTRADA",
+    "lote": "22063",
+    "barrio": "1ER. GIR ACAY"
+  },
+  {
+    "id": 729,
+    "nombre": "GREGORIO MOTA SANTIAGO",
+    "lote": "22064",
+    "barrio": "PTE. QUEBRADO"
+  },
+  {
+    "id": 730,
+    "nombre": "JOSE ROJO JIMENEZ",
+    "lote": "22064",
+    "barrio": "PTE. QUEBRADO"
+  },
+  {
+    "id": 731,
+    "nombre": "CATARINO CRUZ JIMENEZ",
+    "lote": "22065",
+    "barrio": "PTE. QUEBRADO"
+  },
+  {
+    "id": 732,
+    "nombre": "MAGDALENO ESTRADA RIVAS",
+    "lote": "22068",
+    "barrio": "PTE. QUEBRADO"
+  },
+  {
+    "id": 733,
+    "nombre": "SANTIAGO MOTA AGUILAR",
+    "lote": "22069",
+    "barrio": "PTE. QUEBRADO"
+  },
+  {
+    "id": 734,
+    "nombre": "PORFIRIO ROJO SANCHEZ",
+    "lote": "22070",
+    "barrio": "PTE. QUEBRADO"
+  },
+  {
+    "id": 735,
+    "nombre": "JESUS GARCIA LOPEZ",
+    "lote": "22072",
+    "barrio": "PTE. QUEBRADO"
+  },
+  {
+    "id": 736,
+    "nombre": "VICENTE MOTA GARCIA",
+    "lote": "22073",
+    "barrio": "PTE. QUEBRADO"
+  },
+  {
+    "id": 737,
+    "nombre": "FLORENTINO QUIJANO CRUZ",
+    "lote": "22074",
+    "barrio": ""
+  },
+  {
+    "id": 738,
+    "nombre": "CRESCENCIO AGUILAR CRUZ",
+    "lote": "22075",
+    "barrio": "PTE. QUEBRADO"
+  },
+  {
+    "id": 739,
+    "nombre": "NATALIO ROJO JIMENEZ",
+    "lote": "22077",
+    "barrio": "PTE. QUEBRADO"
+  },
+  {
+    "id": 740,
+    "nombre": "JOAQUIN ROJO JIMENEZ",
+    "lote": "22078",
+    "barrio": "PTE. QUEBRADO"
+  },
+  {
+    "id": 741,
+    "nombre": "CARLOS CRUZ GARCIA",
+    "lote": "22079",
+    "barrio": "PTE. QUEBRADO"
+  },
+  {
+    "id": 742,
+    "nombre": "CECILIO DOMINGUEZ GARCIA",
+    "lote": "22080",
+    "barrio": "PTE. QUEBRADO"
+  },
+  {
+    "id": 743,
+    "nombre": "LEOBARDO GARCIA MARTINEZ",
+    "lote": "22081",
+    "barrio": "PTE. QUEBRADO"
+  },
+  {
+    "id": 744,
+    "nombre": "PABLO QUIJANO PEREZ",
+    "lote": "22082",
+    "barrio": "PTE. QUEBRADO"
+  },
+  {
+    "id": 745,
+    "nombre": "EDUARDO HERNANDEZ GARCIA",
+    "lote": "22083",
+    "barrio": "PTE. QUEBRADO"
+  },
+  {
+    "id": 746,
+    "nombre": "TORIBIO ORTIZ HERNANDEZ",
+    "lote": "22084",
+    "barrio": "PTE. QUEBRADO"
+  },
+  {
+    "id": 747,
+    "nombre": "JOSE ORTIZ ANGELES",
+    "lote": "22085",
+    "barrio": "PTE. QUEBRADO"
+  },
+  {
+    "id": 748,
+    "nombre": "DOMINGO HERNANDEZ GARCIA",
+    "lote": "22086",
+    "barrio": "PTE. QUEBRADO"
+  },
+  {
+    "id": 749,
+    "nombre": "AMADO QUIJANO MARTINEZ",
+    "lote": "22087",
+    "barrio": "PTE. QUEBRADO"
+  },
+  {
+    "id": 750,
+    "nombre": "FRANCISCO ESTRADA TOVAR",
+    "lote": "22088",
+    "barrio": "PTE. QUEBRADO"
+  },
+  {
+    "id": 751,
+    "nombre": "DELFINO MOTA VALDEZ",
+    "lote": "22089",
+    "barrio": "PTE. QUEBRADO"
+  },
+  {
+    "id": 752,
+    "nombre": "FRANCISCO ORTIZ PEREZ",
+    "lote": "22090",
+    "barrio": "PTE. QUEBRADO"
+  },
+  {
+    "id": 753,
+    "nombre": "FERNANDO ORTIZ OROPEZA",
+    "lote": "22091",
+    "barrio": "PTE. QUEBRADO"
+  },
+  {
+    "id": 754,
+    "nombre": "FRANCISCO LUGO CONTRERAS",
+    "lote": "22092",
+    "barrio": "PTE. QUEBRADO"
+  },
+  {
+    "id": 755,
+    "nombre": "FRANCISCO LUGO CONTRERAS",
+    "lote": "22093",
+    "barrio": "PTE. QUEBRADO"
+  },
+  {
+    "id": 756,
+    "nombre": "MANUEL LUGO GARCIA",
+    "lote": "22093",
+    "barrio": "PTE. QUEBRADO"
+  },
+  {
+    "id": 757,
+    "nombre": "GUADALUPE VALDEZ ESCOBAR",
+    "lote": "22094",
+    "barrio": "PTE. QUEBRADO"
+  },
+  {
+    "id": 758,
+    "nombre": "JUAN PEREZ QUIJANO",
+    "lote": "22095",
+    "barrio": "1er G PTE QUE"
+  },
+  {
+    "id": 759,
+    "nombre": "MANUEL LUGO GARCIA",
+    "lote": "22096",
+    "barrio": ""
+  },
+  {
+    "id": 760,
+    "nombre": "FRANCISCO DOMINGUEZ GARCIA",
+    "lote": "22097",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 761,
+    "nombre": "PABLO ANTONIO VALDEZ CORNEJO",
+    "lote": "22098",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 762,
+    "nombre": "ISMAEL ROJO OROPEZA",
+    "lote": "22099",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 763,
+    "nombre": "SIMON QUINTANAR GONZALEZ",
+    "lote": "22100",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 764,
+    "nombre": "CRESCENCIO AGUILAR CRUZ",
+    "lote": "22101",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 765,
+    "nombre": "ANDRES SIMON OROPEZA",
+    "lote": "22102",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 766,
+    "nombre": "CELERINO ANGELES HERNANDEZ",
+    "lote": "22103",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 767,
+    "nombre": "FILOGONIO GARCIA ESTRADA",
+    "lote": "22104",
+    "barrio": ""
+  },
+  {
+    "id": 768,
+    "nombre": "GABRIEL ROJO SANCHEZ",
+    "lote": "22106",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 769,
+    "nombre": "AURELIO SANTIAGO OROPEZA",
+    "lote": "22107",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 770,
+    "nombre": "BENITO AGUILAR SANTIAGO",
+    "lote": "22108",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 771,
+    "nombre": "ALVARO QUIJANO SERRANO",
+    "lote": "22110",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 772,
+    "nombre": "JOSE MARTINEZ CRUZ",
+    "lote": "22111",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 773,
+    "nombre": "GILBERTO SANTIAGO PEREZ",
+    "lote": "22113",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 774,
+    "nombre": "CIPRIANO AGUILAR QUIJANO",
+    "lote": "22115",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 775,
+    "nombre": "ANTONIA OROPEZA ANGELES",
+    "lote": "22116",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 776,
+    "nombre": "ANDRES MOTA CERVANTES",
+    "lote": "22117",
+    "barrio": ""
+  },
+  {
+    "id": 777,
+    "nombre": "MARIA ANGELES ROJO",
+    "lote": "22118",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 778,
+    "nombre": "LAZARO ORTIZ CRUZ",
+    "lote": "22119",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 779,
+    "nombre": "FAUSTINO CERVANTES ANGELES",
+    "lote": "22120",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 780,
+    "nombre": "PRIMO QUIJANO HERNANDEZ",
+    "lote": "22121",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 781,
+    "nombre": "MIGUEL GARCIA SALAZAR",
+    "lote": "22122",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 782,
+    "nombre": "BARTOLO QUIJANO ORTIZ",
+    "lote": "22123",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 783,
+    "nombre": "MARIO ANGELES SALVADOR",
+    "lote": "22124",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 784,
+    "nombre": "FRANCISCO LUGO PIZAÑA",
+    "lote": "22125",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 785,
+    "nombre": "PASCUAL GARCIA REYES",
+    "lote": "22126",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 786,
+    "nombre": "TEODOMIRO GARCIA CORNEJO",
+    "lote": "22127",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 787,
+    "nombre": "JOSE REYES SANTIAGO",
+    "lote": "22128",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 788,
+    "nombre": "HILARIO ORTIZ AGUILAR",
+    "lote": "22129",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 789,
+    "nombre": "BRAULIO CRUZ ANGELES",
+    "lote": "22130",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 790,
+    "nombre": "FLORENTINO PIZAÑA CRUZ",
+    "lote": "22131",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 791,
+    "nombre": "JESUS ANGELES GARCIA",
+    "lote": "22132",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 792,
+    "nombre": "BENITO AGUILAR SANTIAGO",
+    "lote": "22133",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 793,
+    "nombre": "ANTONIA PEREZ LUGO",
+    "lote": "22134",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 794,
+    "nombre": "TOMAS MOTA SALVADOR",
+    "lote": "22135",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 795,
+    "nombre": "MARGARITA CRUZ DIAZ",
+    "lote": "22136",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 796,
+    "nombre": "LEONIDES PEREZ CRUZ",
+    "lote": "22137",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 797,
+    "nombre": "JOSE LUIS PEREZ PIZAÑA",
+    "lote": "22138",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 798,
+    "nombre": "DECIDERIO PEREZ CORONA",
+    "lote": "22139",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 799,
+    "nombre": "RAMON SIMON REYES",
+    "lote": "22140",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 800,
+    "nombre": "JULIO CRUZ ANGELES",
+    "lote": "22141",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 801,
+    "nombre": "ENRIQUE GARCIA CERVANTES",
+    "lote": "22142",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 802,
+    "nombre": "VICENTE HERNANDEZ PEREZ",
+    "lote": "22143",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 803,
+    "nombre": "MARIO ALBERTO MOTA AGUILAR",
+    "lote": "22144",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 804,
+    "nombre": "ANGEL SANCHEZ GOMEZ",
+    "lote": "22145",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 805,
+    "nombre": "ANGEL CERVANTES GARCIA",
+    "lote": "22146",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 806,
+    "nombre": "JOSE SANTIAGO ROJO",
+    "lote": "22147",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 807,
+    "nombre": "FIDENCIO ANGELES MOTA",
+    "lote": "22148",
+    "barrio": "2o. G PTE QUE"
+  },
+  {
+    "id": 808,
+    "nombre": "ROSENDA VALDEZ PIZAÑA",
+    "lote": "22149",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 809,
+    "nombre": "RAMON CRUZ GARRIDO",
+    "lote": "22150",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 810,
+    "nombre": "JACINTO LUGO GARCIA",
+    "lote": "22151",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 811,
+    "nombre": "MELITON SANTIAGO HERNANDEZ",
+    "lote": "22152",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 812,
+    "nombre": "BENIGNO QUIJANO CRUZ",
+    "lote": "22153",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 813,
+    "nombre": "ESTEFANA ALVARADO OROPEZA",
+    "lote": "22154",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 814,
+    "nombre": "FELIPE OROPEZA ZUÑIGA",
+    "lote": "22155",
+    "barrio": "1 G. ACAY PAR."
+  },
+  {
+    "id": 815,
+    "nombre": "EDUWIGES CRUZ DIAZ",
+    "lote": "22159",
+    "barrio": "1 G. ACAY PAR."
+  },
+  {
+    "id": 816,
+    "nombre": "SANTIAGO DIAZ JIMENEZ",
+    "lote": "22160",
+    "barrio": "1 G. ACAY PAR."
+  },
+  {
+    "id": 817,
+    "nombre": "MARIA OROPEZA ZUÑIGA",
+    "lote": "22161",
+    "barrio": "1 G. ACAY PAR."
+  },
+  {
+    "id": 818,
+    "nombre": "JOSE CERVANTES DIAZ",
+    "lote": "22162",
+    "barrio": "1 G. ACAY PAR."
+  },
+  {
+    "id": 819,
+    "nombre": "JUAN PABLO PIZAÑA SANTIAGO",
+    "lote": "22163",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 820,
+    "nombre": "ENDELISA GONZALEZ CRUZ",
+    "lote": "22164",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 821,
+    "nombre": "GABRIEL PEREZ SANCHEZ",
+    "lote": "22165",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 822,
+    "nombre": "AMBROCIO MOTA SALVADOR",
+    "lote": "22166",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 823,
+    "nombre": "IGNACIO MOTA ANGELES",
+    "lote": "22167",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 824,
+    "nombre": "SILVESTRE REYES GONZALEZ",
+    "lote": "22168",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 825,
+    "nombre": "ERASMO RAZIEL LUGO GARCIA",
+    "lote": "22170",
+    "barrio": "PTE. QUEBRADO"
+  },
+  {
+    "id": 826,
+    "nombre": "JULIO SANCHEZ ANGELES",
+    "lote": "22171",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 827,
+    "nombre": "GRACIANO OROPEZA SANTIAGO",
+    "lote": "22172",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 828,
+    "nombre": "ALVARO GONZALEZ PEREZ",
+    "lote": "22173",
+    "barrio": "PTE. QUEBRADO"
+  },
+  {
+    "id": 829,
+    "nombre": "FRANCISCO CRUZ CRUZ",
+    "lote": "22174",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 830,
+    "nombre": "NATALIO ROJO JIMENEZ",
+    "lote": "22175",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 831,
+    "nombre": "FRANCISCO SANTIAGO MOTA",
+    "lote": "22176",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 832,
+    "nombre": "FRANCISCO MOTA SALVADOR",
+    "lote": "22177",
+    "barrio": "PTE. QUEBRADO"
+  },
+  {
+    "id": 833,
+    "nombre": "VICTORINO CUELLAR SANTIAGO",
+    "lote": "22178",
+    "barrio": "PTE. QUEBRADO"
+  },
+  {
+    "id": 834,
+    "nombre": "ISIDRA REYES ESTRADA",
+    "lote": "22179",
+    "barrio": "PTE. QUEBRADO"
+  },
+  {
+    "id": 835,
+    "nombre": "MARCELINO CRUZ BARRERA",
+    "lote": "22180",
+    "barrio": "2o. GIRON P"
+  },
+  {
+    "id": 836,
+    "nombre": "FRANCISCO GARCIA CONTRERAS",
+    "lote": "22181",
+    "barrio": "2o. GIRON P"
+  },
+  {
+    "id": 837,
+    "nombre": "ENRIQUETA CRUZ SANTIAGO",
+    "lote": "22182",
+    "barrio": "2o. GIRON P"
+  },
+  {
+    "id": 838,
+    "nombre": "FIDENCIO MARTINEZ MOTA",
+    "lote": "22183",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 839,
+    "nombre": "FAUSTO SANTIAGO HERNANDEZ",
+    "lote": "22184",
+    "barrio": "2o. GIRON P"
+  },
+  {
+    "id": 840,
+    "nombre": "FLORENTINO SANTIAGO GONZALEZ",
+    "lote": "22185",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 841,
+    "nombre": "GUILLERMO BARRERA CRUZ",
+    "lote": "22186",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 842,
+    "nombre": "RAFAEL GONZALEZ PEREZ",
+    "lote": "22187",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 843,
+    "nombre": "CIPRIANO AGUILAR QUIJANO",
+    "lote": "22188",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 844,
+    "nombre": "SIMON QUINTANAR GONZALEZ",
+    "lote": "22189",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 845,
+    "nombre": "PRIMO CONTRERAS SALVADOR",
+    "lote": "22190",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 846,
+    "nombre": "ELISEO GARCIA SANCHEZ",
+    "lote": "22191",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 847,
+    "nombre": "GUILLERMO SANTIAGO MARTINEZ",
+    "lote": "22192",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 848,
+    "nombre": "LEOBARDO MOTA OROPEZA",
+    "lote": "22194",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 849,
+    "nombre": "CANDIDO PEREZ ESTRADA",
+    "lote": "22195",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 850,
+    "nombre": "JULIO VALDEZ ALFARO",
+    "lote": "22196",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 851,
+    "nombre": "JULIA ESCAMILLA GARCIA",
+    "lote": "22197",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 852,
+    "nombre": "RAFAEL SALVADOR CRUZ",
+    "lote": "22198",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 853,
+    "nombre": "LUCIO REYES QUIJANO",
+    "lote": "22199",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 854,
+    "nombre": "PONCIANO CERVANTES GARCIA",
+    "lote": "22200",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 855,
+    "nombre": "VICENTE OROPEZA SALVADOR",
+    "lote": "22201",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 856,
+    "nombre": "CARLOS MENDOZA VALDEZ",
+    "lote": "22202",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 857,
+    "nombre": "ZENON GONZALEZ PEREZ",
+    "lote": "22203",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 858,
+    "nombre": "MARIA SANTIAGO ESTRADA",
+    "lote": "22205",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 859,
+    "nombre": "VICENTE MOTA ANGELES",
+    "lote": "22206",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 860,
+    "nombre": "JUANA MOTA ANGELES",
+    "lote": "22207",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 861,
+    "nombre": "RAMON SANCHEZ GOMEZ",
+    "lote": "22208",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 862,
+    "nombre": "GABRIEL PEREZ SANCHEZ",
+    "lote": "22209",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 863,
+    "nombre": "NATALIO ROJO JIMENEZ",
+    "lote": "22210",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 864,
+    "nombre": "NATALIA ORTIZ PORRAS",
+    "lote": "22211",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 865,
+    "nombre": "GUILLERMO ROJO ANGELES",
+    "lote": "22212",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 866,
+    "nombre": "LUIS PEREZ ESTRADA",
+    "lote": "22213",
+    "barrio": "C. NVA"
+  },
+  {
+    "id": 867,
+    "nombre": "ISMAEL MARTIN RAMIREZ MONROY",
+    "lote": "22214",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 868,
+    "nombre": "FERMINA RIVAS CRUZ",
+    "lote": "22215",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 869,
+    "nombre": "ANTONIO CERVANTES ANGELES    .85",
+    "lote": "22216",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 870,
+    "nombre": "CELERINA CRUZ SANTIAGO",
+    "lote": "22217",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 871,
+    "nombre": "CANDIDA PIZAÑA GARCIA",
+    "lote": "22218",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 872,
+    "nombre": "MARTIN SIMON ANGELES",
+    "lote": "22219",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 873,
+    "nombre": "GUMARO SANCHEZ CUELLAR",
+    "lote": "22220",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 874,
+    "nombre": "ANTONIO ORTIZ SIMON",
+    "lote": "22221",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 875,
+    "nombre": "JULIO SANTIAGO GOMEZ",
+    "lote": "22222",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 876,
+    "nombre": "APOLONIA CERVANTES CORONA",
+    "lote": "22223",
+    "barrio": "PISILLO"
+  },
+  {
+    "id": 877,
+    "nombre": "EMILIO ANGELES HERNANDEZ",
+    "lote": "22224",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 878,
+    "nombre": "JUAN ORTIZ DOMINGUEZ",
+    "lote": "22225",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 879,
+    "nombre": "MARGARITO QUIJANO MARTINEZ",
+    "lote": "22226",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 880,
+    "nombre": "LUIS AGUILAR QUIJANO",
+    "lote": "22227",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 881,
+    "nombre": "ASCENCION ESCOBAR SANCHEZ",
+    "lote": "22229",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 882,
+    "nombre": "JULIO RIOS GARCIA",
+    "lote": "22230",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 883,
+    "nombre": "NATALIO ANGELES CRUZ",
+    "lote": "22231",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 884,
+    "nombre": "WENCESLAO PEREZ JUAREZ",
+    "lote": "22232",
+    "barrio": "PISILLO"
+  },
+  {
+    "id": 885,
+    "nombre": "CATARINO CERVANTES GARCIA",
+    "lote": "22233",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 886,
+    "nombre": "VIDAL ANGELES OROPEZA",
+    "lote": "22234",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 887,
+    "nombre": "ABUNDIO SANTIAGO MOTA",
+    "lote": "22235",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 888,
+    "nombre": "JOSE QUIJANO CRUZ",
+    "lote": "22236",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 889,
+    "nombre": "SERGIO ANGELES CERVANTES",
+    "lote": "22237",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 890,
+    "nombre": "TEODULO PEREZ CRUZ",
+    "lote": "22238",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 891,
+    "nombre": "IGNACIO CERVANTES SANTIAGO",
+    "lote": "22239",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 892,
+    "nombre": "DIONICIO DORANTES PORRAS",
+    "lote": "22240",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 893,
+    "nombre": "GUSTAVO ANGELES PEREZ",
+    "lote": "22241",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 894,
+    "nombre": "GUILLERMO LUGO PIZAÑA",
+    "lote": "22242",
+    "barrio": "PISILLO"
+  },
+  {
+    "id": 895,
+    "nombre": "MARIA SALVADOR LOPEZ",
+    "lote": "22243",
+    "barrio": "BORDO BCO"
+  },
+  {
+    "id": 896,
+    "nombre": "ENRIQUE AGUILAR CRUZ",
+    "lote": "22244",
+    "barrio": "BORDO BCO"
+  },
+  {
+    "id": 897,
+    "nombre": "FILOGONIO MARTINEZ MOTA",
+    "lote": "22245",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 898,
+    "nombre": "HERMELINDA RESENDIZ RAMIREZ",
+    "lote": "22246",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 899,
+    "nombre": "FERNANDO GARCIA ESTRADA",
+    "lote": "22247",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 900,
+    "nombre": "ROSALIO REYES ESTRADA",
+    "lote": "22248",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 901,
+    "nombre": "ALFREDO DOMINGUEZ MARTINEZ",
+    "lote": "22249",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 902,
+    "nombre": "GERMAN MARTINEZ GARCIA",
+    "lote": "22250",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 903,
+    "nombre": "JUAN LOPEZ GARCIA",
+    "lote": "22251",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 904,
+    "nombre": "CRISTOBAL PEREZ RAMIREZ",
+    "lote": "22252",
+    "barrio": "BORDO BCO"
+  },
+  {
+    "id": 905,
+    "nombre": "NARCISO AGUILAR SIMON",
+    "lote": "22253",
+    "barrio": "BORDO BCO"
+  },
+  {
+    "id": 906,
+    "nombre": "ELIZABETH HERNANDEZ SIMON",
+    "lote": "22254",
+    "barrio": "BORDO BCO"
+  },
+  {
+    "id": 907,
+    "nombre": "PABLO PEREZ CRUZ",
+    "lote": "22255",
+    "barrio": "BORDO BCO"
+  },
+  {
+    "id": 908,
+    "nombre": "IGNACIO PEREZ BARRERA",
+    "lote": "22256",
+    "barrio": "BORDO BCO"
+  },
+  {
+    "id": 909,
+    "nombre": "PATRICIO URIEL LUGO ANGELES",
+    "lote": "22257",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 910,
+    "nombre": "PRIMO SALVADOR RIOS",
+    "lote": "22258",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 911,
+    "nombre": "ROSA SALVADOR LUGO",
+    "lote": "22258",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 912,
+    "nombre": "JOSE CONTRERAS SALVADOR",
+    "lote": "22259",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 913,
+    "nombre": "CANDIDO LOPEZ RAMIREZ",
+    "lote": "22261",
+    "barrio": "VARIADO"
+  },
+  {
+    "id": 914,
+    "nombre": "ELADIO GARCIA MOTA",
+    "lote": "22261",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 915,
+    "nombre": "HILARION VALDEZ SARABIA",
+    "lote": "22262",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 916,
+    "nombre": "AVELINA VALDEZ SANCHEZ",
+    "lote": "22263",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 917,
+    "nombre": "GENARO CORNEJO CORNEJO",
+    "lote": "22264",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 918,
+    "nombre": "ALFONSO LUGO PIZAÑA",
+    "lote": "22265",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 919,
+    "nombre": "ADOLFO GARCIA ESCOBAR",
+    "lote": "22295",
+    "barrio": "VARIADO"
+  },
+  {
+    "id": 920,
+    "nombre": "JOSE MIGUEL PEREZ",
+    "lote": "22913",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 921,
+    "nombre": "JOSE CRUZ ALVAREZ",
+    "lote": "22914",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 922,
+    "nombre": "OCTAVIANO VIVEROS MENDOZA",
+    "lote": "22915",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 923,
+    "nombre": "EPIGMENIO BERNAL CRUZ",
+    "lote": "22917",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 924,
+    "nombre": "AURELIO CRUZ DIAZ",
+    "lote": "22918",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 925,
+    "nombre": "FORTUNATO DIAZ LORENZO",
+    "lote": "22921",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 926,
+    "nombre": "PRISCILIANO LORENZO MARTINEZ",
+    "lote": "22922",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 927,
+    "nombre": "BACILIO DIAZ VENTURA",
+    "lote": "22923",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 928,
+    "nombre": "ALBINO ZUÑIGA JIMENEZ",
+    "lote": "22924",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 929,
+    "nombre": "FRANCISCO DIAZ MARTINEZ",
+    "lote": "22925",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 930,
+    "nombre": "SANTIAGO DIAZ PIZAÑA",
+    "lote": "22926",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 931,
+    "nombre": "MAGDALENO DIAZ OROPEZA",
+    "lote": "22928",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 932,
+    "nombre": "HERMENEGILDO DIAZ CRUZ",
+    "lote": "22929",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 933,
+    "nombre": "GIL CRUZ BERNAL",
+    "lote": "22930",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 934,
+    "nombre": "MARTIN ANGELES VENTURA",
+    "lote": "22931",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 935,
+    "nombre": "MAXIMINO DIAZ LORENZO",
+    "lote": "22932",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 936,
+    "nombre": "FRANCISCO JIMENEZ CRUZ",
+    "lote": "22933",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 937,
+    "nombre": "MARTIN ANGELES VENTURA",
+    "lote": "22934",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 938,
+    "nombre": "MARCELINO JIMENEZ CRUZ",
+    "lote": "22935",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 939,
+    "nombre": "CONCEPCION CRUZ DIAZ",
+    "lote": "22936",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 940,
+    "nombre": "ROMUALDO CRUZ CRUZ",
+    "lote": "22937",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 941,
+    "nombre": "ESPERANZA DIAZ VDA. LORENZ",
+    "lote": "22938",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 942,
+    "nombre": "CECILIO CRUZ DIAZ",
+    "lote": "22939",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 943,
+    "nombre": "CIRILO DIAZ BARRERA",
+    "lote": "22940",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 944,
+    "nombre": "VICENTE JIMENEZ DIAZ",
+    "lote": "22941",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 945,
+    "nombre": "ANASTACIO DIAZ VENTURA",
+    "lote": "22943",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 946,
+    "nombre": "TERESO ESTRADA RIOS",
+    "lote": "22944",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 947,
+    "nombre": "CIRILO ZUÑIGA JIMENEZ",
+    "lote": "22945",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 948,
+    "nombre": "EFREN RAMIREZ SARABIA",
+    "lote": "22945",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 949,
+    "nombre": "FLORENTINO VIVEROS MIGUEL",
+    "lote": "22945",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 950,
+    "nombre": "JOSE DIAZ ANGELES",
+    "lote": "22946",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 951,
+    "nombre": "BARTOLO ZUÑIGA BERNAL",
+    "lote": "22947",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 952,
+    "nombre": "FLORENCIA HERNANDEZ SARABIA",
+    "lote": "22948",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 953,
+    "nombre": "REYES DIAZ VENTURA",
+    "lote": "22949",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 954,
+    "nombre": "RUPERTO DIAZ LORENZO",
+    "lote": "22950",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 955,
+    "nombre": "PEDRO CRUZ LORENZO",
+    "lote": "22951",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 956,
+    "nombre": "ROMAN DIAZ OROPEZA",
+    "lote": "22954",
+    "barrio": "1 G. ACAY PAR."
+  },
+  {
+    "id": 957,
+    "nombre": "DEMETRIO DIAZ FALCON",
+    "lote": "22955",
+    "barrio": "1 G. ACAY PAR."
+  },
+  {
+    "id": 958,
+    "nombre": "TEODORA CRUZ DIAZ",
+    "lote": "22956",
+    "barrio": "1 G. ACAY PAR."
+  },
+  {
+    "id": 959,
+    "nombre": "OTILIO ZUÑIGA JIMENEZ",
+    "lote": "22957",
+    "barrio": "1 G. ACAY PAR."
+  },
+  {
+    "id": 960,
+    "nombre": "CARLOS DIAZ VENTURA",
+    "lote": "22958",
+    "barrio": "1 G. ACAY PAR."
+  },
+  {
+    "id": 961,
+    "nombre": "JOSE DIAZ MIGUEL",
+    "lote": "22959",
+    "barrio": "1 G. ACAY PAR."
+  },
+  {
+    "id": 962,
+    "nombre": "JUANA JIMENEZ DIAZ",
+    "lote": "22961",
+    "barrio": "1 G. ACAY PAR."
+  },
+  {
+    "id": 963,
+    "nombre": "MARTIN RAMIREZ GUTIERREZ",
+    "lote": "22962",
+    "barrio": "1 G. ACAY PAR."
+  },
+  {
+    "id": 964,
+    "nombre": "ELEUTERIO VIVEROS MENDOZA",
+    "lote": "22963",
+    "barrio": "1 G. ACAY PAR."
+  },
+  {
+    "id": 965,
+    "nombre": "EPIFANIO ESCOBAR DIAZ",
+    "lote": "22964",
+    "barrio": "1 G. ACAY PAR."
+  },
+  {
+    "id": 966,
+    "nombre": "SEVERIANO BALTAZAR CRUZ",
+    "lote": "22965",
+    "barrio": "1 G. ACAY PAR."
+  },
+  {
+    "id": 967,
+    "nombre": "VALENTINA CRUZ OLGUIN",
+    "lote": "22966",
+    "barrio": "1 G. ACAY PAR."
+  },
+  {
+    "id": 968,
+    "nombre": "AGAPITO DIAZ OROPEZA",
+    "lote": "22967",
+    "barrio": "1 G. ACAY PAR."
+  },
+  {
+    "id": 969,
+    "nombre": "MACARIO OROPEZA DIAZ",
+    "lote": "22968",
+    "barrio": "1 G. ACAY PAR."
+  },
+  {
+    "id": 970,
+    "nombre": "ABEL ANGELES CONTRERAS",
+    "lote": "23123",
+    "barrio": "CHARQUITO"
+  },
+  {
+    "id": 971,
+    "nombre": "ABEL ANGELES ROJO",
+    "lote": "23124",
+    "barrio": "CHARQUITO"
+  },
+  {
+    "id": 972,
+    "nombre": "ANGEL SANCHEZ GOMEZ",
+    "lote": "23125",
+    "barrio": "CHARQUITO"
+  },
+  {
+    "id": 973,
+    "nombre": "LEOPOLDO VAZQUEZ MONTOYA",
+    "lote": "23126",
+    "barrio": "CHARQUITO"
+  },
+  {
+    "id": 974,
+    "nombre": "AGUSTIN SANTIAGO MOTA",
+    "lote": "23127",
+    "barrio": "CHARQUITO"
+  },
+  {
+    "id": 975,
+    "nombre": "JOSE REYES CRUZ",
+    "lote": "23128",
+    "barrio": "CHARQUITO"
+  },
+  {
+    "id": 976,
+    "nombre": "CIRILO ACEVEDO MOTA",
+    "lote": "23129",
+    "barrio": "CHARQUITO"
+  },
+  {
+    "id": 977,
+    "nombre": "BARTOLO RIVAS PEREZ",
+    "lote": "23130",
+    "barrio": "CHARQUITO"
+  },
+  {
+    "id": 978,
+    "nombre": "AGAPITO ORTIZ HERNANDEZ",
+    "lote": "23131",
+    "barrio": "CHARQUITO"
+  },
+  {
+    "id": 979,
+    "nombre": "EUFROCINO SANTIAGO OROPEZA",
+    "lote": "23132",
+    "barrio": "CHARQUITO"
+  },
+  {
+    "id": 980,
+    "nombre": "J. GUADALUPE AGUILAR ROJO",
+    "lote": "23133",
+    "barrio": "2o. GIRON P"
+  },
+  {
+    "id": 981,
+    "nombre": "AURELIO MOTA FALCON",
+    "lote": "23134",
+    "barrio": "2o. GIRON P"
+  },
+  {
+    "id": 982,
+    "nombre": "CONCEPCION GARCIA ESTRADA",
+    "lote": "23135",
+    "barrio": "CHARQUITO"
+  },
+  {
+    "id": 983,
+    "nombre": "GUMARO SANCHEZ CUELLAR",
+    "lote": "23136",
+    "barrio": "2o. GIRON P"
+  },
+  {
+    "id": 984,
+    "nombre": "MARGARITA SANCHEZ VDA. DE G.",
+    "lote": "23137",
+    "barrio": "2o. GIRON P"
+  },
+  {
+    "id": 985,
+    "nombre": "TITO ANGELES MOTA",
+    "lote": "23138",
+    "barrio": "2o. GIRON P"
+  },
+  {
+    "id": 986,
+    "nombre": "FELIPA AGUILAR QUIJANO",
+    "lote": "23139",
+    "barrio": "2o. GIRON P"
+  },
+  {
+    "id": 987,
+    "nombre": "JUSTINO MOTA ANGELES",
+    "lote": "23140",
+    "barrio": "2o. GIRON P"
+  },
+  {
+    "id": 988,
+    "nombre": "ISMAEL QUIJANO ORTIZ",
+    "lote": "23141",
+    "barrio": "2o. GIRON P"
+  },
+  {
+    "id": 989,
+    "nombre": "MARCO ANTONIO MOTA CRUZ",
+    "lote": "23142",
+    "barrio": "2o. GIRON P"
+  },
+  {
+    "id": 990,
+    "nombre": "J. ISABEL MARTINEZ SANCHEZ",
+    "lote": "23143",
+    "barrio": "2o. GIRON P"
+  },
+  {
+    "id": 991,
+    "nombre": "GUSTAVO ANGELES PEREZ",
+    "lote": "23145",
+    "barrio": "2o. GIRON P"
+  },
+  {
+    "id": 992,
+    "nombre": "CATARINO CRUZ SANTIAGO",
+    "lote": "23146",
+    "barrio": "2o. GIRON P"
+  },
+  {
+    "id": 993,
+    "nombre": "MIGUEL SANTIAGO MARTINEZ",
+    "lote": "23147",
+    "barrio": "2o. GIRON P"
+  },
+  {
+    "id": 994,
+    "nombre": "NICOLAS CERVANTES SANTIAGO",
+    "lote": "23148",
+    "barrio": "2o. GIRON P"
+  },
+  {
+    "id": 995,
+    "nombre": "MATIANA CONTRERAS AGUILAR",
+    "lote": "23149",
+    "barrio": "2o. GIRON P"
+  },
+  {
+    "id": 996,
+    "nombre": "LAZARO AGUILAR ROJO",
+    "lote": "23150",
+    "barrio": "2o. GIRON P"
+  },
+  {
+    "id": 997,
+    "nombre": "AGUSTIN CRUZ GARCIA",
+    "lote": "23151",
+    "barrio": "2o. GIRON P"
+  },
+  {
+    "id": 998,
+    "nombre": "FAUSTO VAZQUEZ BARRERA",
+    "lote": "23152",
+    "barrio": "2o. GIRON P"
+  },
+  {
+    "id": 999,
+    "nombre": "AVELINO GONZALEZ OROPEZA",
+    "lote": "23153",
+    "barrio": "2o. GIRON P"
+  },
+  {
+    "id": 1000,
+    "nombre": "LEOPOLDO QUIJANO ESTRADA",
+    "lote": "23154",
+    "barrio": "2o. GIRON P"
+  },
+  {
+    "id": 1001,
+    "nombre": "ANGELICA GARCIA SANCHEZ",
+    "lote": "23155",
+    "barrio": "2o. GIRON P"
+  },
+  {
+    "id": 1002,
+    "nombre": "CELESTINO CERVANTES SANTIAGO",
+    "lote": "23156",
+    "barrio": "2o. GIRON P"
+  },
+  {
+    "id": 1003,
+    "nombre": "MERCED QUIJANO GARCIA",
+    "lote": "23157",
+    "barrio": "2o. GIRON P"
+  },
+  {
+    "id": 1004,
+    "nombre": "FRANCISCO CRUZ SANTIAGO",
+    "lote": "23158",
+    "barrio": "1er. GIRON"
+  },
+  {
+    "id": 1005,
+    "nombre": "CORNELIA RUFINO ALVARADO",
+    "lote": "23159",
+    "barrio": "1er. GIRON"
+  },
+  {
+    "id": 1006,
+    "nombre": "CASIMIRO PEREZ MARTINEZ",
+    "lote": "23160",
+    "barrio": "1er. GIRON"
+  },
+  {
+    "id": 1007,
+    "nombre": "FIDEL ESTRADA LUGO",
+    "lote": "23161",
+    "barrio": "1er. GIRON"
+  },
+  {
+    "id": 1008,
+    "nombre": "EUSTOLIO ORTIZ PEREZ",
+    "lote": "23162",
+    "barrio": "1er. GIRON"
+  },
+  {
+    "id": 1009,
+    "nombre": "REYNA BARRERA CRUZ",
+    "lote": "23163",
+    "barrio": "1er. GIRON"
+  },
+  {
+    "id": 1010,
+    "nombre": "J. ISABEL ROJO SANTIAGO",
+    "lote": "23164",
+    "barrio": "1er. GIRON"
+  },
+  {
+    "id": 1011,
+    "nombre": "MARCOS SANTIAGO ANGELES",
+    "lote": "23165",
+    "barrio": "1er. GIRON"
+  },
+  {
+    "id": 1012,
+    "nombre": "FRANCISCO FLORES GARCIA",
+    "lote": "23166",
+    "barrio": "1er. GIRON"
+  },
+  {
+    "id": 1013,
+    "nombre": "GUMESINDO AGUILAR QUIJANO",
+    "lote": "23167",
+    "barrio": "1er. GIRON"
+  },
+  {
+    "id": 1014,
+    "nombre": "PABLO ORTIZ CORONA",
+    "lote": "23168",
+    "barrio": "1er. GIRON"
+  },
+  {
+    "id": 1015,
+    "nombre": "CEFERINO CONTRERAS GARCIA",
+    "lote": "23169",
+    "barrio": "1er. GIRON"
+  },
+  {
+    "id": 1016,
+    "nombre": "GERONIMO OROPEZA ANGELES",
+    "lote": "23170",
+    "barrio": "1er. GIRON"
+  },
+  {
+    "id": 1017,
+    "nombre": "PEDRO ROJO AGUILAR",
+    "lote": "23171",
+    "barrio": "1er. GIRON"
+  },
+  {
+    "id": 1018,
+    "nombre": "EMILIO MOTA CRUZ",
+    "lote": "23172",
+    "barrio": "1er. GIRON"
+  },
+  {
+    "id": 1019,
+    "nombre": "ROMAN ANGELES RUIZ",
+    "lote": "23173",
+    "barrio": "1er. GIR PARAISO"
+  },
+  {
+    "id": 1020,
+    "nombre": "DOLORES GARCIA LOPEZ",
+    "lote": "23174",
+    "barrio": "1er. GIRON"
+  },
+  {
+    "id": 1021,
+    "nombre": "BENJAMIN AGUILAR ROJO",
+    "lote": "23175",
+    "barrio": "1er. GIRON"
+  },
+  {
+    "id": 1022,
+    "nombre": "TEZONTEPEC PARCELA ESCOLAR",
+    "lote": "23176",
+    "barrio": "1er. GIRON"
+  },
+  {
+    "id": 1023,
+    "nombre": "TEZONTEPEC PARCELA ESCOLAR",
+    "lote": "23177",
+    "barrio": "1er. GIRON"
+  },
+  {
+    "id": 1024,
+    "nombre": "TEZONTEPEC PARCELA ESCOLAR",
+    "lote": "23178",
+    "barrio": "1er. GIRON"
+  },
+  {
+    "id": 1025,
+    "nombre": "RODOLFO PEREZ MENDOZA",
+    "lote": "23179",
+    "barrio": "1er. GIRON"
+  },
+  {
+    "id": 1026,
+    "nombre": "IGNACIO MOTA ANGELES",
+    "lote": "23180",
+    "barrio": "1er. GIRON"
+  },
+  {
+    "id": 1027,
+    "nombre": "IGNACIO MOTA ANGELES",
+    "lote": "23180-1",
+    "barrio": ""
+  },
+  {
+    "id": 1028,
+    "nombre": "LUIS SANTIAGO ROJO",
+    "lote": "23181",
+    "barrio": "1er. GIRON"
+  },
+  {
+    "id": 1029,
+    "nombre": "JUANA MARIA AGUILAR ROJO",
+    "lote": "23182",
+    "barrio": "1er. GIRON"
+  },
+  {
+    "id": 1030,
+    "nombre": "LUCINO SANTIAGO CRUZ",
+    "lote": "23183",
+    "barrio": "1er. GIRON"
+  },
+  {
+    "id": 1031,
+    "nombre": "CRISTINO ANGELES SIMON",
+    "lote": "23184",
+    "barrio": "1er. GIRON"
+  },
+  {
+    "id": 1032,
+    "nombre": "ANTONIO ROJO PEREZ",
+    "lote": "23185",
+    "barrio": "1er. GIRON"
+  },
+  {
+    "id": 1033,
+    "nombre": "JUANA SANTIAGO PEREZ",
+    "lote": "23186",
+    "barrio": "C. CHAMBAS"
+  },
+  {
+    "id": 1034,
+    "nombre": "PEDRO TELLES CRUZ",
+    "lote": "23187",
+    "barrio": "C.CHAMBAS"
+  },
+  {
+    "id": 1035,
+    "nombre": "RAUL AGUILAR ROJO",
+    "lote": "23188",
+    "barrio": "C.CHAMBAS"
+  },
+  {
+    "id": 1036,
+    "nombre": "RAUL AGUILAR ROJO",
+    "lote": "23188-1",
+    "barrio": "C.CHAMBAS"
+  },
+  {
+    "id": 1037,
+    "nombre": "VENANCIO HERNANDEZ SANTIAGO",
+    "lote": "23189",
+    "barrio": "C. CHAMBAS"
+  },
+  {
+    "id": 1038,
+    "nombre": "CLARO BERTIN VALDEZ GONZALEZ",
+    "lote": "23190",
+    "barrio": "C. CHAMBAS"
+  },
+  {
+    "id": 1039,
+    "nombre": "ISIDRO ANGELES PEREZ",
+    "lote": "23191",
+    "barrio": "C. CHAMBAS"
+  },
+  {
+    "id": 1040,
+    "nombre": "FELICIANO VALDEZ DURAN",
+    "lote": "23192",
+    "barrio": "C. CHAMBAS"
+  },
+  {
+    "id": 1041,
+    "nombre": "AGUSTIN GARCIA LOPEZ",
+    "lote": "23193",
+    "barrio": "C. CHAMBAS"
+  },
+  {
+    "id": 1042,
+    "nombre": "JORGE SANCHEZ MOTA",
+    "lote": "23194",
+    "barrio": "C.CHAMBAS"
+  },
+  {
+    "id": 1043,
+    "nombre": "EUSEBIO ROJO SANCHEZ",
+    "lote": "23195",
+    "barrio": "C.CHAMBAS"
+  },
+  {
+    "id": 1044,
+    "nombre": "AURELIO SANTIAGO OROPEZA",
+    "lote": "23196",
+    "barrio": "C. NUEVA"
+  },
+  {
+    "id": 1045,
+    "nombre": "IGNACIO VALDEZ CRUZ",
+    "lote": "23197",
+    "barrio": "C. NUEVA"
+  },
+  {
+    "id": 1046,
+    "nombre": "DESIDERIO AGUILAR QUIJANO",
+    "lote": "23198",
+    "barrio": "C. NUEVA"
+  },
+  {
+    "id": 1047,
+    "nombre": "ANTONIO QUIJANO GARCIA",
+    "lote": "23199",
+    "barrio": "C. NUEVA"
+  },
+  {
+    "id": 1048,
+    "nombre": "JOSE ESTRADA MOTA",
+    "lote": "23200",
+    "barrio": "C. NUEVA"
+  },
+  {
+    "id": 1049,
+    "nombre": "JOSE BARRERA SIMON",
+    "lote": "23201",
+    "barrio": "C. NUEVA"
+  },
+  {
+    "id": 1050,
+    "nombre": "PRIMO HERNANDEZ GONZALEZ",
+    "lote": "23201",
+    "barrio": "C. NUEVA"
+  },
+  {
+    "id": 1051,
+    "nombre": "TOMAS SERRANO GARCIA",
+    "lote": "23202",
+    "barrio": "C. NUEVA"
+  },
+  {
+    "id": 1052,
+    "nombre": "SANTIAGO SALVADOR HERNANDEZ",
+    "lote": "23203",
+    "barrio": "C. NUEVA"
+  },
+  {
+    "id": 1053,
+    "nombre": "FLORENTINO HERNANDEZ SERRANO",
+    "lote": "23204",
+    "barrio": "C. NUEVA"
+  },
+  {
+    "id": 1054,
+    "nombre": "EFREN OROPEZA CRUZ",
+    "lote": "23205",
+    "barrio": "C. NUEVA"
+  },
+  {
+    "id": 1055,
+    "nombre": "NARSISO MOTA SANTIAGO",
+    "lote": "23206",
+    "barrio": "C. NUEVA"
+  },
+  {
+    "id": 1056,
+    "nombre": "ELADIO HERNANDEZ CRUZ",
+    "lote": "23207",
+    "barrio": "C. NUEVA"
+  },
+  {
+    "id": 1057,
+    "nombre": "JULIAN BARCENAS OROPEZA",
+    "lote": "23208",
+    "barrio": "C. NUEVA"
+  },
+  {
+    "id": 1058,
+    "nombre": "AMADO SALVADOR HERNANDEZ",
+    "lote": "23209",
+    "barrio": "C. NUEVA"
+  },
+  {
+    "id": 1059,
+    "nombre": "JOSE GONZALEZ ESTRADA",
+    "lote": "23210",
+    "barrio": "C. NUEVA"
+  },
+  {
+    "id": 1060,
+    "nombre": "MARIA ALVAREZ SALVADOR",
+    "lote": "23211",
+    "barrio": "C. NUEVA"
+  },
+  {
+    "id": 1061,
+    "nombre": "DANIEL CRUZ CRUZ",
+    "lote": "23212",
+    "barrio": "C. CHAMBAS"
+  },
+  {
+    "id": 1062,
+    "nombre": "LEOBARDA ANGELES RUIZ",
+    "lote": "23213",
+    "barrio": "C. CHAMBAS"
+  },
+  {
+    "id": 1063,
+    "nombre": "DESIDERIO ESCOBAR SANCHEZ",
+    "lote": "23214",
+    "barrio": "C. CHAMBAS"
+  },
+  {
+    "id": 1064,
+    "nombre": "EUFEMIO ANGELES PEREZ",
+    "lote": "23215",
+    "barrio": "C. CHAMBAS"
+  },
+  {
+    "id": 1065,
+    "nombre": "JULIO QUIJANO HERNANDEZ",
+    "lote": "23216",
+    "barrio": "C. CHAMBAS"
+  },
+  {
+    "id": 1066,
+    "nombre": "EDGARDO SANCHEZ GARCIA",
+    "lote": "23217",
+    "barrio": "C. CHAMBAS"
+  },
+  {
+    "id": 1067,
+    "nombre": "PEDRO ORTIZ PEREZ",
+    "lote": "23218",
+    "barrio": "C. CHAMBAS"
+  },
+  {
+    "id": 1068,
+    "nombre": "TOMASA ANGELES GARCIA",
+    "lote": "23219",
+    "barrio": "C. CHAMBAS"
+  },
+  {
+    "id": 1069,
+    "nombre": "JULIO HERNANDEZ CRUZ",
+    "lote": "23220",
+    "barrio": "C. CHAMBAS"
+  },
+  {
+    "id": 1070,
+    "nombre": "HERMILO SERRANO ANGELES",
+    "lote": "23221",
+    "barrio": "C. CHAMBAS"
+  },
+  {
+    "id": 1071,
+    "nombre": "CLARA SALVADOR LUGO",
+    "lote": "23222",
+    "barrio": "C. CHAMBAS"
+  },
+  {
+    "id": 1072,
+    "nombre": "CALIXTO AGUILAR GARCIA",
+    "lote": "23223",
+    "barrio": "C. CHAMBAS"
+  },
+  {
+    "id": 1073,
+    "nombre": "GRACIANO CRUZ AGUILAR",
+    "lote": "23225",
+    "barrio": "C. CHAMBAS"
+  },
+  {
+    "id": 1074,
+    "nombre": "MA. CRUZ VAZQUEZ DURAN",
+    "lote": "23226",
+    "barrio": "C. CHAMBAS"
+  },
+  {
+    "id": 1075,
+    "nombre": "CLARA GARCIA SALAZAR",
+    "lote": "23228",
+    "barrio": "C. NVA"
+  },
+  {
+    "id": 1076,
+    "nombre": "ANDRES QUIJANO ROSAS",
+    "lote": "23229",
+    "barrio": "C. NVA"
+  },
+  {
+    "id": 1077,
+    "nombre": "TERESO MARTINEZ CRUZ",
+    "lote": "23230",
+    "barrio": "C. NVA"
+  },
+  {
+    "id": 1078,
+    "nombre": "ANGEL ANGELES CRUZ",
+    "lote": "23231",
+    "barrio": "PISILLO"
+  },
+  {
+    "id": 1079,
+    "nombre": "BENJAMIN AGUILAR GARCIA",
+    "lote": "23232",
+    "barrio": "PISILLO"
+  },
+  {
+    "id": 1080,
+    "nombre": "LORENZO SERRANO OLGUIN",
+    "lote": "23233",
+    "barrio": "PISILLO"
+  },
+  {
+    "id": 1081,
+    "nombre": "CASTULO HERNANDEZ SANCHEZ",
+    "lote": "23234",
+    "barrio": "PISILLO"
+  },
+  {
+    "id": 1082,
+    "nombre": "ELEUTERIO SANCHEZ HERNANDEZ",
+    "lote": "23235",
+    "barrio": "PISILLO"
+  },
+  {
+    "id": 1083,
+    "nombre": "FIDEL SERRANO HERNANDEZ",
+    "lote": "23236",
+    "barrio": "PISILLO"
+  },
+  {
+    "id": 1084,
+    "nombre": "ROBERTO GARCIA HERNANDEZ",
+    "lote": "23237",
+    "barrio": "PISILLO"
+  },
+  {
+    "id": 1085,
+    "nombre": "EMILIANO MARTINEZ SERRANO",
+    "lote": "23238",
+    "barrio": "PISILLO"
+  },
+  {
+    "id": 1086,
+    "nombre": "ABRAHAM BARCENAS SERRANO",
+    "lote": "23239",
+    "barrio": ""
+  },
+  {
+    "id": 1087,
+    "nombre": "NATALIO BARCENAS GARCIA",
+    "lote": "23239",
+    "barrio": "PISILLO"
+  },
+  {
+    "id": 1088,
+    "nombre": "LUIS ALBERTO BARCENAS MARTINEZ",
+    "lote": "23239-2",
+    "barrio": ""
+  },
+  {
+    "id": 1089,
+    "nombre": "JOSE BARRERA HERNANDEZ",
+    "lote": "23240",
+    "barrio": "PISILLO"
+  },
+  {
+    "id": 1090,
+    "nombre": "MATEO HERNANDEZ AGUILAR",
+    "lote": "23241",
+    "barrio": "PISILLO"
+  },
+  {
+    "id": 1091,
+    "nombre": "BONIFACIA CERVANTES PEREZ",
+    "lote": "23242",
+    "barrio": "PISILLO"
+  },
+  {
+    "id": 1092,
+    "nombre": "ANDRES GARCIA CUENDIA",
+    "lote": "23243",
+    "barrio": "PISILLO"
+  },
+  {
+    "id": 1093,
+    "nombre": "ANTONIO AGUILAR AGUILAR",
+    "lote": "23244",
+    "barrio": "PISILLO"
+  },
+  {
+    "id": 1094,
+    "nombre": "JULIO SERRANO SALVADOR",
+    "lote": "23245",
+    "barrio": "PISILLO"
+  },
+  {
+    "id": 1095,
+    "nombre": "VICTOR SERRANO GARCIA",
+    "lote": "23246",
+    "barrio": "PISILLO"
+  },
+  {
+    "id": 1096,
+    "nombre": "HERLINDO SERRANO MARTINEZ",
+    "lote": "23247",
+    "barrio": "PISILLO"
+  },
+  {
+    "id": 1097,
+    "nombre": "LUISA SIMON HERNANDEZ",
+    "lote": "23248",
+    "barrio": "PISILLO"
+  },
+  {
+    "id": 1098,
+    "nombre": "PEDRO MOTA AGUILAR",
+    "lote": "23249",
+    "barrio": "PISILLO"
+  },
+  {
+    "id": 1099,
+    "nombre": "GREGORIO SANCHEZ SERRANO",
+    "lote": "23250",
+    "barrio": "PISILLO"
+  },
+  {
+    "id": 1100,
+    "nombre": "ROSA MARIA CRUZ LOPEZ",
+    "lote": "23251",
+    "barrio": "BORDO BCO."
+  },
+  {
+    "id": 1101,
+    "nombre": "MAXIMINO MOTA CRUZ",
+    "lote": "23252",
+    "barrio": "BORDO BDO."
+  },
+  {
+    "id": 1102,
+    "nombre": "GUMECINDO RIOS CONTRERAS",
+    "lote": "23253",
+    "barrio": "BORDO BCO"
+  },
+  {
+    "id": 1103,
+    "nombre": "FILIBERTO ESTRADA AGUILAR",
+    "lote": "23254",
+    "barrio": "PISILLO"
+  },
+  {
+    "id": 1104,
+    "nombre": "DELFINO CORNEJO LOPEZ",
+    "lote": "23255",
+    "barrio": "PISILLO"
+  },
+  {
+    "id": 1105,
+    "nombre": "JUAN LOPEZ SERRANO",
+    "lote": "23256",
+    "barrio": "PISILLO"
+  },
+  {
+    "id": 1106,
+    "nombre": "SILVINO AGUILAR SERRANO",
+    "lote": "23257",
+    "barrio": "PISILLO"
+  },
+  {
+    "id": 1107,
+    "nombre": "JUAN LUGO VAZQUEZ",
+    "lote": "23258",
+    "barrio": "PISILLO"
+  },
+  {
+    "id": 1108,
+    "nombre": "ENRIQUE HERNANDEZ CONTRERAS",
+    "lote": "23259",
+    "barrio": "PISILLO"
+  },
+  {
+    "id": 1109,
+    "nombre": "SATURNINO SALVADOR LOPEZ",
+    "lote": "23260",
+    "barrio": ""
+  },
+  {
+    "id": 1110,
+    "nombre": "VICENTE CRUZ CRUZ",
+    "lote": "23261",
+    "barrio": "BORDO BCO"
+  },
+  {
+    "id": 1111,
+    "nombre": "PEDRO RIOS MARTINEZ",
+    "lote": "23263",
+    "barrio": "BORDO BCO"
+  },
+  {
+    "id": 1112,
+    "nombre": "SANTIAGO PEREZ SIMON",
+    "lote": "23264",
+    "barrio": "BORDO BCO"
+  },
+  {
+    "id": 1113,
+    "nombre": "GABRIEL SIMON HERNANDEZ",
+    "lote": "23265",
+    "barrio": ""
+  },
+  {
+    "id": 1114,
+    "nombre": "JOSE SALVADOR HERNANDEZ",
+    "lote": "23266",
+    "barrio": "LAS CADENAS"
+  },
+  {
+    "id": 1115,
+    "nombre": "MARCIANO SERRANO HERNANDEZ",
+    "lote": "23267",
+    "barrio": "LAS CADENAS"
+  },
+  {
+    "id": 1116,
+    "nombre": "GUADALUPE SERRANO HERNANDEZ",
+    "lote": "23268",
+    "barrio": "LAS CADENAS"
+  },
+  {
+    "id": 1117,
+    "nombre": "MARCELINO ESTRADA BARRERA",
+    "lote": "23270",
+    "barrio": "LAS CADENAS"
+  },
+  {
+    "id": 1118,
+    "nombre": "JOSE SERRANO HERNANDEZ",
+    "lote": "23271",
+    "barrio": "LAS CADENAS"
+  },
+  {
+    "id": 1119,
+    "nombre": "ELVIRA NUÑEZ MORENO",
+    "lote": "23272",
+    "barrio": ""
+  },
+  {
+    "id": 1120,
+    "nombre": "MIGUEL RIOS SANCHEZ",
+    "lote": "23273",
+    "barrio": "LAS CADENAS"
+  },
+  {
+    "id": 1121,
+    "nombre": "MALBINA GARCIA GARCIA",
+    "lote": "23274",
+    "barrio": "BARRERA"
+  },
+  {
+    "id": 1122,
+    "nombre": "MARCELINA MARTINEZ DOMINGUEZ",
+    "lote": "23275",
+    "barrio": "BARRERA"
+  },
+  {
+    "id": 1123,
+    "nombre": "DELFINO SERRANO CRUZ",
+    "lote": "23277",
+    "barrio": "LA CADENAS"
+  },
+  {
+    "id": 1124,
+    "nombre": "INES BARRERA CRUZ",
+    "lote": "21068-A",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 1125,
+    "nombre": "MA. MAGDALENA MOTA AGUILAR",
+    "lote": "21070-2",
+    "barrio": ""
+  },
+  {
+    "id": 1126,
+    "nombre": "EVARISTO MOTA ANGELES",
+    "lote": "21070-A",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 1127,
+    "nombre": "FELIPA SANTIAGO MARTINEZ",
+    "lote": "21071-A",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 1128,
+    "nombre": "MARTINEZ ROJO HONORIO",
+    "lote": "21073-1",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 1129,
+    "nombre": "AMADEO MOTA VALDEZ",
+    "lote": "21073-2",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 1130,
+    "nombre": "PILAR SANTIAGO PEREZ",
+    "lote": "21075-A",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 1131,
+    "nombre": "GREGORIO ROJO JIMENEZ",
+    "lote": "21077-A",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 1132,
+    "nombre": "SANTIAGO MOTA MELQUIADEZ",
+    "lote": "21078-2",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 1133,
+    "nombre": "JUSTO HERNANDEZ SANTIAGO",
+    "lote": "21078-BE",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 1134,
+    "nombre": "URSULA SANTIAGO HERNANDEZ",
+    "lote": "21080-3",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 1135,
+    "nombre": "FLORES HERNANDEZ ANSELMA",
+    "lote": "21080-4",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 1136,
+    "nombre": "CRISTINO HERNANDEZ SANTIAGO",
+    "lote": "21080-5",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 1137,
+    "nombre": "JOSE ROJO JIMENEZ",
+    "lote": "21080-A",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 1138,
+    "nombre": "JOSE ROJO JIMENEZ",
+    "lote": "21080-A",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 1139,
+    "nombre": "ROBERTO FLORES HERNANDEZ",
+    "lote": "21080-B",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 1140,
+    "nombre": "DELFINO MOTA VALDEZ",
+    "lote": "21081-1",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 1141,
+    "nombre": "MARCELINO MOTA ANGELES",
+    "lote": "21081-A",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1142,
+    "nombre": "JOSEFA CRUZ SANTIAGO",
+    "lote": "21082-1",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1143,
+    "nombre": "JOSEFA CRUZ SANTIAGO",
+    "lote": "21082-2",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1144,
+    "nombre": "NEMECIO MOTA ROJO",
+    "lote": "21083-3",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1145,
+    "nombre": "GARCIA CRUZ SALVADOR",
+    "lote": "21083-4",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1146,
+    "nombre": "JOSE MOTA VALDEZ",
+    "lote": "21083-A",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1147,
+    "nombre": "IGNACIO MOTA ANGELES",
+    "lote": "21083-B",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 1148,
+    "nombre": "JUSTINO HERNANDEZ ESTRADA",
+    "lote": "21090-1",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 1149,
+    "nombre": "CLEOFAS SANTIAGO ANGELES",
+    "lote": "21092-A",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 1150,
+    "nombre": "CLEOFAS DE SANTIAGO ANGELES",
+    "lote": "21092-B",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 1151,
+    "nombre": "WENCESLAO PEREZ JUAREZ",
+    "lote": "21092-C",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 1152,
+    "nombre": "MIGUEL ANGELES HERNANDEZ",
+    "lote": "21094-1",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 1153,
+    "nombre": "FROYLAN MENDOZA AGUILAR",
+    "lote": "21094-C",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 1154,
+    "nombre": "ANGELES AGUILAR REINALDA",
+    "lote": "21096-1",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 1155,
+    "nombre": "SABINO CERVANTES CORONA",
+    "lote": "21102-2",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 1156,
+    "nombre": "CERVANTES CORONA BONIFACIO",
+    "lote": "21102-c",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 1157,
+    "nombre": "AARON PEREZ CRUZ",
+    "lote": "21106-1",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 1158,
+    "nombre": "REYNA ANGELES AGUILAR",
+    "lote": "21106-a",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 1159,
+    "nombre": "ARNULFO ANGELES MOTA",
+    "lote": "21107-1",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 1160,
+    "nombre": "PEDRO CERVANTES SANTIAGO",
+    "lote": "21109-A",
+    "barrio": "VARIADO"
+  },
+  {
+    "id": 1161,
+    "nombre": "JUSTINO MOTA ANGELES",
+    "lote": "21110-1",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1162,
+    "nombre": "MARIA FELIX ANGELES PEREZ",
+    "lote": "21111-A",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 1163,
+    "nombre": "ANA TELLES ANGELES",
+    "lote": "21111-A1",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 1164,
+    "nombre": "EUFROCINO SANTIAGO OROPEZA",
+    "lote": "21112-A",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 1165,
+    "nombre": "GONZALO SANTIAGO MOTA",
+    "lote": "21131-B",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 1166,
+    "nombre": "MARGARITA GONZALEZ GARCIA",
+    "lote": "21133-3",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 1167,
+    "nombre": "MIGUEL CRUZ CRUZ",
+    "lote": "21136-3",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 1168,
+    "nombre": "ANTONIO DIAZ VENTURA",
+    "lote": "21136-a",
+    "barrio": ""
+  },
+  {
+    "id": 1169,
+    "nombre": "MIGUEL CRUZ CRUZ",
+    "lote": "21136-B",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 1170,
+    "nombre": "MIGUEL CRUZ CRUZ",
+    "lote": "21136-C",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 1171,
+    "nombre": "SALOMON SIMON RIOS",
+    "lote": "21154-A",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 1172,
+    "nombre": "GERONIMO MENDOZA VALDEZ",
+    "lote": "21173-1",
+    "barrio": ""
+  },
+  {
+    "id": 1173,
+    "nombre": "RICARDA BARRERA AGUILAR",
+    "lote": "21207-A",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 1174,
+    "nombre": "JUAN PIZAÑA URIBE",
+    "lote": "21222-2",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 1175,
+    "nombre": "VICTOR HIPOLITO LUGO VALDEZ",
+    "lote": "21238-1",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 1176,
+    "nombre": "LESLY LUGO LOPEZ        1.00",
+    "lote": "21238-2",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 1177,
+    "nombre": "REYNALDA VALDEZ ALFARO    2.00",
+    "lote": "21238-3",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 1178,
+    "nombre": "JOSEFA CRUZ SANTIAGO",
+    "lote": "21244-A",
+    "barrio": "LLANO"
+  },
+  {
+    "id": 1179,
+    "nombre": "MARTIN DOMINGUEZ AGUILAR",
+    "lote": "21247-1",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 1180,
+    "nombre": "AGUSTIN AGUILAR HERNANDEZ",
+    "lote": "21250-1",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1181,
+    "nombre": "MARIA SALVADOR MARTINEZ",
+    "lote": "21250-A",
+    "barrio": "PANUAYA"
+  },
+  {
+    "id": 1182,
+    "nombre": "JUAN PIZAÑA CRUZ",
+    "lote": "21254-A",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1183,
+    "nombre": "CARMELA VAZQUEZ DOMINGUEZ",
+    "lote": "21257-1",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1184,
+    "nombre": "LEON PIZAÑA URIBE",
+    "lote": "21257-A",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1185,
+    "nombre": "LIDIA SANTIAGO PEREZ",
+    "lote": "21258-AE",
+    "barrio": ""
+  },
+  {
+    "id": 1186,
+    "nombre": "TERESA PEREZ ESTRADA",
+    "lote": "21259-1",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 1187,
+    "nombre": "MARIA HERNANDEZ CORTES",
+    "lote": "21263-A",
+    "barrio": "el arbolito"
+  },
+  {
+    "id": 1188,
+    "nombre": "HERMENEGILDO CRUZ CRUZ",
+    "lote": "21263-C",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1189,
+    "nombre": "HIPOLITO GARCIA SANTIAGO",
+    "lote": "21263-F",
+    "barrio": ""
+  },
+  {
+    "id": 1190,
+    "nombre": "AUGUSTO PEREZ CRUZ",
+    "lote": "21268-1",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1191,
+    "nombre": "MARTHA PEREZ ESTRADA",
+    "lote": "21268-2",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1192,
+    "nombre": "NOE ROJO CRUZ",
+    "lote": "21276-B",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 1193,
+    "nombre": "NEMESIO MOTA ROJO",
+    "lote": "21303-A",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 1194,
+    "nombre": "J. GUADALUPE AGUILAR ROJO",
+    "lote": "21303-B",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 1195,
+    "nombre": "GUILLERMO ROJO ANGELES",
+    "lote": "21303-C",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 1196,
+    "nombre": "ANITA ROJO LUGO",
+    "lote": "21303-F",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 1197,
+    "nombre": "AURELIO ANGELES ROJO",
+    "lote": "21304-B",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 1198,
+    "nombre": "JUAN PEREZ QUIJANO",
+    "lote": "21308-1",
+    "barrio": "LA LOMA H"
+  },
+  {
+    "id": 1199,
+    "nombre": "VICENTE MARTINEZ JIMENEZ",
+    "lote": "21310-A",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1200,
+    "nombre": "RENE MAXIMILIANO LUGO ANGELES",
+    "lote": "21317-1",
+    "barrio": "VARIADO"
+  },
+  {
+    "id": 1201,
+    "nombre": "EDUARDO ANGELES TREJO",
+    "lote": "21317-2",
+    "barrio": "VARIADO"
+  },
+  {
+    "id": 1202,
+    "nombre": "IRENE ANGELES DE SERRANO",
+    "lote": "21317-B",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1203,
+    "nombre": "GERONIMO MENDOZA VALDEZ",
+    "lote": "21325-AE",
+    "barrio": "VARIADO"
+  },
+  {
+    "id": 1204,
+    "nombre": "ANGEL CERVANTES GARCIA",
+    "lote": "21334-A",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 1205,
+    "nombre": "MARGARITO GONZALEZ MARTINEZ",
+    "lote": "21340-1",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 1206,
+    "nombre": "RAFAEL GONZALEZ PEREZ",
+    "lote": "21340-A",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 1207,
+    "nombre": "DIEGA AGUILAR SERRANO",
+    "lote": "21342-2",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1208,
+    "nombre": "ANASTACIO AGUILAR CORNEJO",
+    "lote": "21342-3",
+    "barrio": "LLANO"
+  },
+  {
+    "id": 1209,
+    "nombre": "ENRIQUE AGUILAR SERRANO",
+    "lote": "21342-4",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1210,
+    "nombre": "RAMON AGUILAR MARTINEZ",
+    "lote": "21342-AE",
+    "barrio": "LLANO"
+  },
+  {
+    "id": 1211,
+    "nombre": "FLAVIANO AGUILAR CORNEJO",
+    "lote": "21343-A",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1212,
+    "nombre": "VENUSTIANA HERNANDEZ GARCIA",
+    "lote": "21348-1",
+    "barrio": "LLANO"
+  },
+  {
+    "id": 1213,
+    "nombre": "REYNA SALVADOR MARTINEZ",
+    "lote": "21351-1",
+    "barrio": "LLANO"
+  },
+  {
+    "id": 1214,
+    "nombre": "JULIAN RIOS PEREZ",
+    "lote": "21364-A",
+    "barrio": "LLANO"
+  },
+  {
+    "id": 1215,
+    "nombre": "CRECENCIANO OROPEZA CRUZ",
+    "lote": "21364-AE",
+    "barrio": "LLANO"
+  },
+  {
+    "id": 1216,
+    "nombre": "VICTORIANO CRUZ CRUZ",
+    "lote": "21365-1",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1217,
+    "nombre": "FIDEL LUGO QUIJANO",
+    "lote": "21372-1",
+    "barrio": "LLANO"
+  },
+  {
+    "id": 1218,
+    "nombre": "CLAUDIO LUGO PEREZ",
+    "lote": "21372-A",
+    "barrio": "LLANO"
+  },
+  {
+    "id": 1219,
+    "nombre": "CECILIA CRUZ GARCIA",
+    "lote": "21389-1",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1220,
+    "nombre": "MARIA CRUZ GARCIA",
+    "lote": "21389-A1",
+    "barrio": "PANUAYA"
+  },
+  {
+    "id": 1221,
+    "nombre": "PABLO PEREZ CRUZ",
+    "lote": "21395-1",
+    "barrio": "LLANO"
+  },
+  {
+    "id": 1222,
+    "nombre": "PABLO PEREZ CRUZ",
+    "lote": "21395-B",
+    "barrio": "LLANO"
+  },
+  {
+    "id": 1223,
+    "nombre": "PABLO PEREZ CRUZ",
+    "lote": "21395-B1",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1224,
+    "nombre": "PABLO PEREZ CRUZ",
+    "lote": "21395-b2",
+    "barrio": "LLANO"
+  },
+  {
+    "id": 1225,
+    "nombre": "PABLO PEREZ CRUZ",
+    "lote": "21395-b3",
+    "barrio": ""
+  },
+  {
+    "id": 1226,
+    "nombre": "CRESCENCIANO OROPEZA CRUZ",
+    "lote": "21395-B-3",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1227,
+    "nombre": "PABLO PEREZ CRUZ",
+    "lote": "21395-b4",
+    "barrio": "LLANO"
+  },
+  {
+    "id": 1228,
+    "nombre": "LEOPOLDO ANGELES RIOS",
+    "lote": "21395-CE",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1229,
+    "nombre": "JORGE CRUZ MARTINEZ",
+    "lote": "21396-1",
+    "barrio": "LLANO"
+  },
+  {
+    "id": 1230,
+    "nombre": "MAURILIA MARTINEZ AGUILAR",
+    "lote": "21396-A",
+    "barrio": "LLANO"
+  },
+  {
+    "id": 1231,
+    "nombre": "PEDRO HERNANDEZ GARCIA",
+    "lote": "21397-A",
+    "barrio": "LLANO"
+  },
+  {
+    "id": 1232,
+    "nombre": "AMADO SALVADOR RIOS",
+    "lote": "21400",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1233,
+    "nombre": "MARIA ISABEL CORNEJO MARTINEZ",
+    "lote": "21403-1",
+    "barrio": "LLANO"
+  },
+  {
+    "id": 1234,
+    "nombre": "FEBRONIO RIOS CONTRERAS",
+    "lote": "21405-B",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1235,
+    "nombre": "FEBRONIO RIOS CONTRERAS",
+    "lote": "21405-C",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1236,
+    "nombre": "CARLOS SERRANO HERNANDEZ",
+    "lote": "21409-A",
+    "barrio": "ALTO"
+  },
+  {
+    "id": 1237,
+    "nombre": "VALENTIN ESTRADA AGUILAR",
+    "lote": "21409-B",
+    "barrio": "ALTO"
+  },
+  {
+    "id": 1238,
+    "nombre": "MARCELO ESTRADA MOTA",
+    "lote": "21411-1",
+    "barrio": "ALTO"
+  },
+  {
+    "id": 1239,
+    "nombre": "BONIFACIA ESTRADA MOTA",
+    "lote": "21411-1A",
+    "barrio": "LLANO"
+  },
+  {
+    "id": 1240,
+    "nombre": "FLORENTINA GARCIA DE SANCHEZ",
+    "lote": "21411-4",
+    "barrio": "ALTO"
+  },
+  {
+    "id": 1241,
+    "nombre": "ARNULFA BARRERA ESTRADA",
+    "lote": "21411-6",
+    "barrio": "ALTO"
+  },
+  {
+    "id": 1242,
+    "nombre": "MARCELINO ESTRADA MOTA",
+    "lote": "21411-A",
+    "barrio": "ALTO"
+  },
+  {
+    "id": 1243,
+    "nombre": "MARCELINO ESTRADA MOTA",
+    "lote": "21411-B",
+    "barrio": "ALTO"
+  },
+  {
+    "id": 1244,
+    "nombre": "MANUELA HERNANDEZ HERNANDEZ",
+    "lote": "21414-A",
+    "barrio": "ALTO"
+  },
+  {
+    "id": 1245,
+    "nombre": "JULIAN HERNANDEZ GARCIA",
+    "lote": "21414-1",
+    "barrio": ""
+  },
+  {
+    "id": 1246,
+    "nombre": "ESTANISLAO LOPEZ RIOS",
+    "lote": "21420-1",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1247,
+    "nombre": "ESPERANZA BARRERA SANCHEZ",
+    "lote": "21421-1",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1248,
+    "nombre": "BENITO LOPEZ HERNANDEZ",
+    "lote": "21428-A",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1249,
+    "nombre": "FRANCISCO LOPEZ HERNANDEZ",
+    "lote": "21428-B",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1250,
+    "nombre": "ISAURA ESTRADA AGUILAR",
+    "lote": "21431-1",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1251,
+    "nombre": "ERNESTO SALVADOR AGUILAR",
+    "lote": "21432-0",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1252,
+    "nombre": "HERMELINDA SALVADOR RAMIREZ",
+    "lote": "21432-1",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1253,
+    "nombre": "MANUELA SALVADOR AGUILAR",
+    "lote": "21432-2",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1254,
+    "nombre": "COLUMBA SALVADOR AGUILAR",
+    "lote": "21432-4",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1255,
+    "nombre": "MA.ISABEL SALVADOR CRUZ",
+    "lote": "21432-5",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1256,
+    "nombre": "TRINIDAD MARTINEZ RIOS",
+    "lote": "21437-B",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 1257,
+    "nombre": "ISIDRO MARTINEZ CORNEJO",
+    "lote": "21438-1",
+    "barrio": "ALTO"
+  },
+  {
+    "id": 1258,
+    "nombre": "GAUDENCIO MARTINEZ CORNEJO",
+    "lote": "21438-3",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 1259,
+    "nombre": "TRINIDAD MARTINEZ RIOS",
+    "lote": "21438-A",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 1260,
+    "nombre": "MARCELO BARRERA ESTRADA",
+    "lote": "21438-B",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 1261,
+    "nombre": "ANDRES AGUILAR BARRERA",
+    "lote": "EL",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1262,
+    "nombre": "VICTORINO ESTRADA AGUILAR",
+    "lote": "21440-A",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 1263,
+    "nombre": "DONACIANO GARCIA REYES",
+    "lote": "21441-1",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 1264,
+    "nombre": "PANFILO REYES ESTRADA",
+    "lote": "21441-2",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 1265,
+    "nombre": "HILARION MARTINEZ ESTRADA",
+    "lote": "21445-A",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 1266,
+    "nombre": "FLAVIO GARCIA REYES",
+    "lote": "21446-A",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 1267,
+    "nombre": "TRINIDAD MARTINEZ RIOS",
+    "lote": "21446-C",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 1268,
+    "nombre": "ANDRES RAMIREZ SERRANO",
+    "lote": "21453-1",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 1269,
+    "nombre": "HIGINIA REYES DE MARTINEZ",
+    "lote": "21455-1",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 1270,
+    "nombre": "ROSALIO REYES ESTRADA",
+    "lote": "21455-1",
+    "barrio": ""
+  },
+  {
+    "id": 1271,
+    "nombre": "MATEO REYES ESTRADA",
+    "lote": "21455-2",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 1272,
+    "nombre": "ISABEL RIOS SIMON",
+    "lote": "21460-1",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1273,
+    "nombre": "ISABEL RIOS SIMON",
+    "lote": "21460-AE",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1274,
+    "nombre": "GABINO BARRERA RIOS",
+    "lote": "21467-1",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1275,
+    "nombre": "AMADO SALVADOR RIOS",
+    "lote": "21469-1",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1276,
+    "nombre": "CANDIDO LOPEZ RAMIREZ",
+    "lote": "21471-1",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1277,
+    "nombre": "AGAPITA SANCHEZ SIMON",
+    "lote": "21472-1",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 1278,
+    "nombre": "J. DOLORES PEREZ ESTRADA",
+    "lote": "21478-1",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1279,
+    "nombre": "JOSE GONZALEZ CORNEJO",
+    "lote": "21478-1",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1280,
+    "nombre": "ELADIO ROJO LUGO",
+    "lote": "21478-2",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1281,
+    "nombre": "HERON NAVA DE LA PAZ",
+    "lote": "21478-3",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1282,
+    "nombre": "ELVIRA NUÑEZ MORENO",
+    "lote": "21481-1",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1283,
+    "nombre": "EMILIANO SANCHEZ LUGO",
+    "lote": "21481-A",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1284,
+    "nombre": "AMADO PIZAÑA GRANADOS",
+    "lote": "21482-A",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1285,
+    "nombre": "FERMINA RIVAS PEREZ",
+    "lote": "21483-AE",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 1286,
+    "nombre": "RICARDO RIVAS PORRAS",
+    "lote": "21483-1",
+    "barrio": ""
+  },
+  {
+    "id": 1287,
+    "nombre": "PORFIRIA ESCOBAR DIAZ",
+    "lote": "21485-1",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1288,
+    "nombre": "HERMENEGILDO CRUZ CRUZ",
+    "lote": "21487-AE",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1289,
+    "nombre": "FRANCISCO SERRANO SANCHEZ",
+    "lote": "21491-A",
+    "barrio": "LA LOMA"
+  },
+  {
+    "id": 1290,
+    "nombre": "CELEDONIO GONZALEZ ESTRADA",
+    "lote": "21494-1",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 1291,
+    "nombre": "GREGORIO MOTA LOPEZ",
+    "lote": "21494-3",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 1292,
+    "nombre": "MARCELINA MARTINEZ DOMINGUEZ",
+    "lote": "21496-A",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 1293,
+    "nombre": "JACINTO GARCIA HERCULANO",
+    "lote": "21496-B",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 1294,
+    "nombre": "PORFIRIO MARTINEZ AGUILAR",
+    "lote": "21501-BE",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 1295,
+    "nombre": "SEVERA GARCIA DE HERNANDEZ",
+    "lote": "21503-A",
+    "barrio": "ALTO"
+  },
+  {
+    "id": 1296,
+    "nombre": "INES CORNEJO QUIJANO",
+    "lote": "21507-B",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 1297,
+    "nombre": "JOSE CORNEJO AGUILAR",
+    "lote": "21529-A",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 1298,
+    "nombre": "FABIANA PORRAS REYES",
+    "lote": "21540-2",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 1299,
+    "nombre": "FLOR HERNANDEZ ORTIZ",
+    "lote": "21540-3",
+    "barrio": ""
+  },
+  {
+    "id": 1300,
+    "nombre": "MARIA ISABEL MARTINEZ JUAREZ",
+    "lote": "21545-1",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 1301,
+    "nombre": "MERCED AGUILAR SIMON",
+    "lote": "21555-AE",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 1302,
+    "nombre": "FIDEL SERRANO HERNANDEZ",
+    "lote": "21556-BE",
+    "barrio": ""
+  },
+  {
+    "id": 1303,
+    "nombre": "JESUS GARCIA MOTA",
+    "lote": "21575-1",
+    "barrio": ""
+  },
+  {
+    "id": 1304,
+    "nombre": "MA.DEL CARMEN SERRANO MENDOZA",
+    "lote": "21577-1",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 1305,
+    "nombre": "ENRIQUETA SERRANO DE GARCIA",
+    "lote": "21578-A",
+    "barrio": "LOMA"
+  },
+  {
+    "id": 1306,
+    "nombre": "ABRAHAM BARCENAS SERRANO",
+    "lote": "21579-1",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 1307,
+    "nombre": "PROSESA GARCIA VALDEZ",
+    "lote": "21580-2",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 1308,
+    "nombre": "VIRGINIA GARCIA VALDEZ",
+    "lote": "21583-1",
+    "barrio": "LOMA H"
+  },
+  {
+    "id": 1309,
+    "nombre": "BERULIO GARCIA VALDEZ",
+    "lote": "21583-2",
+    "barrio": "LOMA H"
+  },
+  {
+    "id": 1310,
+    "nombre": "CARMELITA GARCÍA VALDEZ",
+    "lote": "21583-2",
+    "barrio": "LOMA"
+  },
+  {
+    "id": 1311,
+    "nombre": "CARMELITA GARCÍA VALDEZ",
+    "lote": "21583-3",
+    "barrio": "LOMA H"
+  },
+  {
+    "id": 1312,
+    "nombre": "CARMELITA GARCÍA VALDEZ",
+    "lote": "21583-4",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 1313,
+    "nombre": "CARMELITA GARCÍA VALDEZ",
+    "lote": "21583-A",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 1314,
+    "nombre": "ANGELINO GARCIA VALDEZ",
+    "lote": "21583-B",
+    "barrio": "LOMA H"
+  },
+  {
+    "id": 1315,
+    "nombre": "ELADIO GARCIA MOTA",
+    "lote": "21584-1",
+    "barrio": "LOMA H"
+  },
+  {
+    "id": 1316,
+    "nombre": "MA. DE JESUS DOMINGUEZ GARCIA",
+    "lote": "21587-A",
+    "barrio": "LOMA"
+  },
+  {
+    "id": 1317,
+    "nombre": "AURELIANO SERRANO PEREZ",
+    "lote": "21587-1",
+    "barrio": "PD"
+  },
+  {
+    "id": 1318,
+    "nombre": "ROSA CORNEJO MARTINEZ",
+    "lote": "21589-1",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1319,
+    "nombre": "TOMAS OSCAR LUGO VALDEZ    1.11",
+    "lote": "21589-1",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1320,
+    "nombre": "JOSEFA CRUZ SANTIAGO",
+    "lote": "21591-1",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1321,
+    "nombre": "SABINO PEREZ SALVADOR",
+    "lote": "21593-1",
+    "barrio": "LOMA H"
+  },
+  {
+    "id": 1322,
+    "nombre": "SILVIA GONZALEZ PEREZ",
+    "lote": "21595-1",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 1323,
+    "nombre": "ATENOGENES ANGELES CRUZ",
+    "lote": "21596-1",
+    "barrio": "CENTRO"
+  },
+  {
+    "id": 1324,
+    "nombre": "HERMINIA OROPEZA ANGELES",
+    "lote": "21600-1",
+    "barrio": "LOMA H"
+  },
+  {
+    "id": 1325,
+    "nombre": "ALBINO CRUZ SALVADOR",
+    "lote": "21604-1",
+    "barrio": "LOMA H"
+  },
+  {
+    "id": 1326,
+    "nombre": "TOMASA LOPEZ ALVAREZ",
+    "lote": "21607-1",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 1327,
+    "nombre": "LAURA LOPEZ ALVAREZ",
+    "lote": "21607-2",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 1328,
+    "nombre": "ALICIA ALVAREZ",
+    "lote": "21607-A",
+    "barrio": ""
+  },
+  {
+    "id": 1329,
+    "nombre": "UBALDO LOPEZ MOTA",
+    "lote": "21607-BE",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 1330,
+    "nombre": "MARIA FELIX DURAN PEREZ",
+    "lote": "21610-A",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 1331,
+    "nombre": "JOSE SALVADOR GARCIA",
+    "lote": "21611-A",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 1332,
+    "nombre": "SANTIAGO PEREZ SIMON",
+    "lote": "21614-AE",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 1333,
+    "nombre": "JULIAN SERRANO REYES",
+    "lote": "21616-2",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 1334,
+    "nombre": "ADOLFO GARCIA ESCOBAR",
+    "lote": "21622-1",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 1335,
+    "nombre": "GLORIA GARCIA VALDEZ",
+    "lote": "21624-2",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 1336,
+    "nombre": "NOE GARCIA VALDEZ",
+    "lote": "21624-A",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 1337,
+    "nombre": "JULIA ALVAREZ SALVADOR",
+    "lote": "21626-A",
+    "barrio": "EL ALTO"
+  },
+  {
+    "id": 1338,
+    "nombre": "ELIZABETH HERNANDEZ SANTIAGO",
+    "lote": "21626-B",
+    "barrio": ""
+  },
+  {
+    "id": 1339,
+    "nombre": "SILVESTRE REYES GONZALEZ",
+    "lote": "21634-1",
+    "barrio": "LA LOMA H"
+  },
+  {
+    "id": 1340,
+    "nombre": "CELERINO JOSE DORANTES GONZALEZ",
+    "lote": "21634-2",
+    "barrio": "LA LOMA"
+  },
+  {
+    "id": 1341,
+    "nombre": "PETRA DORANTES PORRAS",
+    "lote": "21637-A",
+    "barrio": "LA LOMA"
+  },
+  {
+    "id": 1342,
+    "nombre": "JOAQUIN PEREZ GOMEZ",
+    "lote": "21640-1",
+    "barrio": "LA LOMA H"
+  },
+  {
+    "id": 1343,
+    "nombre": "GUADALUPE MARTINEZ HERNANDEZ",
+    "lote": "21642-1",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 1344,
+    "nombre": "SALOME ALVAREZ BARCENAS**",
+    "lote": "21642-3",
+    "barrio": "MEZQUITE"
+  },
+  {
+    "id": 1345,
+    "nombre": "CELERINO JOSE DORANTES GONZALEZ",
+    "lote": "21642-B",
+    "barrio": "LA LOMA H"
+  },
+  {
+    "id": 1346,
+    "nombre": "GREGORIO DORANTES CRUZ",
+    "lote": "21645-A",
+    "barrio": "LA LOMA H"
+  },
+  {
+    "id": 1347,
+    "nombre": "CRESENCIO PEREZ SANCHEZ",
+    "lote": "21646-A",
+    "barrio": "LA LOMA"
+  },
+  {
+    "id": 1348,
+    "nombre": "DANIEL AGUILAR QUIJANO",
+    "lote": "21646-B",
+    "barrio": "LA LOMA"
+  },
+  {
+    "id": 1349,
+    "nombre": "JOSE QUIJANO PEREZ",
+    "lote": "21647-AE",
+    "barrio": "LA LOMA H"
+  },
+  {
+    "id": 1350,
+    "nombre": "LAZARO PEREZ MARTINEZ",
+    "lote": "21656-A",
+    "barrio": "LA LOMA H"
+  },
+  {
+    "id": 1351,
+    "nombre": "FAUSTINO PEREZ MARTINEZ",
+    "lote": "21656-b",
+    "barrio": "LA LOMA"
+  },
+  {
+    "id": 1352,
+    "nombre": "FAUSTINO CERVANTES GARCIA",
+    "lote": "21690-1",
+    "barrio": "LA LOMA H"
+  },
+  {
+    "id": 1353,
+    "nombre": "ANTONIA OROPEZA ANGELES",
+    "lote": "21698-A",
+    "barrio": "LA LOMA"
+  },
+  {
+    "id": 1354,
+    "nombre": "TIMOTEO CERVANTES MENDOZA",
+    "lote": "21701-1",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 1355,
+    "nombre": "ISMAEL MARTIN RAMIREZ MONROY",
+    "lote": "21704-1",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 1356,
+    "nombre": "CONSUELO GARCIA HERNANDEZ",
+    "lote": "21706-A",
+    "barrio": "EL ZARAGOZA"
+  },
+  {
+    "id": 1357,
+    "nombre": "MAURA PEREZ ORTIZ",
+    "lote": "21710-6",
+    "barrio": ""
+  },
+  {
+    "id": 1358,
+    "nombre": "ANGELA PEREZ ORTIZ",
+    "lote": "21710-B",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1359,
+    "nombre": "JULIAN PEREZ",
+    "lote": "21711-1",
+    "barrio": ""
+  },
+  {
+    "id": 1360,
+    "nombre": "INES HERNANDEZ PEREZ",
+    "lote": "21717-A",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1361,
+    "nombre": "MATIAS ANGELES HERNANDEZ",
+    "lote": "21725-A",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1362,
+    "nombre": "SARA PEREZ CRUZ",
+    "lote": "21728-1",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1363,
+    "nombre": "SILVINO HERNANDEZ VELAZQUEZ",
+    "lote": "21732-1",
+    "barrio": "LAS MINAS"
+  },
+  {
+    "id": 1364,
+    "nombre": "PROSPERO BAUTISTA PEREZ",
+    "lote": "21736-1",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1365,
+    "nombre": "CARLOS BAUTISTA GONZALEZ",
+    "lote": "21737-1",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1366,
+    "nombre": "ENRIQUE URIBE MENDIETA",
+    "lote": "21738-a",
+    "barrio": ""
+  },
+  {
+    "id": 1367,
+    "nombre": "SARA PEREZ CRUZ",
+    "lote": "21751-1",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1368,
+    "nombre": "ISMAEL CRUZ HERNANDEZ",
+    "lote": "21755-0",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1369,
+    "nombre": "ISIDRO ANGELES PEREZ",
+    "lote": "21756-A",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1370,
+    "nombre": "MIGUEL HERNANDEZ HERNANDEZ",
+    "lote": "21763-1",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1371,
+    "nombre": "TIBURCIA HERNANDEZ HERNANDEZ",
+    "lote": "21763-2",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1372,
+    "nombre": "LINO HERNANDEZ HERNANDEZ",
+    "lote": "21778-1",
+    "barrio": ""
+  },
+  {
+    "id": 1373,
+    "nombre": "ELFEGO PEREZ SALVADOR",
+    "lote": "21801-1",
+    "barrio": ""
+  },
+  {
+    "id": 1374,
+    "nombre": "DANIEL PEREZ MARTINEZ",
+    "lote": "21806-1",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1375,
+    "nombre": "MANUELA  A. CRUZ SANCHEZ",
+    "lote": "21809-A",
+    "barrio": ""
+  },
+  {
+    "id": 1376,
+    "nombre": "VICENTE REYES MARTINEZ",
+    "lote": "21814-1",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1377,
+    "nombre": "SALUSTIA MOTA LOPEZ",
+    "lote": "21815-A",
+    "barrio": "PANUAYA"
+  },
+  {
+    "id": 1378,
+    "nombre": "MARIO MOTA MARTINEZ",
+    "lote": "21819-A",
+    "barrio": "EL MEZQUITE"
+  },
+  {
+    "id": 1379,
+    "nombre": "JUSTINO GONZALEZ BARRERA",
+    "lote": "21822-1",
+    "barrio": "LA LOMA H"
+  },
+  {
+    "id": 1380,
+    "nombre": "DAMAZA VICTORIA GONZALEZ",
+    "lote": "21822-2",
+    "barrio": "LA LOMA H"
+  },
+  {
+    "id": 1381,
+    "nombre": "JUAN GONZALEZ CORNEJO",
+    "lote": "21830-A",
+    "barrio": "EL MEZQUITE"
+  },
+  {
+    "id": 1382,
+    "nombre": "TEODORO GARCIA CORNEJO",
+    "lote": "21836-1",
+    "barrio": "EL MEZQUITE"
+  },
+  {
+    "id": 1383,
+    "nombre": "ANDRES GONZALEZ HERNANDEZ",
+    "lote": "21841-3",
+    "barrio": "EL MEZQUITE"
+  },
+  {
+    "id": 1384,
+    "nombre": "ROSENDO PEREZ MARTINEZ",
+    "lote": "21843-a",
+    "barrio": "EL MEZQUITE"
+  },
+  {
+    "id": 1385,
+    "nombre": "TEODORO GARCIA CORNEJO",
+    "lote": "21843-b",
+    "barrio": "EL MEZQUITE"
+  },
+  {
+    "id": 1386,
+    "nombre": "ROSENDO PEREZ MARTINEZ",
+    "lote": "21844-A",
+    "barrio": "EL MEZQUITE"
+  },
+  {
+    "id": 1387,
+    "nombre": "ROMANA GONZALEZ HERNANDEZ",
+    "lote": "21848-A",
+    "barrio": "EL MEZQUITE"
+  },
+  {
+    "id": 1388,
+    "nombre": "JOSE ORTIZ AGUILAR",
+    "lote": "21857-A",
+    "barrio": "EL MEZQUITE"
+  },
+  {
+    "id": 1389,
+    "nombre": "DIONISIO PEREZ MOTA",
+    "lote": "21883-A",
+    "barrio": "EL MEZQUITE"
+  },
+  {
+    "id": 1390,
+    "nombre": "GUADALUPE PEREZ MOTA",
+    "lote": "21883-B",
+    "barrio": "EL MEZQUITE"
+  },
+  {
+    "id": 1391,
+    "nombre": "JOSE PEREZ MOTA",
+    "lote": "21883-C",
+    "barrio": "EL MEZQUITE"
+  },
+  {
+    "id": 1392,
+    "nombre": "MARTHA HERNANDEZ PEREZ",
+    "lote": "21890-1",
+    "barrio": "EL MEZQUITE"
+  },
+  {
+    "id": 1393,
+    "nombre": "PAULA CRUZ HERNANDEZ",
+    "lote": "21890-2",
+    "barrio": "EL MEZQUITE"
+  },
+  {
+    "id": 1394,
+    "nombre": "VICENTE HERNANDEZ SANCHEZ",
+    "lote": "21892-1",
+    "barrio": "EL MEZQUITE"
+  },
+  {
+    "id": 1395,
+    "nombre": "VICTOR HERNANDEZ ORTIZ",
+    "lote": "21892-2",
+    "barrio": "EL MEZQUITE"
+  },
+  {
+    "id": 1396,
+    "nombre": "JOSE HERNANDEZ CORONA",
+    "lote": "21897-A",
+    "barrio": "EL MEZQUITE"
+  },
+  {
+    "id": 1397,
+    "nombre": "JESUS HERNANDEZ CORTES",
+    "lote": "21898-1",
+    "barrio": "EL MEZQUITE"
+  },
+  {
+    "id": 1398,
+    "nombre": "SABAS HERNANDEZ SANTIAGO",
+    "lote": "21900-1",
+    "barrio": "EL MEZQUITE"
+  },
+  {
+    "id": 1399,
+    "nombre": "SATURNINO PORRAS",
+    "lote": "21900-A",
+    "barrio": ""
+  },
+  {
+    "id": 1400,
+    "nombre": "HERIBERTO HERNANDEZ PEREZ",
+    "lote": "21900-B",
+    "barrio": "EL MEZQUITE"
+  },
+  {
+    "id": 1401,
+    "nombre": "BARTOLO GOMEZ AGUILAR",
+    "lote": "21909-1",
+    "barrio": "EL MEZQUITE"
+  },
+  {
+    "id": 1402,
+    "nombre": "FELIPE HERNANDEZ ANGELES",
+    "lote": "21910-A",
+    "barrio": "EL MEZQUITE"
+  },
+  {
+    "id": 1403,
+    "nombre": "MARCO ANTONIO PORRAS CRUZ",
+    "lote": "21917-A",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1404,
+    "nombre": "MARTINIANO PORRAS ESCAMILLA",
+    "lote": "21918-AE",
+    "barrio": ""
+  },
+  {
+    "id": 1405,
+    "nombre": "CATALINA CRUZ BAUTISTA",
+    "lote": "21922-A",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1406,
+    "nombre": "JOSE DORANTES PORRAS",
+    "lote": "21924-1",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1407,
+    "nombre": "JOSE DORANTES PORRAS",
+    "lote": "21924-A",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1408,
+    "nombre": "HERIBERTO REYES MARETINEZ",
+    "lote": "21935-1",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1409,
+    "nombre": "ASCENCION CORONA HERNANDEZ",
+    "lote": "21937",
+    "barrio": ""
+  },
+  {
+    "id": 1410,
+    "nombre": "ISMAEL PORRAS ESCAMILLA",
+    "lote": "21941-A1",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1411,
+    "nombre": "ISMAEL PORRAS GUERRERO",
+    "lote": "21948-A",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1412,
+    "nombre": "FIDEL GARCIA CERVANTES",
+    "lote": "21954-A",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1413,
+    "nombre": "AUSTROBERTO PORRAS MENDIETA",
+    "lote": "21957-1",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1414,
+    "nombre": "ISABEL PORRAS HERNANDEZ",
+    "lote": "21957-B",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1415,
+    "nombre": "ISMAEL PORRAS GUERRERO",
+    "lote": "21958-1",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1416,
+    "nombre": "ERASTO PORRAS SANCHEZ",
+    "lote": "21960-A",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1417,
+    "nombre": "VICTORIANO PORRAS HERNANDEZ",
+    "lote": "21961-a",
+    "barrio": ""
+  },
+  {
+    "id": 1418,
+    "nombre": "PAZ GARCIA HERNANDEZ",
+    "lote": "21963-1",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1419,
+    "nombre": "ONECIMO PORRAS GUERRERO",
+    "lote": "21970-1",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1420,
+    "nombre": "JUAN PORRAS CORONA",
+    "lote": "21970-A",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1421,
+    "nombre": "ISMAEL PORRAS GUERRERO",
+    "lote": "21972-1",
+    "barrio": ""
+  },
+  {
+    "id": 1422,
+    "nombre": "ISMAEL PORRAS GUERRERO",
+    "lote": "21972-A",
+    "barrio": ""
+  },
+  {
+    "id": 1423,
+    "nombre": "ALFREDO GARDUÑO MOTA",
+    "lote": "21973-1",
+    "barrio": ""
+  },
+  {
+    "id": 1424,
+    "nombre": "JACINTO MARTINEZ PORRAS",
+    "lote": "21974-A",
+    "barrio": "PROPIEDAD HUITEL"
+  },
+  {
+    "id": 1425,
+    "nombre": "BASILIO PORRAS CORTES",
+    "lote": "21977-1",
+    "barrio": "PROPIEDAD HUITEL"
+  },
+  {
+    "id": 1426,
+    "nombre": "ISMAEL PORRAS CRUZ",
+    "lote": "21980-1",
+    "barrio": "PROPIEDAD HUITEL"
+  },
+  {
+    "id": 1427,
+    "nombre": "MARIA PORRAS HERNANDEZ",
+    "lote": "21981-1",
+    "barrio": "VARIADO"
+  },
+  {
+    "id": 1428,
+    "nombre": "JUAN MOTA HERNANDEZ",
+    "lote": "21984-1",
+    "barrio": "PROPIEDAD HUITEL"
+  },
+  {
+    "id": 1429,
+    "nombre": "HERLINDO PORRAS BARRERA",
+    "lote": "21994-1",
+    "barrio": "VARIADO"
+  },
+  {
+    "id": 1430,
+    "nombre": "GERARDO MARTINEZ MONROY",
+    "lote": "21995-1",
+    "barrio": "VARIADO"
+  },
+  {
+    "id": 1431,
+    "nombre": "JUAN PORRAS GUERRERO",
+    "lote": "21996-1",
+    "barrio": "VARIADO"
+  },
+  {
+    "id": 1432,
+    "nombre": "JUAN PORRAS GUERRERO",
+    "lote": "21996-2",
+    "barrio": "VARIADO"
+  },
+  {
+    "id": 1433,
+    "nombre": "BENJAMIN PEREZ SERRANO",
+    "lote": "22002-1",
+    "barrio": "HUITEL PROP"
+  },
+  {
+    "id": 1434,
+    "nombre": "JOSE GARCIA PORRAS",
+    "lote": "22004-AE",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1435,
+    "nombre": "JUAN ALFARO MARTINEZ",
+    "lote": "22010-1",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1436,
+    "nombre": "LUISA PEREZ MARTINEZ",
+    "lote": "22010-2",
+    "barrio": "HUITEL"
+  },
+  {
+    "id": 1437,
+    "nombre": "NESTORA AGUILAR SERRANO",
+    "lote": "22013-3",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1438,
+    "nombre": "TELESFORO AGUILAR SERRANO",
+    "lote": "22013-5",
+    "barrio": "EL LLANO"
+  },
+  {
+    "id": 1439,
+    "nombre": "PEDRO AGUILAR SANTIAGO",
+    "lote": "22013-CE",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 1440,
+    "nombre": "NEMORIO RIOS CONTRERAS",
+    "lote": "22016-a",
+    "barrio": ""
+  },
+  {
+    "id": 1441,
+    "nombre": "LUCIA AGUILAR CRUZ",
+    "lote": "22017-2",
+    "barrio": "EL ALTO GDE"
+  },
+  {
+    "id": 1442,
+    "nombre": "J. GUADALUPE HERNANDEZ SALVADOR",
+    "lote": "22017-C",
+    "barrio": "VARIADO"
+  },
+  {
+    "id": 1443,
+    "nombre": "ALVARO OVIEDO PORRAS",
+    "lote": "22017-D",
+    "barrio": "ALTO HUITEL"
+  },
+  {
+    "id": 1444,
+    "nombre": "ROSA AGUILAR QUIJANO",
+    "lote": "22019-1",
+    "barrio": ""
+  },
+  {
+    "id": 1445,
+    "nombre": "J. ISABEL ANGELES PEREZ",
+    "lote": "22022-1",
+    "barrio": "EL ALTO GDE"
+  },
+  {
+    "id": 1446,
+    "nombre": "J. ISABEL ANGELES PEREZ",
+    "lote": "22022-A",
+    "barrio": "EL ALTO GDE"
+  },
+  {
+    "id": 1447,
+    "nombre": "ANASTACIO SANTIAGO PIZAÑA",
+    "lote": "22026-1",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 1448,
+    "nombre": "MARCIAL BALTAZAR CRUZ",
+    "lote": "22035-A",
+    "barrio": "2o. GIRON ACAY"
+  },
+  {
+    "id": 1449,
+    "nombre": "LEOPOLDO DIAZ OROPEZA",
+    "lote": "22040-A",
+    "barrio": "PARAISO"
+  },
+  {
+    "id": 1450,
+    "nombre": "MARCIAL OLIVA CRUZ",
+    "lote": "22042-A",
+    "barrio": "2o. GIRON ACAY"
+  },
+  {
+    "id": 1451,
+    "nombre": "JULIO DIAZ PIZAÑA",
+    "lote": "22043-A",
+    "barrio": "2o. GIRON ACAY"
+  },
+  {
+    "id": 1452,
+    "nombre": "MEDARDO PEREZ VENTURA",
+    "lote": "22050-1",
+    "barrio": "1ER. GIR ACAY"
+  },
+  {
+    "id": 1453,
+    "nombre": "JOSEFA ESTRADA PEREZ**",
+    "lote": "22068-.4",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 1454,
+    "nombre": "MAGDALENO ESTRADA RIVAS",
+    "lote": "22068-1",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 1455,
+    "nombre": "LUISA ESTRADA TOVAR**",
+    "lote": "22068-2",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 1456,
+    "nombre": "NABOR ESTRADA PEREZ",
+    "lote": "22068-3",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 1457,
+    "nombre": "GUADALUPE AGUILAR ROJO",
+    "lote": "22069-AE",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 1458,
+    "nombre": "CRESCENCIO AGUILAR CRUZ",
+    "lote": "22075-A",
+    "barrio": "PTE. QUEBRADO"
+  },
+  {
+    "id": 1459,
+    "nombre": "MAXIMO MOTA SIMON",
+    "lote": "22075-BE",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 1460,
+    "nombre": "BRAULIO ROJO PIZAÑA",
+    "lote": "22078-A",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 1461,
+    "nombre": "MARTIN SANTIAGO SANTIAGO",
+    "lote": "22078-B",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 1462,
+    "nombre": "PABLO QUIJANO PEREZ",
+    "lote": "22082-1",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 1463,
+    "nombre": "SANTIAGO MOTA AGUILAR",
+    "lote": "22106-A",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 1464,
+    "nombre": "AURELIO SANTIAGO OROPEZA",
+    "lote": "22107-A",
+    "barrio": "PTE QUEBRADO"
+  },
+  {
+    "id": 1465,
+    "nombre": "NARCISO AGUILAR SANTIAGO",
+    "lote": "22108-1",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 1466,
+    "nombre": "MA LUISA SANTIAGO MARTINEZ",
+    "lote": "22125-1",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 1467,
+    "nombre": "MA. DEL ROSARIO ALVAREZ OMAÑA",
+    "lote": "22139-A",
+    "barrio": "PTE. QUEBRADO"
+  },
+  {
+    "id": 1468,
+    "nombre": "NATALIO ROJO JIMENEZ",
+    "lote": "22175-1",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 1469,
+    "nombre": "CIPRIANO CRUZ PORRAS",
+    "lote": "22193-1",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 1470,
+    "nombre": "CIPRIANO CRUZ PORRAS",
+    "lote": "22193-2",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 1471,
+    "nombre": "PETRA AGUILAR LOPEZ",
+    "lote": "22194-1",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 1472,
+    "nombre": "FLORENCIO CUELLAR CRUZ",
+    "lote": "22202-B",
+    "barrio": "ALTO GDE"
+  },
+  {
+    "id": 1473,
+    "nombre": "JACINTO CUELLAR MONROY",
+    "lote": "22217-1",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 1474,
+    "nombre": "EFREN M. OROPEZA CRUZ",
+    "lote": "22222-A",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 1475,
+    "nombre": "GREGORIO SIMON REYES",
+    "lote": "22236-A",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 1476,
+    "nombre": "ANTONIO CRUZ DOMINGUEZ",
+    "lote": "22238-10",
+    "barrio": "ALTO CH"
+  },
+  {
+    "id": 1477,
+    "nombre": "GUILLERMO CRUZ DOMINGUEZ",
+    "lote": "22238-11",
+    "barrio": "ALTO CH"
+  },
+  {
+    "id": 1478,
+    "nombre": "PEDRO ROJO LUGO",
+    "lote": "22238-12",
+    "barrio": "ALTO CH"
+  },
+  {
+    "id": 1479,
+    "nombre": "JUAN AGUILAR LORENZO",
+    "lote": "22238-13",
+    "barrio": "ALTO CH"
+  },
+  {
+    "id": 1480,
+    "nombre": "DANIEL GARCIA SANCHEZ",
+    "lote": "22238-14",
+    "barrio": "ALTO CHI"
+  },
+  {
+    "id": 1481,
+    "nombre": "TITO ANGELES MOTA",
+    "lote": "22238-15",
+    "barrio": "ALTO CHI"
+  },
+  {
+    "id": 1482,
+    "nombre": "EULALIO GARCIA GONZALEZ",
+    "lote": "22238-16",
+    "barrio": "ALTO CH"
+  },
+  {
+    "id": 1483,
+    "nombre": "RUPERTO MOTA ROJO",
+    "lote": "22238-17",
+    "barrio": "ALTO CH"
+  },
+  {
+    "id": 1484,
+    "nombre": "JOSE SANCHEZ CUELLAR",
+    "lote": "22238-18",
+    "barrio": "ALTO CH"
+  },
+  {
+    "id": 1485,
+    "nombre": "FELIPE SANTIAGO ROJO",
+    "lote": "22238-19",
+    "barrio": "ALTO CH"
+  },
+  {
+    "id": 1486,
+    "nombre": "JACINTO GARCIA HERCULANO",
+    "lote": "22238-2",
+    "barrio": "ALTO CH"
+  },
+  {
+    "id": 1487,
+    "nombre": "FELIPA MONROY PIZAÑA",
+    "lote": "22238-20",
+    "barrio": "ALTO CH"
+  },
+  {
+    "id": 1488,
+    "nombre": "FELIPE SANTIAGO ROJO",
+    "lote": "22238-21",
+    "barrio": "ALTO CH"
+  },
+  {
+    "id": 1489,
+    "nombre": "TRINIDAD AGUILAR QUIJANO",
+    "lote": "22238-22",
+    "barrio": "ALTO CH"
+  },
+  {
+    "id": 1490,
+    "nombre": "J. TRINIDAD AGUILAR SERRANO",
+    "lote": "22238-23",
+    "barrio": "ALTO CH"
+  },
+  {
+    "id": 1491,
+    "nombre": "RICARDA AGUILAR ROJO",
+    "lote": "22238-24",
+    "barrio": "ALTO CH"
+  },
+  {
+    "id": 1492,
+    "nombre": "LEOBARDA AGUILAR ROJO",
+    "lote": "22238-25",
+    "barrio": "ALTO CH"
+  },
+  {
+    "id": 1493,
+    "nombre": "INOCENTE LOPEZ SANTIAGO",
+    "lote": "22238-3",
+    "barrio": "ALTO CH"
+  },
+  {
+    "id": 1494,
+    "nombre": "FLAVIO HERNANDEZ BARRERA",
+    "lote": "22238-4",
+    "barrio": "ALTO CH"
+  },
+  {
+    "id": 1495,
+    "nombre": "ERNESTO RIOS ORTIZ",
+    "lote": "22238-5",
+    "barrio": "ALTO CH"
+  },
+  {
+    "id": 1496,
+    "nombre": "FIDELIA MARTINEZ LUGO",
+    "lote": "22238-6",
+    "barrio": "ALTO CH"
+  },
+  {
+    "id": 1497,
+    "nombre": "ARMANDO CRUZ SANCHEZ",
+    "lote": "22238-7",
+    "barrio": "ALTO CH"
+  },
+  {
+    "id": 1498,
+    "nombre": "GABRIEL SANCHEZ GOMEZ",
+    "lote": "22238-8",
+    "barrio": "ALTO CH"
+  },
+  {
+    "id": 1499,
+    "nombre": "JUAN GONZALEZ CORNEJO",
+    "lote": "22238-9",
+    "barrio": "ALTO CH"
+  },
+  {
+    "id": 1500,
+    "nombre": "FIDEL CRUZ SIMON",
+    "lote": "22250-A",
+    "barrio": "ALTO CH"
+  },
+  {
+    "id": 1501,
+    "nombre": "FIDEL SIMON CRUZ",
+    "lote": "22250-A1",
+    "barrio": "ALTO CH"
+  },
+  {
+    "id": 1502,
+    "nombre": "JOSE GARCIA PORRAS",
+    "lote": "22250-B",
+    "barrio": "ALTO CH"
+  },
+  {
+    "id": 1503,
+    "nombre": "CRUZ HERNANDEZ LOPEZ",
+    "lote": "22250-C",
+    "barrio": "ALTO CH"
+  },
+  {
+    "id": 1504,
+    "nombre": "TOMAS MARTINEZ REYES",
+    "lote": "22257-A",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 1505,
+    "nombre": "PARCELA ESCOLAR HUITEL",
+    "lote": "22266-1",
+    "barrio": "EL ARBOLITO"
+  },
+  {
+    "id": 1506,
+    "nombre": "EPIFANIO HERNANDEZ AGUILAR",
+    "lote": "22266-A",
+    "barrio": "ALTO CH"
+  },
+  {
+    "id": 1507,
+    "nombre": "PAULINO OROPEZA DIAZ",
+    "lote": "22912-E",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 1508,
+    "nombre": "JOSE MIGUEL PEREZ",
+    "lote": "22913-A",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 1509,
+    "nombre": "OLEGARIO RAMIREZ DIAZ",
+    "lote": "22913-BE",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 1510,
+    "nombre": "FELIPE ESTRADA RIOS",
+    "lote": "22926-B",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 1511,
+    "nombre": "UBALDO JIMENEZ OROPEZA",
+    "lote": "22930-A",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 1512,
+    "nombre": "TERESO ESTRADA RIOS",
+    "lote": "22944-1",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 1513,
+    "nombre": "JOSE JIMENEZ ZUÑIGA",
+    "lote": "22945-CE",
+    "barrio": "2 G. ACAY PAR."
+  },
+  {
+    "id": 1514,
+    "nombre": "MARIA ISABEL DIAZ ANGELES",
+    "lote": "22954-A",
+    "barrio": "1 G. ACAY PAR."
+  },
+  {
+    "id": 1515,
+    "nombre": "ABEL MOTA HERNANDEZ",
+    "lote": "22959-1",
+    "barrio": "1 G. ACAY PAR."
+  },
+  {
+    "id": 1516,
+    "nombre": "DIONISIO DIAZ LORENZO",
+    "lote": "22959-A",
+    "barrio": "1 G. ACAY PAR."
+  },
+  {
+    "id": 1517,
+    "nombre": "JULIO DIAZ PIZAÑA",
+    "lote": "22963-A",
+    "barrio": "1 G. ACAY PAR."
+  },
+  {
+    "id": 1518,
+    "nombre": "NICOLAS CERVANTES SANTIAGO",
+    "lote": "23148-1",
+    "barrio": "2o. GIRON P"
+  },
+  {
+    "id": 1519,
+    "nombre": "PEDRO ROJO AGUILAR",
+    "lote": "23171-1",
+    "barrio": "1er. GIRON"
+  },
+  {
+    "id": 1520,
+    "nombre": "JORGE SANCHEZ MOTA",
+    "lote": "23194-1",
+    "barrio": "C. CHAMBAS"
+  },
+  {
+    "id": 1521,
+    "nombre": "MARIA GARCIA SALVADOR",
+    "lote": "23198-A",
+    "barrio": "C. NUEVA"
+  },
+  {
+    "id": 1522,
+    "nombre": "FORTUNATO HERNANDEZ ROJO",
+    "lote": "23232-A",
+    "barrio": "PISILLO"
+  },
+  {
+    "id": 1523,
+    "nombre": "GALDINO  GARCIA CORNEJO",
+    "lote": "23269-AE",
+    "barrio": "LAS CADENAS"
+  }
+]

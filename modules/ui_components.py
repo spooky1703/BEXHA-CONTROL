@@ -188,7 +188,7 @@ class VentanaPrincipal:
         ttk.Label(frame_venta, text="💵 $", font=('Helvetica', 20)).pack(side=tk.LEFT)
         label_total = ttk.Label(frame_venta, textvariable=self.total_dia,
                                 font=('Helvetica', 20, 'bold'),
-                                foreground='green')
+                                foreground='#506e78')
         label_total.pack(side=tk.LEFT)
         
         # Botón Agenda
@@ -545,7 +545,7 @@ class VentanaVenta:
             info_siembra = f"\n✅ Siembra activa: {siembra['cultivo']} - {siembra['numero_riegos']} riegos realizados"
             ttk.Label(frame_info, text=info_siembra,
                       font=('Helvetica', 10, 'bold'),
-                      foreground='green').pack(anchor=tk.W)
+                      foreground='#506e78').pack(anchor=tk.W)
         else:
             ttk.Label(frame_info, text="\n⚠️ No tiene siembra activa",
                       font=('Helvetica', 10, 'bold'),
@@ -620,7 +620,7 @@ class VentanaVenta:
         self.lbl_costo = ttk.Label(frame_costo,
                                    text="$0.00",
                                    font=('Helvetica', 20, 'bold'),
-                                   foreground='green')
+                                   foreground='#506e78')
         self.lbl_costo.pack()
         
         tarifa = obtener_configuracion('tarifa_hectarea')
@@ -1283,7 +1283,7 @@ class VentanaDetalleDia:
         self.label_total = ttk.Label(frame_totales,
                                      text="Total: $0.00",
                                      font=('Helvetica', 16, 'bold'),
-                                     foreground='green')
+                                     foreground='#506e78')
         self.label_total.pack()
         
         self.label_cantidad = ttk.Label(frame_totales,
@@ -2300,254 +2300,298 @@ class VentanaAdministrarDatos:
             messagebox.showerror("Error", f"Error al actualizar nombre: {str(e)}")         
 
 class VentanaEstadisticas:
-    """Ventana de estadísticas e insights con gráficas"""
+    """Ventana de estadísticas e insights con gráficas y pestañas"""
     
     def __init__(self, parent):
         self.ventana = tk.Toplevel(parent)
         self.ventana.title("📊 Estadísticas e Insights")
-        self.ventana.geometry("900x650")
+        self.ventana.geometry("1100x700")
         self.ventana.transient(parent)
         
-        # Obtener datos
+        # Obtener datos actualizados
         self.stats = obtener_estadisticas_generales()
         
-        # Crear scrollable
-        self.canvas, self.frame_principal = crear_ventana_scrollable(self.ventana, None)
+        # Estilo para las tarjetas
+        style = ttk.Style()
+        style.configure("Card.TFrame", background="white", relief="raised")
         
-        self.crear_widgets()
-    
-    def crear_widgets(self):
-        """Crea los widgets de la ventana"""
+        # Crear Notebook (Pestañas)
+        self.notebook = ttk.Notebook(self.ventana)
+        self.notebook.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
         
-        frame_principal = ttk.Frame(self.frame_principal, padding="20")
-        frame_principal.pack(fill=tk.BOTH, expand=True)
+        # Pestaña 1: Resumen General
+        self.tab_resumen = ttk.Frame(self.notebook)
+        self.notebook.add(self.tab_resumen, text="📈 Resumen General")
+        self.crear_tab_resumen()
         
-        # TÍTULO
-        ttk.Label(frame_principal, text="📊 ESTADÍSTICAS E INSIGHTS",
-                 font=('Helvetica', 16, 'bold')).pack(pady=10)
+        # Pestaña 2: Financiero
+        self.tab_financiero = ttk.Frame(self.notebook)
+        self.notebook.add(self.tab_financiero, text="💰 Financiero")
+        self.crear_tab_financiero()
         
-        # ===== PANEL DE RESUMEN =====
-        frame_resumen = ttk.LabelFrame(frame_principal, text="📈 Resumen General", padding="15")
-        frame_resumen.pack(fill=tk.X, pady=10)
+        # Pestaña 3: Geográfico
+        self.tab_geografico = ttk.Frame(self.notebook)
+        self.notebook.add(self.tab_geografico, text="🌍 Geográfico")
+        self.crear_tab_geografico()
         
+        # Pestaña 4: Operativo
+        self.tab_operativo = ttk.Frame(self.notebook)
+        self.notebook.add(self.tab_operativo, text="⚙️ Operativo")
+        self.crear_tab_operativo()
         
-        # Grid de estadísticas principales
-        stats_grid = ttk.Frame(frame_resumen)
-        stats_grid.pack(fill=tk.X)
+        # Botones de acción (fuera de las pestañas)
+        frame_botones = ttk.Frame(self.ventana)
+        frame_botones.pack(fill=tk.X, padx=10, pady=10)
         
-        self._crear_stat_card(stats_grid, 0, 0, "👥 Total Campesinos", 
-                             str(self.stats['total_campesinos']), "blue")
-        self._crear_stat_card(stats_grid, 0, 1, "🌾 Total Hectáreas", 
-                             f"{self.stats['total_hectareas']} ha", "green")
-        self._crear_stat_card(stats_grid, 0, 2, "✅ Hectáreas Sembradas", 
-                             f"{self.stats['hectareas_sembradas']} ha", "green")
-        self._crear_stat_card(stats_grid, 1, 0, "📊 Porcentaje Sembrado", 
-                             f"{self.stats['porcentaje_sembrado']}%", "orange")
-        self._crear_stat_card(stats_grid, 1, 1, "❌ Sin Sembrar", 
-                             f"{self.stats['hectareas_sin_sembrar']} ha", "red")
-        self._crear_stat_card(stats_grid, 1, 2, "⚠️ Campesinos Sin Siembra", 
-                             str(self.stats['campesinos_sin_siembra']), "red")
-        
-        # ===== FILTROS =====
-        frame_filtros = ttk.LabelFrame(frame_principal, text="🔍 Filtros", padding="10")
-        frame_filtros.pack(fill=tk.X, pady=10)
-        
-        ttk.Label(frame_filtros, text="Filtrar por cultivo:").pack(side=tk.LEFT, padx=5)
-        
-        self.combo_filtro = ttk.Combobox(frame_filtros, 
-                                         values=['Todos'] + list(self.stats['siembras_por_cultivo'].keys()),
-                                         state='readonly', width=20)
-        self.combo_filtro.current(0)
-        self.combo_filtro.pack(side=tk.LEFT, padx=5)
-        self.combo_filtro.bind('<<ComboboxSelected>>', self.aplicar_filtro)
-        
-        ttk.Button(frame_filtros, text="🔄 Actualizar",
+        ttk.Button(frame_botones, text="🔄 Actualizar Datos",
                   command=self.actualizar_datos).pack(side=tk.LEFT, padx=5)
         
-        # ===== GRÁFICAS =====
-        frame_graficas = ttk.Frame(frame_principal)
-        frame_graficas.pack(fill=tk.BOTH, expand=True, pady=10)
-        
-        # Gráfica 1: Hectáreas por cultivo
-        self.crear_grafica_barras(frame_graficas, 
-                                   self.stats['hectareas_por_cultivo'],
-                                   "Hectáreas Sembradas por Cultivo",
-                                   "Cultivo", "Hectáreas")
-        
-        # ===== DETALLES POR CULTIVO =====
-        frame_detalles = ttk.LabelFrame(frame_principal, text="📋 Detalles por Cultivo", padding="10")
-        frame_detalles.pack(fill=tk.BOTH, expand=True, pady=10)
-        
-        # Tabla de cultivos
-        self.tree = ttk.Treeview(frame_detalles, 
-                                 columns=('cultivo', 'campesinos', 'hectareas', 'porcentaje'),
-                                 show='headings', height=10)
-        
-        self.tree.heading('cultivo', text='Cultivo')
-        self.tree.heading('campesinos', text='Campesinos')
-        self.tree.heading('hectareas', text='Hectáreas')
-        self.tree.heading('porcentaje', text='% del Total')
-        
-        self.tree.column('cultivo', width=150)
-        self.tree.column('campesinos', width=100)
-        self.tree.column('hectareas', width=100)
-        self.tree.column('porcentaje', width=100)
-        
-        scrollbar = ttk.Scrollbar(frame_detalles, orient=tk.VERTICAL, command=self.tree.yview)
-        self.tree.configure(yscroll=scrollbar.set)
-        
-        self.tree.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
-        scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
-        
-        self.cargar_tabla_cultivos()
-        
-         # ===== BOTONES DE ACCIÓN ===== 
-        frame_botones = ttk.Frame(frame_principal)
-        frame_botones.pack(pady=15)
-        
-        ttk.Button(frame_botones, text="📄 Exportar PDF",
+        ttk.Button(frame_botones, text="📄 Exportar Reporte PDF",
                   command=self.exportar_pdf).pack(side=tk.LEFT, padx=5)
         
         ttk.Button(frame_botones, text="❌ Cerrar",
-                  command=self.ventana.destroy).pack(side=tk.LEFT, padx=5)
-    
-    def _crear_stat_card(self, parent, row, col, titulo, valor, color):
-        """Crea una tarjeta de estadística"""
-        frame = ttk.Frame(parent, relief=tk.RIDGE, borderwidth=2)
-        frame.grid(row=row, column=col, padx=10, pady=10, sticky='nsew')
+                  command=self.ventana.destroy).pack(side=tk.RIGHT, padx=5)
+
+    def crear_tab_resumen(self):
+        """Crea el contenido de la pestaña Resumen"""
+        canvas, frame = crear_ventana_scrollable(self.tab_resumen, None)
         
-        ttk.Label(frame, text=titulo, font=('Helvetica', 9)).pack(pady=5)
-        ttk.Label(frame, text=valor, font=('Helvetica', 18, 'bold'),
-                 foreground=color).pack(pady=5)
+        # Título
+        ttk.Label(frame, text="VISTA GENERAL DEL CICLO", 
+                 font=('Helvetica', 14, 'bold')).pack(pady=10, anchor=tk.W)
+        
+        # KPI Cards
+        frame_kpi = ttk.Frame(frame)
+        frame_kpi.pack(fill=tk.X, pady=10)
+        
+        self._crear_kpi_card(frame_kpi, 0, 0, "Campesinos Activos", 
+                            str(self.stats['total_campesinos']), "👥", "#2E86AB")
+        self._crear_kpi_card(frame_kpi, 0, 1, "Hectáreas Totales", 
+                            f"{self.stats['total_hectareas']} ha", "🌾", "#2E86AB")
+        self._crear_kpi_card(frame_kpi, 0, 2, "Hectáreas Sembradas", 
+                            f"{self.stats['hectareas_sembradas']} ha", "✅", "#6A994E")
+        self._crear_kpi_card(frame_kpi, 0, 3, "Porcentaje Sembrado", 
+                            f"{self.stats['porcentaje_sembrado']}%", "📊", "#F18F01")
+        
+        # Gráficas
+        frame_graficas = ttk.Frame(frame)
+        frame_graficas.pack(fill=tk.BOTH, expand=True, pady=10)
+        
+        # Gráfica de Pastel (Distribución de Cultivos)
+        frame_pie = ttk.LabelFrame(frame_graficas, text="Distribución de Cultivos (Hectáreas)")
+        frame_pie.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=5)
+        
+        self.crear_grafica_pastel(frame_pie, self.stats['hectareas_por_cultivo'])
+        
+        # Tabla resumen cultivos
+        frame_tabla = ttk.LabelFrame(frame_graficas, text="Detalle por Cultivo")
+        frame_tabla.pack(side=tk.RIGHT, fill=tk.BOTH, expand=True, padx=5)
+        
+        tree = ttk.Treeview(frame_tabla, columns=('cultivo', 'has', 'pct'), show='headings', height=8)
+        tree.heading('cultivo', text='Cultivo')
+        tree.heading('has', text='Hectáreas')
+        tree.heading('pct', text='%')
+        tree.column('cultivo', width=100)
+        tree.column('has', width=80)
+        tree.column('pct', width=60)
+        tree.pack(fill=tk.BOTH, expand=True)
+        
+        for cultivo, has in self.stats['hectareas_por_cultivo'].items():
+            pct = (has / self.stats['total_hectareas'] * 100) if self.stats['total_hectareas'] > 0 else 0
+            tree.insert('', tk.END, values=(cultivo, f"{has:.1f}", f"{pct:.1f}%"))
+
+    def crear_tab_financiero(self):
+        """Crea el contenido de la pestaña Financiero"""
+        canvas, frame = crear_ventana_scrollable(self.tab_financiero, None)
+        
+        ttk.Label(frame, text="ANÁLISIS FINANCIERO", 
+                 font=('Helvetica', 14, 'bold')).pack(pady=10, anchor=tk.W)
+        
+        # KPIs Financieros
+        frame_kpi = ttk.Frame(frame)
+        frame_kpi.pack(fill=tk.X, pady=10)
+        
+        self._crear_kpi_card(frame_kpi, 0, 0, "Ingreso Potencial", 
+                            f"${self.stats['ingreso_potencial']:,.2f}", "💰", "#8B5A3C")
+        self._crear_kpi_card(frame_kpi, 0, 1, "Ingreso Real (Recaudado)", 
+                            f"${self.stats['ingreso_real']:,.2f}", "💵", "#6A994E")
+        self._crear_kpi_card(frame_kpi, 0, 2, "Eficiencia Recaudación", 
+                            f"{self.stats['eficiencia_recaudacion']}%", "📈", "#BC4B51")
+        
+        # Gráfica de Barras (Ingresos vs Potencial - Simulado visualmente o solo barras de cultivos)
+        frame_chart = ttk.LabelFrame(frame, text="Ingresos Estimados por Cultivo (Basado en Superficie)")
+        frame_chart.pack(fill=tk.BOTH, expand=True, pady=10)
+        
+        # Estimamos ingreso por cultivo = has * tarifa (aprox)
+        ingresos_por_cultivo = {k: v * 450 for k, v in self.stats['hectareas_por_cultivo'].items()} # 450 es tarifa base aprox
+        self.crear_grafica_barras(frame_chart, ingresos_por_cultivo, "Ingreso Estimado ($)", "Cultivo", "Monto ($)")
+
+    def crear_tab_geografico(self):
+        """Crea el contenido de la pestaña Geográfico"""
+        canvas, frame = crear_ventana_scrollable(self.tab_geografico, None)
+        
+        ttk.Label(frame, text="DISTRIBUCIÓN GEOGRÁFICA (BARRIOS)", 
+                 font=('Helvetica', 14, 'bold')).pack(pady=10, anchor=tk.W)
+        
+        # Gráfica Horizontal de Barrios
+        frame_chart = ttk.Frame(frame)
+        frame_chart.pack(fill=tk.BOTH, expand=True, pady=10)
+        
+        self.crear_grafica_barras_horizontal(frame_chart, self.stats['hectareas_por_barrio'], 
+                                            "Superficie por Barrio", "Hectáreas")
+
+    def crear_tab_operativo(self):
+        """Crea el contenido de la pestaña Operativo"""
+        canvas, frame = crear_ventana_scrollable(self.tab_operativo, None)
+        
+        ttk.Label(frame, text="METRICAS OPERATIVAS", 
+                 font=('Helvetica', 14, 'bold')).pack(pady=10, anchor=tk.W)
+        
+        frame_kpi = ttk.Frame(frame)
+        frame_kpi.pack(fill=tk.X, pady=10)
+        
+        self._crear_kpi_card(frame_kpi, 0, 0, "Campesinos Sin Siembra", 
+                            str(self.stats['campesinos_sin_siembra']), "⚠️", "#C73E1D")
+        self._crear_kpi_card(frame_kpi, 0, 1, "Hectáreas Sin Sembrar", 
+                            f"{self.stats['hectareas_sin_sembrar']} ha", "🚫", "#C73E1D")
+        
+        # Lista de cultivos activos (conteo de siembras)
+        frame_chart = ttk.LabelFrame(frame, text="Número de Siembras Activas por Cultivo")
+        frame_chart.pack(fill=tk.BOTH, expand=True, pady=10)
+        
+        self.crear_grafica_barras(frame_chart, self.stats['siembras_por_cultivo'], 
+                                 "Cantidad de Siembras", "Cultivo", "Cantidad")
+
+    def _crear_kpi_card(self, parent, row, col, titulo, valor, icono, color_borde):
+        """Crea una tarjeta KPI estilizada"""
+        frame = ttk.Frame(parent, relief=tk.RAISED, borderwidth=1)
+        frame.grid(row=row, column=col, padx=10, pady=5, sticky='nsew')
+        
+        # Borde superior de color
+        tk.Frame(frame, bg=color_borde, height=3).pack(fill=tk.X)
+        
+        ttk.Label(frame, text=f"{icono} {titulo}", font=('Helvetica', 9, 'bold'), 
+                 foreground='#555').pack(pady=(10, 5))
+        ttk.Label(frame, text=valor, font=('Helvetica', 16, 'bold'), 
+                 foreground='#333').pack(pady=(0, 10))
         
         parent.columnconfigure(col, weight=1)
-    
-    def crear_grafica_barras(self, parent, datos, titulo, xlabel, ylabel):
-        """Crea una gráfica de barras con matplotlib"""
+
+    def crear_grafica_pastel(self, parent, datos):
+        """Crea una gráfica de pastel"""
         try:
             import matplotlib
             matplotlib.use('TkAgg')
             from matplotlib.figure import Figure
             from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
             
-            # Crear figura
-            fig = Figure(figsize=(8, 4), dpi=100)
+            fig = Figure(figsize=(5, 4), dpi=100)
             ax = fig.add_subplot(111)
             
-            # Datos
-            cultivos = list(datos.keys())
-            valores = list(datos.values())
+            labels = list(datos.keys())
+            sizes = list(datos.values())
             
-            # Colores
-            colores = ['#2E86AB', '#A23B72', '#F18F01', '#C73E1D', '#6A994E', 
-                      '#BC4B51', '#8B5A3C', '#5F6F52']
+            # Colores personalizados
+            colors = ['#2E86AB', '#A23B72', '#F18F01', '#C73E1D', '#6A994E', '#BC4B51']
             
-            # Crear gráfica de barras
-            bars = ax.bar(cultivos, valores, color=colores[:len(cultivos)])
+            ax.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=90, colors=colors)
+            ax.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
             
-            # Etiquetas
-            ax.set_xlabel(xlabel, fontsize=10)
-            ax.set_ylabel(ylabel, fontsize=10)
-            ax.set_title(titulo, fontsize=12, fontweight='bold')
-            
-            # Rotar etiquetas del eje X
-            ax.tick_params(axis='x', rotation=45)
-            
-            # Agregar valores encima de las barras
-            for bar in bars:
-                height = bar.get_height()
-                ax.text(bar.get_x() + bar.get_width()/2., height,
-                       f'{height:.1f}',
-                       ha='center', va='bottom', fontsize=9)
-            
-            fig.tight_layout()
-            
-            # Agregar a Tkinter
             canvas = FigureCanvasTkAgg(fig, parent)
             canvas.draw()
             canvas.get_tk_widget().pack(fill=tk.BOTH, expand=True)
             
         except ImportError:
-            ttk.Label(parent, text="⚠️ Instala matplotlib para ver gráficas:\npip install matplotlib",
-                     foreground='red', font=('Helvetica', 11)).pack(pady=20)
-    
-    def cargar_tabla_cultivos(self):
-        """Carga la tabla de detalles por cultivo"""
-        self.tree.delete(*self.tree.get_children())
-        
-        total_hectareas = self.stats['total_hectareas']
-        
-        for cultivo, hectareas in self.stats['hectareas_por_cultivo'].items():
-            campesinos = self.stats['siembras_por_cultivo'].get(cultivo, 0)
-            porcentaje = (hectareas / total_hectareas * 100) if total_hectareas > 0 else 0
+            ttk.Label(parent, text="Instalar matplotlib").pack()
+
+    def crear_grafica_barras(self, parent, datos, titulo, xlabel, ylabel):
+        """Crea una gráfica de barras vertical"""
+        try:
+            import matplotlib
+            matplotlib.use('TkAgg')
+            from matplotlib.figure import Figure
+            from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
             
-            self.tree.insert('', tk.END, values=(
-                cultivo,
-                campesinos,
-                f"{hectareas:.2f} ha",
-                f"{porcentaje:.1f}%"
-            ))
-    
-    def aplicar_filtro(self, event=None):
-        """Aplica filtro por cultivo"""
-        cultivo = self.combo_filtro.get()
-        
-        if cultivo == 'Todos':
-            messagebox.showinfo("Filtro", "Mostrando todos los cultivos")
-            return
-        
-        # Obtener estadísticas del cultivo específico
-        stats_cultivo = obtener_estadisticas_por_cultivo(cultivo)
-        
-        mensaje = f"""📊 ESTADÍSTICAS DE {cultivo.upper()}
-            👥 Campesinos: {stats_cultivo['total_campesinos']}
-            🌾 Hectáreas: {stats_cultivo['total_hectareas']} ha
-            💧 Riegos promedio: {stats_cultivo['riegos_promedio']}
-            📊 Total de riegos: {stats_cultivo['total_riegos']}"""
-        
-        messagebox.showinfo(f"Cultivo: {cultivo}", mensaje)
-    
+            fig = Figure(figsize=(6, 4), dpi=100)
+            ax = fig.add_subplot(111)
+            
+            keys = list(datos.keys())
+            values = list(datos.values())
+            
+            ax.bar(keys, values, color='#2E86AB')
+            ax.set_title(titulo, fontsize=10)
+            ax.set_xlabel(xlabel, fontsize=9)
+            ax.set_ylabel(ylabel, fontsize=9)
+            ax.tick_params(axis='x', rotation=45, labelsize=8)
+            
+            fig.tight_layout()
+            
+            canvas = FigureCanvasTkAgg(fig, parent)
+            canvas.draw()
+            canvas.get_tk_widget().pack(fill=tk.BOTH, expand=True)
+            
+        except ImportError:
+            ttk.Label(parent, text="Instalar matplotlib").pack()
+
+    def crear_grafica_barras_horizontal(self, parent, datos, titulo, xlabel):
+        """Crea una gráfica de barras horizontal"""
+        try:
+            import matplotlib
+            matplotlib.use('TkAgg')
+            from matplotlib.figure import Figure
+            from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+            
+            fig = Figure(figsize=(6, 6), dpi=100)
+            ax = fig.add_subplot(111)
+            
+            # Ordenar datos
+            sorted_items = sorted(datos.items(), key=lambda x: x[1])
+            keys = [k for k, v in sorted_items]
+            values = [v for k, v in sorted_items]
+            
+            ax.barh(keys, values, color='#6A994E')
+            ax.set_title(titulo, fontsize=10)
+            ax.set_xlabel(xlabel, fontsize=9)
+            ax.tick_params(axis='y', labelsize=8)
+            
+            fig.tight_layout()
+            
+            canvas = FigureCanvasTkAgg(fig, parent)
+            canvas.draw()
+            canvas.get_tk_widget().pack(fill=tk.BOTH, expand=True)
+            
+        except ImportError:
+            ttk.Label(parent, text="Instalar matplotlib").pack()
+
     def actualizar_datos(self):
         """Actualiza los datos y refresca la ventana"""
-        self.stats = obtener_estadisticas_generales()
         self.ventana.destroy()
         VentanaEstadisticas(self.ventana.master)
 
     def exportar_pdf(self):
-        """Exporta estadísticas a PDF profesional"""
+        """Exporta estadísticas a PDF"""
         try:
-            from modules.reports import generar_pdf_estadisticas  # CON GUIONES BAJOS
-            from modules.models import obtener_estadisticas_generales
+            from modules.reports import generar_pdf_estadisticas
             
-            # Obtener estadísticas generales
-            estadisticas = obtener_estadisticas_generales()
-            
-            # Construir lista de estadísticas por cultivo desde los datos que ya tenemos
+            # Preparar datos extra para el reporte si es necesario
             estadisticas_cultivo = []
-            for cultivo in estadisticas['hectareas_por_cultivo'].keys():
+            for cultivo, has in self.stats['hectareas_por_cultivo'].items():
                 estadisticas_cultivo.append({
                     'cultivo': cultivo,
-                    'num_siembras': estadisticas['siembras_por_cultivo'].get(cultivo, 0),
-                    'superficie_total': estadisticas['hectareas_por_cultivo'].get(cultivo, 0),
-                    'num_recibos': 0,  # No tenemos este dato fácilmente
-                    'ingresos_totales': 0  # No tenemos este dato fácilmente
+                    'num_siembras': self.stats['siembras_por_cultivo'].get(cultivo, 0),
+                    'superficie_total': has,
+                    'num_recibos': 0,
+                    'ingresos_totales': 0
                 })
             
-            # Generar PDF con diseño profesional
-            ruta_pdf = generar_pdf_estadisticas(estadisticas, estadisticas_cultivo)
+            ruta_pdf = generar_pdf_estadisticas(self.stats, estadisticas_cultivo)
             
-            messagebox.showinfo("Éxito", 
-                f"PDF generado correctamente\n\n"
-                f"Archivo: {os.path.basename(ruta_pdf)}")
-            
-            # Abrir automáticamente el PDF
-            from modules.reports import abrir_pdf
-            abrir_pdf(ruta_pdf)
-            
+            if messagebox.askyesno("Éxito", f"PDF generado: {os.path.basename(ruta_pdf)}\n¿Abrir ahora?"):
+                from modules.reports import abrir_pdf
+                abrir_pdf(ruta_pdf)
+                
         except Exception as e:
-            import traceback
-            print(traceback.format_exc())
-            messagebox.showerror("Error", f"Error al generar PDF:\n{str(e)}")
+            messagebox.showerror("Error", f"Error al generar PDF: {e}")
 
 ####
 class VentanaRenombrarCampesino:
@@ -3914,7 +3958,7 @@ class VentanaNuevaCuota:
     def __init__(self, parent, ventana_gestionar):
         self.ventana = tk.Toplevel(parent)
         self.ventana.title("Nueva Cuota de Cooperación")
-        self.ventana.geometry("450x380")
+        self.ventana.geometry("450x480")
         self.ventana.transient(parent)
         self.ventana.grab_set()
         self.ventana_gestionar = ventana_gestionar
@@ -4767,7 +4811,7 @@ class VentanaAgenda:
         siembra = obtener_siembra_activa(campesino_id)
         if siembra:
             texto_siembra = f"🌱 {siembra['cultivo']} - {siembra['numero_riegos']} riegos - {siembra['ciclo']}"
-            self.lbl_siembra.config(text=texto_siembra, foreground='green')
+            self.lbl_siembra.config(text=texto_siembra, foreground='#506e78')
         else:
             self.lbl_siembra.config(text="Sin siembra activa", foreground='gray')
         
@@ -4824,7 +4868,7 @@ class VentanaAgenda:
         # Verificar INE
         tiene_ine = verificar_documento_existe(campesino_id, 'INE')
         if tiene_ine:
-            self.lbl_ine.config(text="INE: ✓ Documento subido", foreground='green')
+            self.lbl_ine.config(text="INE: ✓ Documento subido", foreground='#506e78')
             self.btn_ver_ine.config(state=tk.NORMAL)
             self.btn_eliminar_ine.config(state=tk.NORMAL)
         else:
@@ -4835,7 +4879,7 @@ class VentanaAgenda:
         # Verificar Documento Agrario
         tiene_agrario = verificar_documento_existe(campesino_id, 'DOCUMENTO_AGRARIO')
         if tiene_agrario:
-            self.lbl_agrario.config(text="Doc. Agrario: ✓ Documento subido", foreground='green')
+            self.lbl_agrario.config(text="Doc. Agrario: ✓ Documento subido", foreground='#506e78')
             self.btn_ver_agrario.config(state=tk.NORMAL)
             self.btn_eliminar_agrario.config(state=tk.NORMAL)
         else:

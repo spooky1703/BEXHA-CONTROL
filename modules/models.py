@@ -942,40 +942,29 @@ def cargar_campesinos_desde_csv(ruta_csv: str):
 
 def obtener_estadisticas_generales() -> Dict:
     """
-    Obtiene estadísticas generales de todos los campesinos y siembras.
-    Retorna:
-    - total_campesinos
-    - total_hectareas
-    - hectareas_sembradas
-    - porcentaje_sembrado
-    - siembras_por_cultivo (dict)
-    - hectareas_por_cultivo (dict)
-    - campesinos_sin_siembra
+    Obtiene estadísticas generales, financieras y geográficas.
     """
     conn = get_connection()
     cursor = conn.cursor()
     
-    # Total de campesinos
-    cursor.execute("SELECT COUNT(*) FROM campesinos")
+    # 1. ESTADÍSTICAS BÁSICAS
+    cursor.execute("SELECT COUNT(*) FROM campesinos WHERE activo = 1")
     total_campesinos = cursor.fetchone()[0]
     
-    # Total de hectáreas
-    cursor.execute("SELECT SUM(superficie) FROM campesinos")
+    cursor.execute("SELECT SUM(superficie) FROM campesinos WHERE activo = 1")
     total_hectareas = cursor.fetchone()[0] or 0
     
-    # Hectáreas sembradas (con siembra activa)
     cursor.execute("""
         SELECT SUM(c.superficie) 
         FROM campesinos c
         INNER JOIN siembras s ON c.id = s.campesino_id
-        WHERE s.activa = 1
+        WHERE s.activa = 1 AND c.activo = 1
     """)
     hectareas_sembradas = cursor.fetchone()[0] or 0
     
-    # Porcentaje sembrado
     porcentaje_sembrado = (hectareas_sembradas / total_hectareas * 100) if total_hectareas > 0 else 0
     
-    # Siembras por cultivo (cantidad)
+    # 2. ESTADÍSTICAS POR CULTIVO
     cursor.execute("""
         SELECT cultivo, COUNT(*) as cantidad
         FROM siembras
@@ -985,7 +974,6 @@ def obtener_estadisticas_generales() -> Dict:
     """)
     siembras_por_cultivo = {row[0]: row[1] for row in cursor.fetchall()}
     
-    # Hectáreas por cultivo
     cursor.execute("""
         SELECT s.cultivo, SUM(c.superficie) as hectareas
         FROM siembras s
@@ -996,12 +984,46 @@ def obtener_estadisticas_generales() -> Dict:
     """)
     hectareas_por_cultivo = {row[0]: row[1] for row in cursor.fetchall()}
     
+    # 3. ESTADÍSTICAS FINANCIERAS
+    # Obtener tarifa por hectárea
+    cursor.execute("SELECT valor FROM configuracion WHERE clave = 'tarifa_hectarea'")
+    row_tarifa = cursor.fetchone()
+    tarifa_hectarea = float(row_tarifa['valor']) if row_tarifa else 450.0
+    
+    # Ingreso Potencial (Total Hectáreas * Tarifa)
+    ingreso_potencial = total_hectareas * tarifa_hectarea
+    
+    # Ingreso Real (Suma de recibos del ciclo actual)
+    cursor.execute("SELECT valor FROM configuracion WHERE clave = 'ciclo_actual'")
+    row_ciclo = cursor.fetchone()
+    ciclo_actual = row_ciclo['valor'] if row_ciclo else ""
+    
+    cursor.execute("""
+        SELECT SUM(costo) 
+        FROM recibos 
+        WHERE eliminado = 0 AND ciclo = ?
+    """, (ciclo_actual,))
+    ingreso_real = cursor.fetchone()[0] or 0
+    
+    eficiencia_recaudacion = (ingreso_real / ingreso_potencial * 100) if ingreso_potencial > 0 else 0
+    
+    # 4. ESTADÍSTICAS GEOGRÁFICAS (Por Barrio)
+    cursor.execute("""
+        SELECT barrio, SUM(superficie) as hectareas
+        FROM campesinos
+        WHERE activo = 1
+        GROUP BY barrio
+        ORDER BY hectareas DESC
+    """)
+    hectareas_por_barrio = {row[0]: row[1] for row in cursor.fetchall()}
+    
+    # 5. OPERATIVO
     # Campesinos sin siembra
     cursor.execute("""
         SELECT COUNT(*) 
         FROM campesinos c
         LEFT JOIN siembras s ON c.id = s.campesino_id AND s.activa = 1
-        WHERE s.id IS NULL
+        WHERE s.id IS NULL AND c.activo = 1
     """)
     campesinos_sin_siembra = cursor.fetchone()[0]
     
@@ -1015,7 +1037,13 @@ def obtener_estadisticas_generales() -> Dict:
         'porcentaje_sembrado': round(porcentaje_sembrado, 2),
         'siembras_por_cultivo': siembras_por_cultivo,
         'hectareas_por_cultivo': hectareas_por_cultivo,
-        'campesinos_sin_siembra': campesinos_sin_siembra
+        'campesinos_sin_siembra': campesinos_sin_siembra,
+        # Nuevos campos
+        'ingreso_potencial': round(ingreso_potencial, 2),
+        'ingreso_real': round(ingreso_real, 2),
+        'eficiencia_recaudacion': round(eficiencia_recaudacion, 2),
+        'hectareas_por_barrio': hectareas_por_barrio,
+        'ciclo_actual': ciclo_actual
     }
 
 def obtener_estadisticas_por_cultivo(cultivo: str) -> Dict:

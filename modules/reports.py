@@ -23,6 +23,9 @@ if platform.system() == "Windows":
 
 from typing import Dict, List
 from modules.models import obtener_recibo_por_id, obtener_configuracion, obtener_recibos_por_folio
+import qrcode
+from reportlab.lib.utils import ImageReader
+from io import BytesIO
 
 # ✅ AGREGAR ESTOS IMPORTS PARA LA FUNCIÓN DE EXCEL
 import openpyxl
@@ -39,7 +42,7 @@ LOGO_PATH = os.path.join('assets', 'lagoo.png')
 
 # ==================== UTILIDADES DE IMPRESIÓN (Windows) ====================
 
-def _buscar_sumatra() -> str | None:
+def _buscar_sumatra() -> Optional[str]:
     """
     Busca SumatraPDF en rutas comunes (x64/x86) y retorna la ruta si existe.
     """
@@ -54,7 +57,7 @@ def _buscar_sumatra() -> str | None:
             return p
     return None
 
-def _imprimir_pdf_windows(ruta_pdf: str, impresora: str | None = None) -> None:
+def _imprimir_pdf_windows(ruta_pdf: str, impresora: Optional[str] = None) -> None:
     """
     Imprime en Windows con múltiples fallbacks:
     1) SumatraPDF (mejor opción)
@@ -257,11 +260,11 @@ def _dibujar_recibo_principal(c, recibo: Dict, nombre_oficina: str, ubicacion: s
     """
     
     # ===== COLORES =====
-    COLOR_VERDE = colors.HexColor('#B8D1BF')
+    COLOR_VERDE = colors.HexColor('#bedcdc')  # Antes #B8D1BF (Fondo header)
     COLOR_BEIGE = colors.HexColor('#FFFFFF')
-    COLOR_BEIGE_OSCURO = colors.HexColor('#C9B99A')
-    COLOR_TEXTO = colors.HexColor('#2C3E2E')
-    COLOR_TEXTO_GRIS = colors.HexColor('#666666')
+    COLOR_BEIGE_OSCURO = colors.HexColor('#bed2dc') # Antes #C9B99A (Líneas)
+    COLOR_TEXTO = colors.HexColor('#506e78')  # Antes #2C3E2E (Texto principal)
+    COLOR_TEXTO_GRIS = colors.HexColor('#506e78') # Antes #666666 (Texto secundario - unificado)
     
     # ===== FONDO BEIGE =====
     c.setFillColor(COLOR_BEIGE)
@@ -273,10 +276,11 @@ def _dibujar_recibo_principal(c, recibo: Dict, nombre_oficina: str, ubicacion: s
     c.roundRect(0.4*cm, RECIBO_ALTO - 2.3*cm, RECIBO_ANCHO - 0.8*cm, 1.9*cm, 
                 0.4*cm, stroke=0, fill=1)
     
-    # ===== LOGO (más grande) =====
+    # ===== LOGO (más grande y más abajo) =====
     if os.path.exists(LOGO_PATH):
         try:
-            c.drawImage(LOGO_PATH, 0.7*cm, RECIBO_ALTO - 2.1*cm, 
+            # Bajamos el logo un poco más (de -2.1 a -2.2)
+            c.drawImage(LOGO_PATH, 0.7*cm, RECIBO_ALTO - 2.2*cm, 
                        width=1.7*cm, height=1.7*cm, mask='auto')
         except:
             pass
@@ -284,12 +288,17 @@ def _dibujar_recibo_principal(c, recibo: Dict, nombre_oficina: str, ubicacion: s
     # ===== TÍTULO (texto más grande) =====
     c.setFillColor(colors.black)
     c.setFont("Helvetica-Bold", 10)
-    c.drawCentredString(RECIBO_ANCHO/2 + 0.5*cm, RECIBO_ALTO - 1*cm, 
+    # Centrado exacto (quitamos el +0.5cm)
+    c.drawCentredString(RECIBO_ANCHO/2, RECIBO_ALTO - 1.0*cm, 
                        "ASOCIACION DE USUARIOS DE LA SECCION 14 EL BEXHA, A.C.")
     
+    # ===== SUBTÍTULO VALE DE RIEGO =====
+    c.setFont("Helvetica-Bold", 12)
+    c.drawCentredString(RECIBO_ANCHO/2, RECIBO_ALTO - 1.6*cm, 
+                       "VALE DE RIEGO")
+    
     c.setFont("Helvetica", 8)
-    c.drawCentredString(RECIBO_ANCHO/2 + 0.5*cm, RECIBO_ALTO - 1.75*cm, 
-                       "RFC: ACB030619G68")
+    # RFC ELIMINADO
     
     # ===== SEPARADOR =====
     y_pos = RECIBO_ALTO - 2.45*cm
@@ -385,8 +394,8 @@ def _dibujar_recibo_principal(c, recibo: Dict, nombre_oficina: str, ubicacion: s
     c.setFont("Helvetica", 7.5)
     
     fecha_obj = datetime.strptime(recibo['fecha'], '%Y-%m-%d')
-    c.drawString(0.8*cm, y_pos, 
-                f"C. Juan Aldama #25, Col. Centro, Tezontepec de Aldama. Fecha: {fecha_obj.strftime('%d/%m/%Y')}")
+    # DIRECCIÓN ELIMINADA, SOLO FECHA
+    c.drawString(0.8*cm, y_pos, f"Fecha: {fecha_obj.strftime('%d/%m/%Y')}")
     
     y_pos -= 0.28*cm
     hora_obj = datetime.strptime(recibo['hora'], '%H:%M:%S')
@@ -401,15 +410,7 @@ def _dibujar_recibo_principal(c, recibo: Dict, nombre_oficina: str, ubicacion: s
     c.drawRightString(RECIBO_ANCHO - 0.8*cm, y_pos + 0.28*cm, "Firma Recaudador")
     c.line(RECIBO_ANCHO - 4*cm, y_pos + 0.18*cm, RECIBO_ANCHO - 0.8*cm, y_pos + 0.18*cm)
     
-    # ===== LEYENDA LEGAL (texto más grande y más espacio) =====
-    y_pos -= 0.45*cm
-    c.setFont("Helvetica", 6)
-    
-    c.drawString(0.7*cm, y_pos, 
-                "Este recibo ampara el pago de cuota ordinaria destinada exclusivamente al mantenimiento y operación del módulo de riego, conforme al régimen fiscal")
-    y_pos -= 0.22*cm
-    c.drawString(0.7*cm, y_pos,
-                "de personas morales con fines no lucrativos. Exento de IVA y de ISR conforme a los artículos 79 y 80 de la Ley del ISR y al artículo 15, fracción XII de la Ley del IVA.")
+    # LEYENDA LEGAL ELIMINADA
     
     # ===== MARCA DE AGUA (CENTRADA VERTICAL Y HORIZONTALMENTE) =====
     if es_reimpresion:
@@ -419,6 +420,55 @@ def _dibujar_recibo_principal(c, recibo: Dict, nombre_oficina: str, ubicacion: s
         c.rotate(30)
         c.drawString(8 * cm, 0.1 * cm, "REIMPRESIÓN") # Cambiado de 0.5*cm a 0.1*cm
         c.restoreState()
+
+    # ===== CÓDIGO QR =====
+    # Datos: lote|nombre|folio|cultivo|superficie|lista_riegos|paraje
+    
+    # Calcular lista de riegos para este folio
+    recibos_folio = obtener_recibos_por_folio(recibo['folio'])
+    # Ordenar por número de riego
+    recibos_folio.sort(key=lambda x: x['numero_riego'])
+    lista_riegos = ",".join([str(r['numero_riego']) for r in recibos_folio])
+    
+    qr_data = f"{recibo['numero_lote']}|{recibo['nombre']}|{recibo['folio']}|{recibo['cultivo']}|{recibo['superficie']}|{lista_riegos}|{recibo['barrio']}"
+    
+    qr = qrcode.QRCode(
+        version=1,
+        error_correction=qrcode.constants.ERROR_CORRECT_L,
+        box_size=10,
+        border=1,
+    )
+    qr.add_data(qr_data)
+    qr.make(fit=True)
+    
+    img_qr = qr.make_image(fill_color="black", back_color="white")
+    
+    # Convertir a formato compatible con ReportLab
+    img_buffer = BytesIO()
+    img_qr.save(img_buffer)
+    img_buffer.seek(0)
+    
+    # Dibujar QR
+    qr_size = 2.2 * cm # Reducimos un poco el tamaño
+    qr_x = 0.8 * cm
+    qr_y = 0.7 * cm # Bajamos más la posición
+    
+    # Contorno del QR
+    c.setStrokeColor(COLOR_VERDE)
+    c.setLineWidth(1)
+    c.rect(qr_x - 0.1*cm, qr_y - 0.1*cm, qr_size + 0.2*cm, qr_size + 0.2*cm, stroke=1, fill=0)
+    
+    c.drawImage(ImageReader(img_buffer), qr_x, qr_y, width=qr_size, height=qr_size)
+    
+    # ===== CAJA "NO ESCANEAR QR" =====
+    # Caja debajo
+    c.setFillColor(COLOR_VERDE) # Mismo color del header
+    c.roundRect(qr_x, qr_y - 0.5*cm, qr_size, 0.4*cm, 0.1*cm, stroke=0, fill=1)
+    
+    # Texto en la caja
+    c.setFillColor(COLOR_TEXTO)
+    c.setFont("Helvetica-Bold", 6)
+    c.drawCentredString(qr_x + qr_size/2, qr_y - 0.35*cm, "NO ESCANEAR QR")
 
 # ==================== REPORTE DIARIO ====================
 
@@ -1973,11 +2023,11 @@ def dibujar_recibo_cuota(c, recibo: Dict, nombre_oficina: str, ubicacion: str):
     """Dibuja el recibo de cuota de cooperación (similar al diseño de riegos)"""
     
     # COLORES
-    COLOR_VERDE = colors.HexColor('#B8D1BF')
+    COLOR_VERDE = colors.HexColor('#bedcdc')
     COLOR_BEIGE = colors.HexColor('#FFFFFF')
-    COLOR_BEIGE_OSCURO = colors.HexColor('#C9B99A')
-    COLOR_TEXTO = colors.HexColor('#2C3E2E')
-    COLOR_TEXTO_GRIS = colors.HexColor('#666666')
+    COLOR_BEIGE_OSCURO = colors.HexColor('#bed2dc')
+    COLOR_TEXTO = colors.HexColor('#506e78')
+    COLOR_TEXTO_GRIS = colors.HexColor('#506e78')
     
     # FONDO BEIGE
     c.setFillColor(COLOR_BEIGE)
@@ -1987,19 +2037,24 @@ def dibujar_recibo_cuota(c, recibo: Dict, nombre_oficina: str, ubicacion: str):
     c.setFillColor(COLOR_VERDE)
     c.roundRect(0.4*cm, RECIBO_ALTO - 2.3*cm, RECIBO_ANCHO - 0.8*cm, 1.9*cm, 0.4*cm, stroke=0, fill=1)
     
-    # LOGO
+    # LOGO (más abajo)
     if os.path.exists(LOGO_PATH):
         try:
-            c.drawImage(LOGO_PATH, 0.7*cm, RECIBO_ALTO - 2.1*cm, width=1.7*cm, height=1.7*cm, mask='auto')
+            c.drawImage(LOGO_PATH, 0.7*cm, RECIBO_ALTO - 2.2*cm, width=1.7*cm, height=1.7*cm, mask='auto')
         except:
             pass
     
-    # TÍTULO
+    # TÍTULO (centrado exacto)
     c.setFillColor(colors.black)
     c.setFont("Helvetica-Bold", 10)
-    c.drawCentredString((RECIBO_ANCHO/2) + 0.5*cm, RECIBO_ALTO - 1*cm, "ASOCIACION DE USUARIOS DE LA SECCION 14 EL BEXHA, A.C.")
+    c.drawCentredString(RECIBO_ANCHO/2, RECIBO_ALTO - 1.0*cm, "ASOCIACION DE USUARIOS DE LA SECCION 14 EL BEXHA, A.C.")
+    
+    # SUBTÍTULO VALE DE RIEGO
+    c.setFont("Helvetica-Bold", 12)
+    c.drawCentredString(RECIBO_ANCHO/2, RECIBO_ALTO - 1.6*cm, "VALE DE RIEGO")
+    
     c.setFont("Helvetica", 8)
-    c.drawCentredString((RECIBO_ANCHO/2) + 0.5*cm, RECIBO_ALTO - 1.75*cm, "RFC: ACB030619G68")
+    # RFC ELIMINADO
     
     # SEPARADOR
     ypos = RECIBO_ALTO - 2.45*cm
@@ -2084,7 +2139,8 @@ def dibujar_recibo_cuota(c, recibo: Dict, nombre_oficina: str, ubicacion: str):
     c.setFont("Helvetica", 7.5)
     
     fecha_obj = datetime.strptime(recibo['fecha'], '%Y-%m-%d')
-    c.drawString(0.8*cm, ypos, f"C. Juan Aldama #25, Col. Centro, Tezontepec de Aldama. Fecha: {fecha_obj.strftime('%d/%m/%Y')}")
+    # DIRECCIÓN ELIMINADA, SOLO FECHA
+    c.drawString(0.8*cm, ypos, f"Fecha: {fecha_obj.strftime('%d/%m/%Y')}")
     
     ypos -= 0.28*cm
     hora_obj = datetime.strptime(recibo['hora'], '%H:%M:%S')
@@ -2099,12 +2155,48 @@ def dibujar_recibo_cuota(c, recibo: Dict, nombre_oficina: str, ubicacion: str):
     c.drawRightString(RECIBO_ANCHO - 0.8*cm, ypos + 0.28*cm, "Firma Recaudador")
     c.line(RECIBO_ANCHO - 4*cm, ypos + 0.18*cm, RECIBO_ANCHO - 0.8*cm, ypos + 0.18*cm)
     
-    # LEYENDA LEGAL
-    ypos -= 0.45*cm
-    c.setFont("Helvetica", 6)
-    c.drawString(0.7*cm, ypos, "Este recibo ampara el pago de cuota de cooperación destinada exclusivamente al mantenimiento y operación del sistema de riego.")
-    ypos -= 0.22*cm
-    c.drawString(0.7*cm, ypos, "Exento de IVA conforme al régimen de personas morales con fines no lucrativos (Art. 79-80 LISR y Art. 15 fracc. XII LIVA).")
+    # ===== CÓDIGO QR =====
+    # Generar datos del QR
+    qr_data = f"CUOTA|{recibo['folio']}|{recibo['numero_lote']}|{recibo['nombre_campesino']}|{recibo['monto']}|{recibo['nombre_cuota']}"
+    
+    qr = qrcode.QRCode(
+        version=1,
+        error_correction=qrcode.constants.ERROR_CORRECT_L,
+        box_size=10,
+        border=4,
+    )
+    qr.add_data(qr_data)
+    qr.make(fit=True)
+    
+    img_qr = qr.make_image(fill_color="black", back_color="white")
+    
+    # Convertir a formato compatible con ReportLab
+    img_buffer = BytesIO()
+    img_qr.save(img_buffer)
+    img_buffer.seek(0)
+    
+    # Dibujar QR
+    qr_size = 2.2 * cm # Reducimos tamaño
+    qr_x = 0.8 * cm
+    qr_y = 0.7 * cm # Bajamos posición
+    
+    # Contorno del QR
+    c.setStrokeColor(COLOR_VERDE)
+    c.setLineWidth(1)
+    c.rect(qr_x - 0.1*cm, qr_y - 0.1*cm, qr_size + 0.2*cm, qr_size + 0.2*cm, stroke=1, fill=0)
+    
+    c.drawImage(ImageReader(img_buffer), qr_x, qr_y, width=qr_size, height=qr_size)
+    
+    # ===== CAJA "NO ESCANEAR QR" =====
+    c.setFillColor(COLOR_VERDE)
+    c.roundRect(qr_x, qr_y - 0.5*cm, qr_size, 0.4*cm, 0.1*cm, stroke=0, fill=1)
+    
+    # Texto en la caja
+    c.setFillColor(COLOR_TEXTO)
+    c.setFont("Helvetica-Bold", 6)
+    c.drawCentredString(qr_x + qr_size/2, qr_y - 0.35*cm, "NO ESCANEAR QR")
+    
+    # LEYENDA LEGAL ELIMINADA
 
 
 def generar_reporte_cuota_pdf(tipo_cuota_id: int) -> str:
