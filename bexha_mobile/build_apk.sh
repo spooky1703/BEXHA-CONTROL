@@ -13,8 +13,8 @@ $FLUTTER_BIN clean
 echo "📦 Obteniendo dependencias..."
 $FLUTTER_BIN pub get
 
-echo "🏗️ Compilando APK (Release)..."
-$FLUTTER_BIN build apk --release
+echo "🏗️ Compilando APK (Release) con OFUSCACIÓN..."
+$FLUTTER_BIN build apk --release --obfuscate --split-debug-info=debug_symbols
 
 if [ -f "$SOURCE_APK" ]; then
     echo "📋 Copiando APK a la carpeta principal..."

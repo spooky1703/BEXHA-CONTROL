@@ -34,6 +34,30 @@ def main():
                 print("ADVERTENCIA: No se encontró BEXHA.csv. La BD estará vacía.")
         
         root = tk.Tk()
+        root.withdraw() # Ocultar ventana mientras se verifica
+        
+        # ===== SISTEMA DE ACTIVACIÓN =====
+        from modules.models import obtener_configuracion, actualizar_configuracion
+        from tkinter import simpledialog
+        
+        if obtener_configuracion('producto_activado') != '1':
+            # El producto no está activado
+            clave = simpledialog.askstring(
+                "Activación de Producto", 
+                "Este software requiere activación.\n\nIngrese la clave de producto:",
+                parent=root,
+                show='*'
+            )
+            
+            if clave == "DiN04lAp1raT3ri4":
+                actualizar_configuracion('producto_activado', '1')
+                messagebox.showinfo("Activación", "¡Producto activado correctamente!")
+            else:
+                messagebox.showerror("Error", "Clave incorrecta. El sistema se cerrará.")
+                sys.exit(1)
+        
+        # Si pasa la activación, mostramos la ventana
+        root.deiconify()
         
         icon_path = os.path.join('assets', 'zapata.png')
         if os.path.exists(icon_path):

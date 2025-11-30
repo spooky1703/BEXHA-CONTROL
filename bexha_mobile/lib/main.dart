@@ -8,6 +8,9 @@ import 'package:intl/intl.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:data_table_2/data_table_2.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:device_info_plus/device_info_plus.dart';
+import 'package:crypto/crypto.dart';
+import 'dart:convert'; // for utf8
 import 'database_helper.dart';
 
 // List of Parajes extracted from DB
@@ -97,11 +100,106 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
   }
 
   Future<void> _initApp() async {
+    await _checkLicense(); // 🔒 SECURITY CHECK
     await _requestPermissions();
     await _dbHelper.seedEjidatarios();
     await _loadMatrixData();
     await _loadSesiones();
     await _restoreSesionActiva();
+  }
+
+  // 🔒 DEVICE LOCK IMPLEMENTATION
+  Future<void> _checkLicense() async {
+    final prefs = await SharedPreferences.getInstance();
+    final isLicensed = prefs.getBool('is_licensed') ?? false;
+
+    if (isLicensed) return;
+
+    // Get Device ID
+    final deviceInfo = DeviceInfoPlugin();
+    String deviceId = "UNKNOWN";
+    
+    if (Platform.isAndroid) {
+      final androidInfo = await deviceInfo.androidInfo;
+      deviceId = androidInfo.id; // Unique ID
+    } else if (Platform.isIOS) {
+      final iosInfo = await deviceInfo.iosInfo;
+      deviceId = iosInfo.identifierForVendor ?? "IOS_NO_ID";
+    }
+
+    if (!mounted) return;
+
+    // Show Blocking Dialog
+    await showDialog(
+      context: context,
+      barrierDismissible: false, // Prevent closing
+      builder: (ctx) {
+        final TextEditingController keyController = TextEditingController();
+        String errorMsg = "";
+
+        return StatefulBuilder(
+          builder: (context, setState) => AlertDialog(
+            title: const Text("🔒 Activación Requerida"),
+            content: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const Icon(Icons.phonelink_lock, size: 50, color: Colors.red),
+                const SizedBox(height: 10),
+                const Text("Este dispositivo no está autorizado."),
+                const SizedBox(height: 10),
+                SelectableText(
+                  "ID: $deviceId",
+                  style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                ),
+                const SizedBox(height: 10),
+                const Text("Envía este ID al administrador para obtener tu clave."),
+                const SizedBox(height: 20),
+                TextField(
+                  controller: keyController,
+                  decoration: InputDecoration(
+                    labelText: "Clave de Activación",
+                    border: const OutlineInputBorder(),
+                    errorText: errorMsg.isEmpty ? null : errorMsg,
+                  ),
+                ),
+              ],
+            ),
+            actions: [
+              ElevatedButton(
+                onPressed: () {
+                  final inputKey = keyController.text.trim().toUpperCase();
+                  final expectedKey = _generateExpectedKey(deviceId);
+                  
+                  if (inputKey == expectedKey) {
+                    prefs.setBool('is_licensed', true);
+                    Navigator.of(ctx).pop(); // Unlock
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(content: Text("✅ Dispositivo Autorizado")),
+                    );
+                  } else {
+                    setState(() {
+                      errorMsg = "Clave incorrecta";
+                    });
+                  }
+                },
+                child: const Text("ACTIVAR"),
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
+  String _generateExpectedKey(String deviceId) {
+    const secretKey = "BEXHA_SECURE_MASTER_KEY_2024"; // MUST MATCH PYTHON SCRIPT
+    final keyBytes = utf8.encode(secretKey);
+    final dataBytes = utf8.encode(deviceId);
+    
+    final hmac = Hmac(sha256, keyBytes);
+    final digest = hmac.convert(dataBytes);
+    
+    return digest.toString().toUpperCase().substring(0, 8);
   }
 
   Future<void> _requestPermissions() async {

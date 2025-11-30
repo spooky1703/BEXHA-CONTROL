@@ -44,6 +44,8 @@ dependencies:
   share_plus: ^10.0.0
   data_table_2: ^2.5.10
   shared_preferences: ^2.2.2
+  device_info_plus: ^10.1.0
+  crypto: ^3.0.3
 
 dev_dependencies:
   flutter_test:
