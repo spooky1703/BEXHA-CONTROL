@@ -41,8 +41,15 @@ def build_with_nuitka():
         # Configuración de salida
         "--output-dir=dist_secure",
         "--remove-output", # Limpiar archivos temporales
+        "-o", "BEXHA_CONTROL.exe", # Forzar extensión .exe
         
-        # Paquetes ocultos (Nuitka suele detectarlos, pero por seguridad)
+        # Optimizaciones y Seguridad
+        "--lto=yes", # Link Time Optimization
+        "--show-progress",
+        "--windows-disable-console", # Desactivar consola siempre
+        "--windows-icon-from-ico=assets/zapata.ico", # Icono obligatorio
+        
+        # Paquetes ocultos
         "--include-package=modules",
         "--include-package=reportlab",
         "--include-package=PIL",
@@ -52,23 +59,19 @@ def build_with_nuitka():
         "main.py"
     ]
     
-    # Configuración específica por SO
-    if sys.platform.startswith('win'):
-        cmd.append("--windows-disable-console")
-        if os.path.exists("assets/zapata.ico"):
-            cmd.append("--windows-icon-from-ico=assets/zapata.ico")
-    elif sys.platform.startswith('darwin'): # Mac
-        cmd.append("--macos-disable-console") # O equivalente si existe, Nuitka lo maneja con bundle
-        if os.path.exists("assets/zapata.png"):
-            cmd.append("--macos-app-icon=assets/zapata.png")
+    # Advertencia si no se corre en Windows
+    if not sys.platform.startswith('win'):
+        print("⚠️  ADVERTENCIA: Estás ejecutando este script en un sistema NO Windows.")
+        print("   Nuitka compilará un binario para TU sistema actual, no un .exe de Windows.")
+        print("   Para generar el .exe final, debes correr este script en Windows.\n")
     
-    print("\n🚀 Ejecutando comando de compilación (esto puede tardar unos minutos)...")
+    print("\n🚀 Ejecutando comando de compilación (Windows Target)...")
     print(" ".join(cmd))
     
     try:
         subprocess.check_call(cmd)
         print("\n✅ Compilación segura completada!")
-        print(f"📁 Ejecutable en: dist_secure/main.bin (o main.app en Mac)")
+        print(f"📁 Ejecutable listo: dist_secure/BEXHA_CONTROL.exe")
     except subprocess.CalledProcessError as e:
         print(f"\n❌ Error durante la compilación: {e}")
         sys.exit(1)

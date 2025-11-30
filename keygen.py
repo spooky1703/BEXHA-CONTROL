@@ -2,7 +2,6 @@ import hashlib
 import hmac
 import sys
 
-# CLAVE MAESTRA SECRETA - ¡NO COMPARTIR!
 # Esta misma clave debe estar en la app móvil
 SECRET_KEY = b"BEXHA_SECURE_MASTER_KEY_2024"
 
