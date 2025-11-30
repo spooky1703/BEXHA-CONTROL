@@ -140,29 +140,42 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
         return StatefulBuilder(
           builder: (context, setState) => AlertDialog(
             title: const Text("🔒 Activación Requerida"),
-            content: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                const Icon(Icons.phonelink_lock, size: 50, color: Colors.red),
-                const SizedBox(height: 10),
-                const Text("Este dispositivo no está autorizado."),
-                const SizedBox(height: 10),
-                SelectableText(
-                  "ID: $deviceId",
-                  style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-                ),
-                const SizedBox(height: 10),
-                const Text("Envía este ID al administrador para obtener tu clave."),
-                const SizedBox(height: 20),
-                TextField(
-                  controller: keyController,
-                  decoration: InputDecoration(
-                    labelText: "Clave de Activación",
-                    border: const OutlineInputBorder(),
-                    errorText: errorMsg.isEmpty ? null : errorMsg,
+            content: SingleChildScrollView(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const Icon(Icons.phonelink_lock, size: 50, color: Colors.red),
+                  const SizedBox(height: 10),
+                  const Text("Este dispositivo no está autorizado."),
+                  const SizedBox(height: 10),
+                  SelectableText(
+                    "ID: $deviceId",
+                    style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                   ),
-                ),
-              ],
+                  const SizedBox(height: 10),
+                  const Text("Envía este ID al administrador para obtener tu clave."),
+                  const SizedBox(height: 10),
+                  const Text(
+                    "Para pedir la clave a distancia llame a:\n+52 8137006569\nó ryverz.alonso@gmail.com",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                  const SizedBox(height: 5),
+                  const Text(
+                    "🚫 Di no a la piratería",
+                    style: TextStyle(color: Colors.red, fontStyle: FontStyle.italic),
+                  ),
+                  const SizedBox(height: 20),
+                  TextField(
+                    controller: keyController,
+                    decoration: InputDecoration(
+                      labelText: "Clave de Activación",
+                      border: const OutlineInputBorder(),
+                      errorText: errorMsg.isEmpty ? null : errorMsg,
+                    ),
+                  ),
+                ],
+              ),
             ),
             actions: [
               ElevatedButton(

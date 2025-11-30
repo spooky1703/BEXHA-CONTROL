@@ -11,5 +11,5 @@ echo "🚀 Iniciando en iPhone..."
 echo "⚠️  NOTA: Asegúrate de que tu iPhone esté desbloqueado y conectado por cable."
 echo "⚠️  Si es la primera vez, deberás confiar en el desarrollador en Configuración > General > VPN y Gestión de Dispositivos."
 
-echo "🔒 Ejecutando con ofuscación..."
-$FLUTTER_BIN run --release --obfuscate --split-debug-info=debug_symbols
+echo "🚀 Iniciando en iPhone (Modo Release)..."
+$FLUTTER_BIN run --release
