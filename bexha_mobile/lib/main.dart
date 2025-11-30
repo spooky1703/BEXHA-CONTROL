@@ -137,8 +137,14 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
         final TextEditingController keyController = TextEditingController();
         String errorMsg = "";
 
-        return StatefulBuilder(
-          builder: (context, setState) => AlertDialog(
+        return PopScope(
+          canPop: false, // 🚫 BLOCK BACK BUTTON
+          onPopInvoked: (didPop) {
+            if (didPop) return;
+            // Optional: Show toast "Activation required"
+          },
+          child: StatefulBuilder(
+            builder: (context, setState) => AlertDialog(
             title: const Text("🔒 Activación Requerida"),
             content: SingleChildScrollView(
               child: Column(
